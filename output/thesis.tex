@@ -1,0 +1,782 @@
+\documentclass[12pt,a4paper,]{report}
+\usepackage{lmodern}
+
+% Overwrite \begin{figure}[htbp] with \begin{figure}[H]
+\usepackage{float}
+\let\origfigure=\figure
+\let\endorigfigure=\endfigure
+\renewenvironment{figure}[1][]{%
+\origfigure[b]
+}{%
+\endorigfigure
+}
+
+% fix for pandoc 1.14
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% TP: hack to truncate list of figures/tables.
+\usepackage{truncate}
+\usepackage{caption}
+\usepackage{tocloft}
+% TP: end hack
+
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+
+% Only use fixltx2e if using pre-2015 kernels
+\begingroup\expandafter\expandafter\expandafter\endgroup
+\expandafter\ifx\csname IncludeInRelease\endcsname\relax
+  \usepackage{fixltx2e}
+\fi
+
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\mathbf{
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{longtable,booktabs}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={Anastasia Stuart},
+            pdftitle={How sleepy are you?},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{5}
+
+% % \newlength{\cslhangindent}
+% \setlength{\cslhangindent}{1.5em}
+% \newenvironment{cslreferences}%
+%   {}%
+%   {\par}
+% 
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+% Table of contents formatting
+\renewcommand{\contentsname}{Table of Contents}
+\setcounter{tocdepth}{3}
+
+% Headers and page numbering
+\usepackage{fancyhdr}
+\pagestyle{plain}
+
+% Following package is used to add background image to front page
+\usepackage{wallpaper}
+
+% Table package
+\usepackage{ctable}% http://ctan.org/pkg/ctable
+
+% Deal with 'LaTeX Error: Too many unprocessed floats.'
+\usepackage{morefloats}
+% or use \extrafloats{100}
+% add some \clearpage
+
+% % Chapter header
+% \usepackage{titlesec, blindtext, color}
+% \definecolor{gray75}{gray}{0.75}
+% \newcommand{\hsp}{\hspace{20pt}}
+% \titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+% % Fonts and typesetting
+% \setmainfont[Scale=1.1]{Helvetica}
+% \setsansfont[Scale=1.1]{Verdana}
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+% \setromanfont[Scale=1.01,Ligatures={Common},Numbers={OldStyle}]{Palatino}
+% \setromanfont[Scale=1.01,Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
+%Following line controls size of code chunks
+% \setmonofont[Scale=0.9]{Monaco}
+%Following line controls size of figure legends
+% \setsansfont[Scale=1.2]{Optima Regular}
+
+% CODE BLOCKS
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{color}
+
+% JAVA CODE BLOCKS
+%\definecolor{backcolour}{RGB}{242,242,242}
+%\definecolor{javared}{rgb}{0.6,0,0}
+%\definecolor{javagreen}{rgb}{0.25,0.5,0.35}
+%\definecolor{javapurple}{rgb}{0.5,0,0.35}
+%\definecolor{javadocblue}{rgb}{0.25,0.35,0.75}
+
+\lstdefinestyle{javaCodeStyle}{
+  language=Java,                         % the language of the code
+  backgroundcolor=\color{backcolour},    % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\fontsize{10}{8}\sffamily,
+  breakatwhitespace=false,
+  breaklines=true,
+  keywordstyle=\color{javapurple}\bfseries,
+  stringstyle=\color{javared},
+  commentstyle=\color{javagreen},
+  morecomment=[s][\color{javadocblue}]{/**}{*/},
+  captionpos=t,                          % sets the caption-position to bottom
+  frame=single,                          % adds a frame around the code
+  numbers=left,
+  numbersep=10pt,                         % margin between number and code block
+  keepspaces=true,                       % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  columns=fullflexible,
+  showspaces=false,                      % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,                % underline spaces within strings only
+  showtabs=false,                        % show tabs within strings adding particular underscores
+  tabsize=2                              % sets default tabsize to 2 spaces
+}
+
+%Attempt to set math size
+%First size must match the text size in the document or command will not work
+%\DeclareMathSizes{display size}{text size}{script size}{scriptscript size}.
+%\DeclareMathSizes{12}{13}{7}{7}
+
+% ---- CUSTOM AMPERSAND
+% \newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% HEADINGS
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\scshape\large}
+\subsubsectionfont{\rmfamily\bfseries\upshape\large}
+% \sectionfont{\rmfamily\mdseries\Large}
+% \subsectionfont{\rmfamily\mdseries\scshape\normalsize}
+% \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
+
+% Set figure legends and captions to be smaller sized sans serif font
+\usepackage[font={footnotesize,sf}]{caption}
+
+\usepackage{siunitx}
+
+% Adjust spacing between lines to 1.5
+\usepackage{setspace}
+% \onehalfspacing
+\doublespacing
+\raggedbottom
+
+% Set margins
+\usepackage[top=1.5in,bottom=1.5in,left=1.5in,right=1.4in]{geometry}
+\setlength\parindent{0.5in} % indent at start of paragraphs (set to 0.3?)
+\setlength{\parskip}{9pt}
+\usepackage{indentfirst}
+
+% Add space between pararaphs
+% http://texblog.org/2012/11/07/correctly-typesetting-paragraphs-in-latex/
+% \usepackage{parskip}
+% \setlength{\parskip}{\baselineskip}
+
+% Set colour of links to black so that they don't show up when printed
+\usepackage{hyperref}
+\hypersetup{colorlinks=false, linkcolor=black}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{array}
+\usepackage{makecell}
+\newcolumntype{x}[1]{%
+>{\centering\arraybackslash}m{#1}}%
+
+% Allow for long captions and float captions on opposite page of figures
+% \usepackage[rightFloats, CaptionBefore]{fltpage}
+
+% Don't let floats cross subsections
+% \usepackage[section,subsection]{extraplaceins}
+
+% Rotate images and tables
+\usepackage{float}
+\usepackage{pdfpages}
+\usepackage{pdflscape}
+\usepackage{graphicx}
+\usepackage{rotating}
+
+% Custom math
+\usepackage{bbold}
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+
+% pandoc-crossref definitions
+
+% We add the lines below from pandoc-crossref because we are using the --include-in-header flag
+% see here: https://lierdakil.github.io/pandoc-crossref/#latex-output-and---include-in-header
+% This LaTeX code is obtained by getting pandoc-crossref to dump it
+% see here: https://github.com/lierdakil/pandoc-crossref/issues/326
+
+
+\begin{document}
+
+
+\begin{titlepage}
+    \begin{center}
+
+
+        \vspace*{2.5cm}
+
+        \huge
+        How sleepy are you?
+
+                \vspace{.5cm}
+
+        \Large
+        KSS and KDT in Insomnia and Non-Restorative Sleep
+        
+
+        \vspace{1.5cm}
+
+        \Large
+        Anastasia Stuart
+
+        \vspace{1.5cm}
+
+        \normalsize
+        A thesis presented for the degree of\\
+        Bachelor of Psychology (Honours) 2024
+
+        \vfill
+
+        \normalsize
+        Supervised by:\\
+        Dr Rick Wassing \\ Dr Julia Chapman
+
+        \vspace{0.8cm}
+
+        % Uncomment the following line
+        % to add a centered university logo
+        % \includegraphics[width=0.4\textwidth]{style/univ_logo.eps}
+
+        \normalsize
+        Macquarie University\\
+        October 2024
+
+        % Except where otherwise noted, content in this thesis is licensed under a Creative Commons Attribution 4.0 License (http://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. Copyright 2015,Tom Pollard.
+
+    \end{center}
+\end{titlepage}
+
+
+% This is where the converted markdown files will go 
+\vspace*{\fill}
+
+\noindent \textit{
+I, Anastasia Stuart confirm that the work presented in this thesis is my own. Where information has been derived from other sources, I confirm that this has been indicated in the thesis.
+} \vspace*{\fill} \pagenumbering{gobble} \newpage
+
+\chapter*{Acknowledgements}\label{acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+\newpage
+
+\chapter*{Abstract}\label{abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et turpis
+gravida, lacinia ante sit amet, sollicitudin erat. Aliquam efficitur
+vehicula leo sed condimentum. Phasellus lobortis eros vitae rutrum
+egestas. Vestibulum ante ipsum primis in faucibus orci luctus et
+ultrices posuere cubilia Curae; Donec at urna imperdiet, vulputate orci
+eu, sollicitudin leo. Donec nec dui sagittis, malesuada erat eget,
+vulputate tellus. Nam ullamcorper efficitur iaculis. Mauris eu vehicula
+nibh. In lectus turpis, tempor at felis a, egestas fermentum massa.
+
+\newpage 
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\pagenumbering{gobble}
+
+\tableofcontents
+
+\newpage
+
+\listoffigures
+
+\newpage
+
+\listoftables
+
+\newpage
+
+\chapter*{Abbreviations}\label{abbreviations}
+\addcontentsline{toc}{chapter}{Abbreviations}
+
+\begin{tabbing}
+\textbf{API}~~~~~~~~~~~~ \= \textbf{A}pplication \textbf{P}rogramming \textbf{I}nterface \\  
+\textbf{JSON} \> \textbf{J}ava\textbf{S}cript \textbf{O}bject \textbf{N}otation \\  
+\end{tabbing}
+
+\newpage
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\doublespacing
+\setlength{\parindent}{0.5in}
+
+\chapter{Introduction}\label{introduction}
+
+\section{Background}\label{background}
+
+Recent research suggests there may be a distinct subtype of insomnia
+called non-restorative sleep, characterized by sleep-state
+misperception.
+
+\section{Sleep-state misperception}\label{sleep-state-misperception}
+
+\subsection{Subsection of the middle
+bit}\label{subsection-of-the-middle-bit}
+
+This is a subsection of the middle bit. Quisque sit amet tempus arcu, ac
+suscipit ante. Cras massa elit, pellentesque eget nisl ut, malesuada
+rutrum risus. Nunc in venenatis mi. Curabitur sit amet suscipit eros,
+non tincidunt nibh. Phasellus lorem lectus, iaculis non luctus eget,
+tempus non risus. Suspendisse ut felis mi. (Sweetman et al., 2021)
+
+\section{Self-reported sleepiness}\label{self-reported-sleepiness}
+
+Self-reported sleepiness can be measured by the Karolinska sleepiness
+scale, which correlates to neural measures of drowsiness in healthy
+controls (Kaida et al., 2006)
+
+\subsection{Subheading}\label{subheading}
+
+\section{Summary of chapters}\label{summary-of-chapters}
+
+\newpage
+
+\chapter{Method}\label{sec:method}
+
+\section{Participants}\label{participants}
+
+12 participants from each clinical group (ID, NRS, HC) were recruited
+through referrals from the Woolcock Institute and the Royal Prince
+Alfred sleep clinics in addition to social media advertising. - Age and
+sex matched - excluded if comorbid sleep disorder - Inclusion criteria
+for insomnia - inclusion criteria for NRS - Remunerated \$100
+
+\section{Measures}\label{measures}
+
+\subsection{KSS}\label{kss}
+
+\begin{itemize}
+\tightlist
+\item
+  KSS is a 1 item 9-point likert scale measure
+\item
+  internal and external validity
+\item
+  measures sleepiness
+\end{itemize}
+
+\subsection{KDT}\label{kdt}
+
+\begin{itemize}
+\tightlist
+\item
+  KDT measured through HD-EEG data
+\item
+  Eyes open and eyes closed conditions
+\item
+  Power spectra
+\end{itemize}
+
+\section{Procedure}\label{procedure}
+
+The study was approved by the Macquarie University Human Research Ethics
+Committee. - Participants come to the Woolcock - Sleep is monitored
+overnight - KSS and KDT recorded at 7am and 9am - Other neurobehavioural
+testing also done
+
+\newpage
+
+\chapter{Results}\label{sec:results}
+
+\section{Comparing KSS scores between
+groups}\label{comparing-kss-scores-between-groups}
+
+All analyses were conducted on Matlab version R2024a and EEGprocessor
+\emph{version}.
+
+\section{Correlation between KSS and slowing ratio scores between
+groups}\label{correlation-between-kss-and-slowing-ratio-scores-between-groups}
+
+\section{Correlation between KSS and AAC between
+groups}\label{correlation-between-kss-and-aac-between-groups}
+
+\section{Topography of channel-by-channel comparisons between ID and NRS
+groups}\label{topography-of-channel-by-channel-comparisons-between-id-and-nrs-groups}
+
+\newpage
+
+\chapter{Discussion}\label{sec:discussion}
+
+The study aimed to explore the relationship between self-reported
+sleepiness scores, as measured by the KSS, and neural markers of
+drowsiness measured in the KDT across a sample of people with insomnia,
+non-restorative sleep, and healthy controls.
+
+\subsection{KSS score variance}\label{kss-score-variance}
+
+The study found that KSS scores varied across groups.
+
+\subsection{AAC}\label{aac}
+
+This is how AAC scores correlated amongst 3 groups
+
+\subsection{Slowing Ratio}\label{slowing-ratio}
+
+Here I will talk about slowing ratio
+
+\subsection{Topographic electrode cluster differences between
+ID/NRS}\label{topographic-electrode-cluster-differences-between-idnrs}
+
+Topographic power spectral analysis found these cluster differences
+which mean this
+
+\section{Strengths}\label{strengths}
+
+\begin{itemize}
+\tightlist
+\item
+  Age and sex matching of participants
+\item
+  Strong exclusion criteria
+\end{itemize}
+
+\section{Limitations}\label{limitations}
+
+\begin{itemize}
+\tightlist
+\item
+  Sample size
+\end{itemize}
+
+\section{Practical implications and future
+directions}\label{practical-implications-and-future-directions}
+
+\section{Conclusion}\label{conclusion}
+
+The KSS is the best measure ever and more people should use it.
+
+\newpage
+
+\footnotesize
+\singlespacing
+\setlength{\parindent}{0in}
+
+\chapter{References}\label{references}
+
+\newpage
+
+\chapter*{Appendix 1: Some extra
+stuff}\label{appendix-1-some-extra-stuff}
+\addcontentsline{toc}{chapter}{Appendix 1: Some extra stuff}
+
+Add appendix 1 here. Vivamus hendrerit rhoncus interdum. Sed ullamcorper
+et augue at porta. Suspendisse facilisis imperdiet urna, eu pellentesque
+purus suscipit in. Integer dignissim mattis ex aliquam blandit.
+Curabitur lobortis quam varius turpis ultrices egestas.
+
+\newpage
+
+\vspace*{\fill}
+
+\noindent \textit{
+I, Anastasia Stuart confirm that the work presented in this thesis is my own. Where information has been derived from other sources, I confirm that this has been indicated in the thesis.
+} \vspace*{\fill} \pagenumbering{gobble} \newpage
+
+\chapter*{Acknowledgements}\label{acknowledgements-1}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+\newpage
+
+\chapter*{Abstract}\label{abstract-1}
+\addcontentsline{toc}{chapter}{Abstract}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et turpis
+gravida, lacinia ante sit amet, sollicitudin erat. Aliquam efficitur
+vehicula leo sed condimentum. Phasellus lobortis eros vitae rutrum
+egestas. Vestibulum ante ipsum primis in faucibus orci luctus et
+ultrices posuere cubilia Curae; Donec at urna imperdiet, vulputate orci
+eu, sollicitudin leo. Donec nec dui sagittis, malesuada erat eget,
+vulputate tellus. Nam ullamcorper efficitur iaculis. Mauris eu vehicula
+nibh. In lectus turpis, tempor at felis a, egestas fermentum massa.
+
+\newpage
+
+\pagenumbering{gobble}
+
+\tableofcontents
+
+\newpage
+
+\listoffigures
+
+\newpage
+
+\chapter*{Abbreviations}\label{abbreviations-1}
+\addcontentsline{toc}{chapter}{Abbreviations}
+
+\begin{tabbing}
+\textbf{API}~~~~~~~~~~~~ \= \textbf{A}pplication \textbf{P}rogramming \textbf{I}nterface \\  
+\textbf{JSON} \> \textbf{J}ava\textbf{S}cript \textbf{O}bject \textbf{N}otation \\  
+\end{tabbing}
+
+\newpage
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\doublespacing
+\setlength{\parindent}{0.5in}
+
+\chapter{Introduction}\label{introduction-1}
+
+\section{Background}\label{background-1}
+
+Recent research suggests there may be a distinct subtype of insomnia
+called non-restorative sleep, characterized by sleep-state
+misperception.
+
+\section{Sleep-state misperception}\label{sleep-state-misperception-1}
+
+\subsection{Subsection of the middle
+bit}\label{subsection-of-the-middle-bit-1}
+
+This is a subsection of the middle bit. Quisque sit amet tempus arcu, ac
+suscipit ante. Cras massa elit, pellentesque eget nisl ut, malesuada
+rutrum risus. Nunc in venenatis mi. Curabitur sit amet suscipit eros,
+non tincidunt nibh. Phasellus lorem lectus, iaculis non luctus eget,
+tempus non risus. Suspendisse ut felis mi. (Sweetman et al., 2021)
+
+\section{Self-reported sleepiness}\label{self-reported-sleepiness-1}
+
+Self-reported sleepiness can be measured by the Karolinska sleepiness
+scale, which correlates to neural measures of drowsiness in healthy
+controls (Kaida et al., 2006)
+
+\subsection{Subheading}\label{subheading-1}
+
+\section{Summary of chapters}\label{summary-of-chapters-1}
+
+\newpage
+
+\chapter{Method}\label{sec:method}
+
+\section{Participants}\label{participants-1}
+
+12 participants from each clinical group (ID, NRS, HC) were recruited
+through referrals from the Woolcock Institute and the Royal Prince
+Alfred sleep clinics in addition to social media advertising. - Age and
+sex matched - excluded if comorbid sleep disorder - Inclusion criteria
+for insomnia - inclusion criteria for NRS - Remunerated \$100
+
+\section{Measures}\label{measures-1}
+
+\subsection{KSS}\label{kss-1}
+
+\begin{itemize}
+\tightlist
+\item
+  KSS is a 1 item 9-point likert scale measure
+\item
+  internal and external validity
+\item
+  measures sleepiness
+\end{itemize}
+
+\subsection{KDT}\label{kdt-1}
+
+\begin{itemize}
+\tightlist
+\item
+  KDT measured through HD-EEG data
+\item
+  Eyes open and eyes closed conditions
+\item
+  Power spectra
+\end{itemize}
+
+\section{Procedure}\label{procedure-1}
+
+The study was approved by the Macquarie University Human Research Ethics
+Committee. - Participants come to the Woolcock - Sleep is monitored
+overnight - KSS and KDT recorded at 7am and 9am - Other neurobehavioural
+testing also done
+
+\newpage
+
+\chapter{Results}\label{sec:results}
+
+\section{Comparing KSS scores between
+groups}\label{comparing-kss-scores-between-groups-1}
+
+All analyses were conducted on Matlab version R2024a and EEGprocessor
+\emph{version}.
+
+\section{Correlation between KSS and slowing ratio scores between
+groups}\label{correlation-between-kss-and-slowing-ratio-scores-between-groups-1}
+
+\section{Correlation between KSS and AAC between
+groups}\label{correlation-between-kss-and-aac-between-groups-1}
+
+\section{Topography of channel-by-channel comparisons between ID and NRS
+groups}\label{topography-of-channel-by-channel-comparisons-between-id-and-nrs-groups-1}
+
+\newpage
+
+\chapter{Discussion}\label{sec:discussion}
+
+The study aimed to explore the relationship between self-reported
+sleepiness scores, as measured by the KSS, and neural markers of
+drowsiness measured in the KDT across a sample of people with insomnia,
+non-restorative sleep, and healthy controls.
+
+\subsection{KSS score variance}\label{kss-score-variance-1}
+
+The study found that KSS scores varied across groups.
+
+\subsection{AAC}\label{aac-1}
+
+This is how AAC scores correlated amongst 3 groups
+
+\subsection{Slowing Ratio}\label{slowing-ratio-1}
+
+Here I will talk about slowing ratio
+
+\subsection{Topographic electrode cluster differences between
+ID/NRS}\label{topographic-electrode-cluster-differences-between-idnrs-1}
+
+Topographic power spectral analysis found these cluster differences
+which mean this
+
+\section{Strengths}\label{strengths-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Age and sex matching of participants
+\item
+  Strong exclusion criteria
+\end{itemize}
+
+\section{Limitations}\label{limitations-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Sample size
+\end{itemize}
+
+\section{Practical implications and future
+directions}\label{practical-implications-and-future-directions-1}
+
+\section{Conclusion}\label{conclusion-1}
+
+The KSS is the best measure ever and more people should use it.
+
+\newpage
+
+\footnotesize
+\singlespacing
+\setlength{\parindent}{0in}
+
+\chapter{References}\label{references-1}
+
+\newpage
+
+\chapter*{Appendix 1: Some extra
+stuff}\label{appendix-1-some-extra-stuff-1}
+\addcontentsline{toc}{chapter}{Appendix 1: Some extra stuff}
+
+Add appendix 1 here. Vivamus hendrerit rhoncus interdum. Sed ullamcorper
+et augue at porta. Suspendisse facilisis imperdiet urna, eu pellentesque
+purus suscipit in. Integer dignissim mattis ex aliquam blandit.
+Curabitur lobortis quam varius turpis ultrices egestas.
+
+\newpage
+
+\chapter*{Appendix 2: Some more extra
+stuff}\label{appendix-2-some-more-extra-stuff}
+\addcontentsline{toc}{chapter}{Appendix 2: Some more extra stuff}
+
+Add appendix 2 here. Aliquam rhoncus mauris ac neque imperdiet, in
+mattis eros aliquam. Etiam sed massa et risus posuere rutrum vel et
+mauris. Integer id mauris sed arcu venenatis finibus. Etiam nec
+hendrerit purus, sed cursus nunc. Pellentesque ac luctus magna. Aenean
+non posuere enim, nec hendrerit lacus. Etiam lacinia facilisis tempor.
+Aenean dictum nunc id felis rhoncus aliquam.
+
+\newpage
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-kaida_validation_2006}
+Kaida, K., Takahashi, M., Akerstedt, T., Nakata, A., Otsuka, Y.,
+Haratani, T., \& Fukasawa, K. (2006). Validation of the {Karolinska}
+sleepiness scale against performance and {EEG} variables. \emph{Clinical
+Neurophysiology: Official Journal of the International Federation of
+Clinical Neurophysiology}, \emph{117}(7), 1574--1581.
+\url{https://doi.org/10.1016/j.clinph.2006.03.011}
+
+\bibitem[\citeproctext]{ref-sweetman_prevalence_2021}
+Sweetman, A., Melaku, Y. A., Lack, L., Reynolds, A., Gill, T. K., Adams,
+R., \& Appleton, S. (2021). Prevalence and associations of co-morbid
+insomnia and sleep apnoea in an {Australian} population-based sample.
+\emph{Sleep Medicine}, \emph{82}, 9--17.
+\url{https://doi.org/10.1016/j.sleep.2021.03.023}
+
+\end{CSLReferences}
+
+\end{document}

@@ -1,0 +1,7 @@
+[WARNING] Could not deduce format from file extension .rmd
+  Defaulting to markdown
+[INFO] Loaded /Users/anastuart/Documents/Honours/thesis_markdown/style/template.tex from /Users/anastuart/Documents/Honours/thesis_markdown/style/template.tex
+[INFO] Loaded /Users/anastuart/Documents/Honours/thesis_markdown/style/preamble.tex from /Users/anastuart/Documents/Honours/thesis_markdown/style/preamble.tex
+[INFO] Running filter /Users/anastuart/Documents/Honours/thesis_markdown/style/filters/figure-short-captions.lua
+Error running filter /Users/anastuart/Documents/Honours/thesis_markdown/style/filters/figure-short-captions.lua:
+cannot open /Users/anastuart/Documents/Honours/thesis_markdown/style/filters/figure-short-captions.lua: No such file or directory
