@@ -15,6 +15,9 @@ Healthy controls needed to have a PSQI score of 4 or less and an ISI score of 6 
 **consent** All patients were remunerated $100 upon successful completion of the study. 
 
 
+```check if works```
+
+
 ## Protocol
 
 The study was approved by the Macquarie University Human Research Ethics Committee. Participants attended the sleep laboratory at the Woolcock Institute of Medical Research for inital screening by a sleep physician. Participants baseline sleep and activity patterns were measured via an Actigraphy watch (**which one**) for 7 days prior, which was validated against self-reported sleep diaries. Participants additionally completed the Restorative Sleep Questionnaire Daily Version (RSQ-D) for 7 days prior. 
@@ -34,6 +37,8 @@ Subjective sleepiness was assessed using the Karolinska Sleepiness Scale (KSS), 
 ### KDT
 
 The KDT was used to measure electrophysiological drowsiness as measured through HD-EEG recordings. Participants were instructed "Look at the dot in front of you and be as relaxed as possible while staying awake. Keep your head and body still and minimize blinking. After a few minutes, I’ll ask you to close your eyes and keep them closed for a few minutes. Finally, I’ll ask you to open your eyes again and keep them open for a few minutes." They commence with their eyes open, close their eyes at 2m10, open eyes again at 4m40, and the test ends at 7m10.
+
+
 
 ### HD EEG
 High-density EEG data were collected using 256-channel caps (**which one**). Th
