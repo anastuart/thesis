@@ -1,37 +1,35 @@
-# Makefile to convert Markdown files in the source directory to a single PDF
-
 # Variables
 SOURCE_DIR := source
 OUTPUT_DIR := output
+BIB := source/references.bib
 PDF_OUTPUT := $(OUTPUT_DIR)/thesis.pdf
 TEX_OUTPUT := $(OUTPUT_DIR)/thesis.tex
+DOCX_OUTPUT := $(OUTPUT_DIR)/thesis.docx
 MD_FILES := $(wildcard $(SOURCE_DIR)/*.md)
 TEMPLATE := style/template.tex
-CSS_FILE := style/style.css
 FILTERS := filters/figure-short-captions.lua filters/table-short-captions.lua
+CSL := style/ref_format.csl
 
 # Default target
-pdf: pdf
-docx: docx
+all: $(PDF_OUTPUT) $(DOCX_OUTPUT)
 
-# Rule to make the PDF file
+# Rule to make the PDF
 pdf: $(PDF_OUTPUT)
+$(PDF_OUTPUT): $(MD_FILES)
+	pandoc $^ -o $@ -s --pdf-engine=pdflatex --template=$(TEMPLATE) --csl=$(CSL) --filter pandoc-crossref --bibliography=$(BIB)
 
-# Rule to generate PDF from LaTeX output
-$(PDF_OUTPUT): $(TEX_OUTPUT)
-	pdflatex -output-directory=$(OUTPUT_DIR) $(TEX_OUTPUT)
-	bibtex $(OUTPUT_DIR)/thesis
-	pdflatex -output-directory=$(OUTPUT_DIR) $(TEX_OUTPUT)
-	pdflatex -output-directory=$(OUTPUT_DIR) $(TEX_OUTPUT)
- 
-	
-# Rule to make the LaTeX file from Markdown
+# Rule to make the DOCX
+docx: $(DOCX_OUTPUT)
+$(DOCX_OUTPUT): $(MD_FILES)
+	pandoc $^ -o $@ -s --csl=$(CSL) --filter pandoc-crossref --bibliography=$(BIB)
+
+# Rule to make the LaTeX file
+tex: $(TEX_OUTPUT)
 $(TEX_OUTPUT): $(MD_FILES)
-	pandoc $(MD_FILES) -o $(TEX_OUTPUT) --template=$(TEMPLATE) --css=$(CSS_FILE) --lua-filter=$(FILTERS)
+	pandoc $^ -o $@ --listings -s --template=$(TEMPLATE) --csl=$(CSL) --filter pandoc-crossref --bibliography=$(BIB)
 
-# Clean rule to clean up temporary files
+# Clean rule
 clean:
-	rm -f $(OUTPUT_DIR)/*.aux $(OUTPUT_DIR)/*.log $(OUTPUT_DIR)/*.bbl $(OUTPUT_DIR)/*.blg $(OUTPUT_DIR)/*.toc $(OUTPUT_DIR)/*.out $(TEX_OUTPUT)
+	rm -f $(OUTPUT_DIR)/*.html $(OUTPUT_DIR)/*.pdf $(OUTPUT_DIR)/*.tex $(OUTPUT_DIR)/*.aux $(OUTPUT_DIR)/*.log $(OUTPUT_DIR)/*.docx
 
-.PHONY: all pdf clean
-
+.PHONY: all pdf docx tex clean

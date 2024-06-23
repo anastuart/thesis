@@ -1,0 +1,44 @@
+---
+title: "Thesis"
+author: "Anastasia Stuart"
+output: 
+  word_document:
+    reference_docx: "APA-7-TEMPLATE-Word-Doc.docx"
+bibliography: "library.bib"
+csl: "apa.csl"
+date: "2024-05-29"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r child='02_statement.md'}
+
+```{r child='03_acknowledgements.md'}
+
+```{r child='04_abstract.md'}
+
+```{r child='05_table_of_contents.md'}
+
+```{r child='05_table_of_contents.md'}
+
+```{r child='06_list_of_figures.md'}
+
+```{r child='07_list_of_tables.md'}
+
+```{r child='08_abbreviations.md'}
+
+```{r child='09_introduction.md'}
+
+```{r child='10_method.md'}
+
+```{r child='11_results.md'}
+
+```{r child='12_discussion.md'}
+
+```{r child='13_references.md'}
+
+```{r child='16_appendix_1.md'}
+
+

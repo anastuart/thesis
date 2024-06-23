@@ -4,7 +4,7 @@
 
 12 participants from each clinical population were recruited: individuals with insomnia disorder (ID), individuals with non-restorative sleep (NRS), and healthy controls (HC). Recruitment was conducted through referrals from the Woolcock Institute and the Royal Prince Alfred sleep clinics, in addition to social media advertising. Due to the influence of age and sex on sleep architecture [@mongrain2005], participants were sex and age matched with a maximum difference of 1 year. 
 
-Participants were excluded if they had any comorbid sleep apnoea, as measured by wrist oximetry (oxygen desaturation index above 10 during any night of monitoring) (WristOX has high sensitivity of diagnosing OSAS [@nigro2008]). Participants were additionally excluded if they had clinically significant depression or anxiety scores as measured through the DASS-21, heavy alcohol use, pregnancy, circadian rhythm disruption through shift work or recent international travel, or a natural sleep time that of less than 6 hours or outside the hours of 21:30 and 8:00. As medications are known to affect sleep architecture, participants taking regular medications affecting sleep were excluded. 
+Participants were excluded if they had any comorbid sleep apnoea, as measured by wrist oximetry (oxygen desaturation index above 10 during any night of monitoring) (WristOX has high sensitivity of diagnosing OSAS [@nigro2009]). Participants were additionally excluded if they had clinically significant depression or anxiety scores as measured through the DASS-21, heavy alcohol use, pregnancy, circadian rhythm disruption through shift work or recent international travel, or a natural sleep time that of less than 6 hours or outside the hours of 21:30 and 8:00. As medications are known to affect sleep architecture, participants taking regular medications affecting sleep were excluded. 
 
 The inclusion criteria for the ID group was as set by the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition [@apa2022] criteria, with difficulty initiating or maintaining sleep persisting for over 1 month causing clinically significant distress or impairment in daily life. They additionally were required to have a Pittsburgh Sleep Quality Index (PSIQ) score of 6 or higher, and an Insomnia Severity Index (ISI) score of 16 or higher.
 
@@ -15,12 +15,9 @@ Healthy controls needed to have a PSQI score of 4 or less and an ISI score of 6 
 **consent** All patients were remunerated $100 upon successful completion of the study. 
 
 
-```check if works```
-
-
 ## Protocol
 
-The study was approved by the Macquarie University Human Research Ethics Committee. Participants attended the sleep laboratory at the Woolcock Institute of Medical Research for inital screening by a sleep physician. Participants baseline sleep and activity patterns were measured via an Actigraphy watch (**which one**) for 7 days prior, which was validated against self-reported sleep diaries. Participants additionally completed the Restorative Sleep Questionnaire Daily Version (RSQ-D) for 7 days prior. 
+The study was approved by the Macquarie University Human Research Ethics Committee. Participants attended the sleep laboratory at the Woolcock Institute of Medical Research for initial screening by a sleep physician. Participants baseline sleep and activity patterns were measured via an Actigraphy watch (**which one**) for 7 days prior, which was validated against self-reported sleep diaries. Participants additionally completed the Restorative Sleep Questionnaire Daily Version (RSQ-D) for 7 days prior. 
 
 Upon arrival at the laboratory at 17:00, participants underwent final medical screening and a series of cognitive assessment. They were then served dinner and fitted with a high-density electroencephalography (HD-EEG) cap. Further cognitive assessments were conducted before the administration of the Karolinska Drowsiness Test (KDT) approximately 45 minutes prior to their habitual bedtime. Overnight polysomnography using HD-EEG was recorded, in addition to sleep video recording using a AXIS P3225-LV camera. 
 
@@ -40,7 +37,7 @@ The KDT was used to measure electrophysiological drowsiness as measured through 
 
 
 
-### HD EEG
+### HD-EEG
 High-density EEG data were collected using 256-channel caps (**which one**). Th
         ```signals were amplified and digitised, impedences, recordings were acquired with electrodes referenced to the vertex```
         ``` processing of original eeg signals was performed ```
@@ -58,7 +55,9 @@ z-score normalised power spectral data were analysed for eyes open and eyes clos
 
 ```To control for Type I error rate in cluster analysis, statistical nonparametric mapping (SnPM) with the suprathreshold cluster test will be used. SnPM uses permutation tests (10 000 random shuffles of the data) to establish a distribution of cluster size findings that occur due to chance. This distribution can then be used to compare cluster size to the a priori set threshold of p < .05, determining if it is statistically significant (D’Rozario et al., 2023). ```
 
-All analyses were performed using MATLAB version r2024a (MathWorks, Natick, MA, USA) and R version 4.3.2 (R Foundation for Statistical Computing, Vienna, Austria)
+EEG processor 
+
+All analyses were performed using MATLAB version r2024a (MathWorks, Natick, MA, USA). 
 
 
 \newpage
