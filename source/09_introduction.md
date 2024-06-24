@@ -14,7 +14,9 @@ The inability to identify objective markers of this **disease** through PSG may 
 
 **People with NRS and Insomnia may experience subjective and objective sleepiness differently to healthy controls, which impacts their daily life and functioning. This could affect how they need to be managed clinically, and greater understanding of this problem could lead to improved outcomes.**
 
-      ```what is the issue. impact. theoretical model. what is the solution. is there a difference in how NRS and ID percieve daytime tiredness, and is that related to delta power in previous nights sleep?
+      ```what is the issue. impact. theoretical model. what is the solution.
+      is there a difference in how NRS and ID percieve daytime tiredness,
+      and is that related to delta power in previous nights sleep?
 
 ## Background
 
@@ -22,7 +24,9 @@ The inability to identify objective markers of this **disease** through PSG may 
 
 Sleep is regulated by both a homeostatic and circadian system [@borbely1982], wherin the homeostatic system increases the level of percieved sleepiness as waking time increases (sleep pressure) while the circadian system regulates internal synchrony with the environment through the suprachiasmatic nuclei [@hastings1997]
 
-    - Insomnia is associated with sleep homeostasis dysfunction, possibly due to decreased homeostatic drive or arousal interfering with the homeostatic process or its dissipation over the night. [@lunsford-avery2021]
+    - Insomnia is associated with sleep homeostasis dysfunction, possibly due to decreased 
+    homeostatic drive or arousal interfering with the homeostatic process or its 
+    dissipation over the night. [@lunsford-avery2021]
 
     - Insomnia SSD has lower sleep duration and lower NREM delta power than HC [@kao2021]
 
@@ -38,13 +42,16 @@ Non-restorative sleep is a population experiencing objectively normal sleep as m
       - Why is it important? 
       - How does it affect people
       
-      **interweave this in NRS, not actually measuring it in the study so perhaps not necessary to describe?**
-      **could be mismeasurement, something to do with how we measure sleep and how we measure sleep is overestimating what we know**
+      **interweave this in NRS, not actually measuring it in the study so perhaps not 
+      necessary to describe?**
+      **could be mismeasurement, something to do with how we measure sleep and how we 
+      measure sleep is overestimating what we know**
       
       **what are the neural correlates? Is it deficits in delta waves? 
     
 
-      Why are we not able to measure sleep-state misperception? Is it an issue in how we measure sleep?
+      Why are we not able to measure sleep-state misperception? Is it an issue in how 
+      we measure sleep?
       
       
 ### process through which sleep pressure is dissipated
@@ -59,7 +66,7 @@ Sleep is identified through changes in EEG patterns which display the shift from
 - subjective sleepiness is a measure of an individual's self-assessed propensity to fall asleep in a particular situation. Persisistent sleepiness is debilitating and often associated with physical or emotional distress
 
 "physiological indices of sleepiness did not occur reliably until subjective perceptions fell between “sleepy” and “extremely sleepy-fighting sleep”; i.e. physiological changes due to sleepiness are not likely to occur until extreme sleepiness is encountered. " [@akerstedt2009]
--  weak association ($$r$$=0.18) between subjective fatigue and sleepiness in individuals with sleep disorders. Analysis of variance testing showed strong association between those patients with prominent fatigue and depressive symptoms (P < 0.01) and illness intrusiveness (P < 0.001). The findings support the notion that subjective fatigue and sleepiness can be independent manifestations of sleep disorders [@hossain2005]
+-  weak association ($r$=0.18) between subjective fatigue and sleepiness in individuals with sleep disorders. Analysis of variance testing showed strong association between those patients with prominent fatigue and depressive symptoms (P < 0.01) and illness intrusiveness (P < 0.001). The findings support the notion that subjective fatigue and sleepiness can be independent manifestations of sleep disorders [@hossain2005]
 - excessive sleepiness is regarded as one of the cardinal manifestations of sleep disorders and often is accompanied by fatigue, many patients with fatigue complain of insomnia and do not report falling asleep or feeling sleepy at inappropriate times [@hossain2005]
 
 ## EEG drowsiness
@@ -93,6 +100,9 @@ current understanding:
  - Insufficiency of slow-wave sleep may predict cognitive impairment and severity of chronic insomnia [@li2016]
 
 ## Delta power
+
+Delta waves are characterised by high amplitude and low frequency (0.5 to 4 Hz) and 
+
 
 Importance of delta waves in sleep architecture
   - characteristics and function
