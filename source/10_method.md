@@ -12,7 +12,7 @@ Individuals in the NRS group could not have a mean Total Sleep Time (TST) below 
 
 Healthy controls needed to have a PSQI score of 4 or less and an ISI score of 6 or less.
 
-**consent** All patients were remunerated $100 upon successful completion of the study. 
+**consent was voluntary and could be discontinued at any time** All patients were remunerated $100 upon successful completion of the study. 
 
 
 ## Protocol

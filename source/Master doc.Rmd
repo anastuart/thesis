@@ -3,8 +3,13 @@ title: "Thesis"
 author: "Anastasia Stuart"
 date: "2024-05-29"
 output:
-  pdf_document:
   word_document:
+    reference_docx: apa template.docx
+  pdf_document:
+    latex_engine: xelatex
+  html_document:
+    df_print: paged
+header-includes: \usepackage{setspace}\doublespacing
 csl: apa.csl
 bibliography: references.bib
 ---
@@ -13,13 +18,12 @@ bibliography: references.bib
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
 ```{r child='02_statement.md'}
 
 ```{r child='03_acknowledgements.md'}
 
 ```{r child='04_abstract.md'}
-
-```{r child='05_table_of_contents.md'}
 
 ```{r child='05_table_of_contents.md'}
 

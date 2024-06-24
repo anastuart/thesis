@@ -31,7 +31,5 @@ Topographic power spectral analysis found these cluster differences which mean t
 
 ## Conclusion
 
-The KSS is the best measure ever and more people should use it.
-
 \newpage
 
