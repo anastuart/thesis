@@ -36,7 +36,7 @@ Sleep is identified through changes in EEG patterns which display the shift from
 
 ### slow wave sleep
 
-Although the function of sleep is nuclear [@sejnowski2000], a primary function may be facilitation of prophylactic cellular maintenance within individual neurons, regulated through periods of reduced synaptic input deemed slow waves requiring globally synchronised neuronal activity [@vyazovskiy2013]. Slow wave activity (SWA) dissipates with sleep, with reduced SWA and decreased wave amplitude during late sleep compared to early sleep [@riedner2007].
+Although the function of sleep is unclear [@sejnowski2000], a primary function may be facilitation of prophylactic cellular maintenance within individual neurons, regulated through periods of reduced synaptic input *deemed* slow waves requiring globally synchronised neuronal activity [@vyazovskiy2013]. Slow wave activity (SWA) dissipates with sleep, with reduced SWA and decreased wave amplitude during late sleep compared to early sleep [@riedner2007].
 
     - EEG slow waves of NREM sleep occur when neurons become bistable and oscillate between two states: 
     a hyperpolarized down-state characterized by neuronal silence (off-period), and a depolarized up-state 
@@ -128,6 +128,8 @@ There is a subjective-objective mismatch that is observed in people with NRS [@b
     
 
 ## aim
+
+In order to examine if individuals with NRS experience subjective and objective drowsiness differently to those with ID and healthy controls... 
 
 This study aimed to examine if there are differences in how the populations experience subjective sleepiness, and if this is associated with regional differences in brain activity during resting wake. We aimed to see if there was a difference in the correlation of objective sleepiness scores to objective measures of drowsiness and if that was associated with topographical cluster differences. Finally, we examined if the regional differences was associated with delta power of previous nights sleep. 
   

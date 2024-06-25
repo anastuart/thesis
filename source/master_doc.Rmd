@@ -3,10 +3,10 @@ title: "Thesis"
 author: "Anastasia Stuart"
 date: "`r Sys.Date()`"
 output:
-  word_document:
-    reference_docx: apa template.docx
   pdf_document:
     latex_engine: xelatex
+  word_document:
+    reference_docx: apa template.docx
   html_document:
     df_print: paged
 header-includes: \usepackage{setspace}\doublespacing
