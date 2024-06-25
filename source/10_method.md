@@ -45,6 +45,12 @@ High-density EEG data were collected using 256-channel caps (**which one**). Th
 The data was visually inspected for artefacts and arousals using a **semi-automatic process** and was manually verified and cleaned. 
       ```The record was visually inspected for bad channels and channels identified as poor quality (2.5% ± 1.4% of 164 chan- nels) were replaced with an interpolated EEG signal using a spher- ical spline interpolation algorithm. After artifact removal and bad channel interpolation, the EEG signals were average-referenced.``` **did we do this?**
       
+## Power spectra
+
+-  The most common quantitative method employed in sleep studies is spectral analysis, which decomposes a time series of EEG data into power  (squared amplitude) in frequency bins (mV2/bin) , can be expressed as absolute or relative to the summed power in all bins, spectral analysis may represent an objective method for examining the pathophysiological mechanisms underlying insomnia [@zhao2021]
+- Raw PSD has a straightforward connection to signal amplitude, with channels expressing larger signal amplitudes typically showing larger power, useful when absolute differences in signal amplitude are deemed meaningful (topographical analysis) [@cox2020]
+
+      
 To calculate power spectral density, cleaned EEG signals were analysed using a fast Fourier transform ```with 50% overlapping between con- secutive 4-second windows with a Hanning filter function, resulting in a frequency resolution of 0.25 Hz``` 
 
 EEG spectral power densities were quantified as: delta (1–4.5 Hz), theta (4.5–8 Hz), alpha (8–12 Hz), sigma (12–15 Hz), beta (15–25 Hz), and gamma (25–40 Hz). 

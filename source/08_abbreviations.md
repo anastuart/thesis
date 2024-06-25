@@ -15,7 +15,7 @@
 \textbf{PSQI} \> \textbf{P}ittsburgh \textbf{S}leep \textbf{Q}uality \textbf{I}ndex \\
 \textbf{REM} \> \textbf{R}apid \textbf{E}ye \textbf{M}ovement \\
 \textbf{RSQ-D} \> \textbf{R}estorative \textbf{S}leep \textbf{Q}uestionnaire \textbf{D}aily \textbf{V}ersion \\
-\textbf{SnPM} \> \textbf{S}tatistical \textbf{N}onparametric \textbf{M}apping \\
+\textbf{SnPM} \> \textbf{S}tatistical \textbf non{P}arametric \textbf{M}apping \\
 \textbf{SR} \> \textbf{S}lowing \textbf{R}atio \\
 \end{tabbing}
 
