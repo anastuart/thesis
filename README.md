@@ -14,11 +14,53 @@ Each smaller file is included there, and you can turn them on or off by changing
 ## Packages you need
 
 Rstudio
+
+    bookdown\
+    clipr\
+    devtools\
+    pkgdown\
+    reprex\
+    
+Brew
+
+    pandoc\
+    pandoc-crossref\
+    mactex\
+    git\
+    
+Zotero
+
+    citationkeyaddin
+
+## Suggested but not essential
+
+Rstudio plugins
+
+    wordcountaddin\
+    imageclipr\
+    
+I have xcode installed which I really like for typing. 
+
+
+## Saving to git
+
+open terminal\
+navigate to your folder\
+    git init\
+    git \
+
+
+Tex
+    tinytex
+    xelatex
+
+Rstudio
     bookdown
     clipr
     devtools
     pkgdown
     reprex
+    knitr
     
 Brew
     pandoc
@@ -43,4 +85,22 @@ I have xcode installed which I really like for typing.
 open terminal
 navigate to your folder
     git init
-    git 
+    git status
+    git add . 
+    
+
+        # if you don't want to add everything all at once
+        which you shouldn't because it makes it harder to look at the versions you
+        can add the files one by one by writing git add "filename"
+        
+    git push origin main
+    
+## to knit the document
+
+Before you knit - check that your reference document has been exported from Zotero and is saved in your source folder as "references.bib"
+
+Open the master doc in rstudio, change the values of the things you want to include to true and press knit to docx/pdf/whatever you desire!
+
+Congratulate yourself for being such a whiz and doing reproducable science!
+
+
