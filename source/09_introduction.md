@@ -15,10 +15,10 @@ output:
 ## Problem statement
 
 Non-restorative sleep (NRS) is a condition characterised 
-by unrefreshing sleep upon awakening despite normal sleep as measured by 
-polysomnography (PSG) [@roth2010]. It has debilitating daytime effects 
-including persistent daytime fatigue [cite], diminished cognitive performance 
-[cite], and reduced mental wellbeing [cite]. 
+by unrefreshing sleep upon awakening despite normal sleep parameters as 
+measured by polysomnography (PSG) [@roth2010]. It has debilitating daytime 
+effects including persistent daytime fatigue [cite], diminished cognitive 
+performance [cite], and reduced mental wellbeing [cite]. 
 Despite the significant impacts of this condition, it is poorly diagnosed and 
 not included in the Diagnostic and Statistical Manual-5 [@apa2022], with no 
 established guidelines for clinical management. A potential reason for the lack 
@@ -142,14 +142,21 @@ increases (sleep pressure) while the circadian system regulates internal
 synchrony with the environment [@borbely1982]. Sleep pressure has both a time 
 and intensity domain, increasing proportionately to the duration and **quality** 
 of the waking episode and dissipating during sleep in proportion to sleep 
-duration and intensity [@borbely2005] **check citation**.
+duration and intensity [@borbely2005] **check citation**. 
 The best established method of measuring sleep homeostasis is the overnight 
-dissipation of delta power [@lunsford-avery2021]. 
+dissipation of delta power, most prominent during slow-wave sleep (SWS) 
+[@lunsford-avery2021]. 
 
-Sleep is identified through changes in EEG patterns which display the shift 
-from wakefulness to sleep, and is categorised into N1, N2, N3 and REM sleep 
-stages. N3 sleep is the deepest stage of sleep, characterised by slow delta 
-waves of activity of 0.5-4 Hz and increased amplitude of 75µV. 
+Sleep architecture is identified through changes in EEG patterns which display 
+the shift from wakefulness to sleep, and is categorised into N1, N2, N3 and REM 
+sleep stages. N3 sleep is the deepest stage of sleep, characterised by slow 
+waves of delta activity of 0.5-4 Hz and increased amplitude of 75µV, 
+constituting between 20-25% of sleep in healthy adults **check** [@cite]. 
+**sleep architecture is affected in ID through shortened sleep, however NRS **
+**has normal sleep as measured by PSG**
+
+### SWS
+
 Slow waves are critical for cellular maintenance and repair, allowing neurons 
 to reverse minor cellular damage before it is becomes irreversible 
 [@vyazovskiy2013]. Importantly, sleep deprivation is associated with increased 
@@ -157,41 +164,26 @@ SW activity during resting wake [@cite] suggesting an adaptive process of
 cortical downregulation in order to prevent long-term irreversible damage at 
 the expense of behavioural performance [@vyazovskiy2013]. 
 
+Slow wave activity (SWA) dissipates with sleep, with reduced SWA and decreased 
+wave amplitude during late sleep compared to early sleep [@riedner2007]. 
 
-### slow wave sleep
+**topography**: 
+- SWA power greatest in frontal areas, especially during early sleep or 
+following sleep deprivation [@werth1996; cajochen1999]
+- Increased frontal slow wave amplitude during N2 and N4 of sleep restriction 
+and recovery night relative to baseline, aggregate slow wave increased in 
+lateral centro-parietal regions in 1st sleep period across all conditions, 
+reflecting a homeostatic response to partial sleep loss [@plante2016]
 
-Although the function of sleep is unclear [@sejnowski2000], a primary function may be facilitation of prophylactic cellular maintenance within individual neurons, regulated through periods of reduced synaptic input *deemed* slow waves requiring globally synchronised neuronal activity [@vyazovskiy2013]. Slow wave activity (SWA) dissipates with sleep, with reduced SWA and decreased wave amplitude during late sleep compared to early sleep [@riedner2007].
-
-```         
-- EEG slow waves of NREM sleep occur when neurons become bistable and oscillate between two states: 
-a hyperpolarized down-state characterized by neuronal silence (off-period), and a depolarized up-state 
-during which neurons fire (on-period) [@steriade2001]. During up-state, neurons fire at high frequencies
-typical of waking, and during down state there is a tonic cessation of firing activity in all cortical layers [@steriade1993]
-- slow oscillation is a travelling wave that originates at a definite site and travels over the scalp at
-an estimated speed of 1.2-7.0 m/sec, waves originate more frequently in prefrontal-orbitofrontal regions 
-and propagate in an anteroposterior direction [@massimini2004]. 
- - We identified two clusters of delta waves with distinctive properties: (1) a frontal-central cluster
- characterized by ∼2.5–3.0 Hz, relatively large, notched delta waves (so-called “sawtooth waves”) that 
- tended to occur in bursts, were associated with increased gamma activity and rapid eye movements (EMs), 
- and upon source modeling displayed an occipital-temporal and a frontal-central component and (2) a
- medial-occipital cluster characterized by more isolated, slower (<2 Hz), and smaller waves that were not
- associated with rapid EMs, displayed a negative correlation with gamma activity, and were also found in 
- NREM sleep. Therefore, delta waves are an integral part of REM sleep in humans and the two identified 
- subtypes (sawtooth and medial-occipital slow waves) may reflect distinct generation mechanisms and 
- functional roles. [@bernardi2019]
-```
-
-### high frequency EEG activity during sleep
-
-- greater power ratio of high frequency EEG activity assumed to give an indication of 'worse' 
-sleep and is associated with sleep complaints of some ID patiets [@krystal] **fix citation**
-- intrusion of high frequency EEG activity marker of unrestorative sleep [@cite] and reduced subjective sleep quality [@krystal2008]
-- brain activities that are intensely active during wake show stronger SWA 
-during sleep [@vyazovskiy2013]. 
+      How do differences in SWA reflect variations in symptoms?
+      How might topographical differences in NRS compared to ID/HC differ?
+      What are the implications of this?
 
 ### ID and NRS slow wave sleep deficiencies
 
-Insomnia is associated with dysfunction in sleep homeostasis, which may be due to decreased homeostatic drive or cortical arousal affecting the overnight dissipation of sleep pressure [@lunsford-avery2021].
+Insomnia is associated with dysfunction in sleep homeostasis, which may be due 
+to decreased homeostatic drive or cortical arousal affecting the overnight 
+dissipation of sleep pressure [@lunsford-avery2021].
 
 increased delta power during resting wake as seen after sleep deprivation are 
 indicative of an adaptive process aimed to temporarily reduce activity in order 
@@ -207,14 +199,14 @@ by differences in total sleep time or wake after sleep onset. [@lunsford-avery20
 
 Non-restorative sleep is a population experiencing objectively normal sleep as measured by PSG, however a feeling of being unrefreshed upon awakening [@stone2008]. **sentence about daytime impairments and fatigue**. This population has lower NREM delta power than healthy controls, despite the same objective sleep time [@kao2021]. A potential mechanism for the subjective loss of sleep is sleep-state misperception, where individuals inaccurately gauge their sleep/wake state [@edinger1995]. However, recent research suggests that it may not actually be a misperception, but rather a mismeasurement of current methods of scoring PSG data [@stephan2023].
 
-```         
-- Definition and overview of sleep-state misperception
-  - What are the neural mechanisms? [discussed in @stephan2023]
-  - Why is it important? 
-  - How does it affect people
-  
-  **what are the neural correlates? Is it deficits in delta waves? 
-```
+### high frequency EEG activity during sleep
+
+- greater power ratio of high frequency EEG activity assumed to give an indication of 'worse' 
+sleep and is associated with sleep complaints of some ID patiets [@krystal] **fix citation**
+- intrusion of high frequency EEG activity marker of unrestorative sleep [@cite] and reduced subjective sleep quality [@krystal2008]
+- brain activities that are intensely active during wake show stronger SWA 
+during sleep [@vyazovskiy2013]. 
+
 
 ## EEG drowsiness
 
@@ -291,6 +283,12 @@ population group. Finally, to examine if delta power is a potential mechanism
 for non-refreshing sleep in NRS, we investigated if clusters associated with a 
 higher slowing ratio were associated with reduced delta power during the 
 previous night's sleep.
+
+```By examining regional brain activity during resting wake, the study aims
+to examine if there are differences in how NRS, ID and HC experience and 
+dissipate sleep pressure. Differences in delta power and SWA among groups may
+reveal differences in how sleep pressure is dissipated and if there are 
+adaptive processes emerging as a result of ongoing sleep deprivation.```
 
 ## Hypotheses
 
