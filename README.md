@@ -15,18 +15,18 @@ Each smaller file is included there, and you can turn them on or off by changing
 
 Rstudio
 
-    bookdown\
-    clipr\
-    devtools\
-    pkgdown\
-    reprex\
+    bookdown
+    clipr
+    devtools
+    pkgdown
+    reprex
     
 Brew
 
-    pandoc\
-    pandoc-crossref\
-    mactex\
-    git\
+    pandoc
+    pandoc-crossref
+    mactex
+    git
     
 Zotero
 
@@ -36,8 +36,8 @@ Zotero
 
 Rstudio plugins
 
-    wordcountaddin\
-    imageclipr\
+    wordcountaddin
+    imageclipr
     
 I have xcode installed which I really like for typing. 
 
@@ -84,14 +84,15 @@ I have xcode installed which I really like for typing.
 
 open terminal
 navigate to your folder
+
     git init
     git status
     git add . 
     
 
-        # if you don't want to add everything all at once
-        which you shouldn't because it makes it harder to look at the versions you
-        can add the files one by one by writing git add "filename"
+if you don't want to add everything all at once which you shouldn't 
+because it makes it harder to look at the versions you can add the 
+files one by one by writing git add "filename"
         
     git push origin main
     
