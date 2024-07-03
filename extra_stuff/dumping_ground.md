@@ -1,3 +1,22 @@
+## Problem statement
+
+```         
+  what is the issue. impact. theoretical model. what is the solution.
+  is there a difference in how NRS and ID percieve daytime tiredness,
+  and is that related to delta power in previous nights sleep?
+  
+  Describe wide problem (people with NRS are not in the DSM, not being 
+  clinically managed, have no treatment)
+  what is the culprit (sleep state mismeasurement)
+  what is the solution (KSS and KDT as measures of sleepiness and drowsiness)
+  
+  What has been done before and what tried to solve the issue
+  Explain what the missing gap is (why does the issue persist)
+  Approach - how to address the gap?
+  
+```
+
+
 - EEG slow waves of NREM sleep occur when neurons become bistable and oscillate 
 between two states: a hyperpolarized down-state characterized by neuronal 
 silence (off-period), and a depolarized up-state during which neurons fire 

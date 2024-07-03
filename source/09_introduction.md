@@ -30,32 +30,19 @@ of PSG recordings provide inadequate sleep state measurement [@cite].
 Measuring subjective sleepiness and objective drowsiness upon awakening offer a 
 novel and effective potential solution for diagnosis. 
 
-```         
-  what is the issue. impact. theoretical model. what is the solution.
-  is there a difference in how NRS and ID percieve daytime tiredness,
-  and is that related to delta power in previous nights sleep?
-  
-  Describe wide problem (people with NRS are not in the DSM, not being 
-  clinically managed, have no treatment)
-  what is the culprit (sleep state mismeasurement)
-  what is the solution (KSS and KDT as measures of sleepiness and drowsiness)
-  
-  What has been done before and what tried to solve the issue
-  Explain what the missing gap is (why does the issue persist)
-  Approach - how to address the gap?
-  
-```
-
 # Introduction to sleep disorders
 
 ## Insomnia with short sleep duration
 
 Insomnia is the one of the most common sleep complaints in Australia, affecting 
 approximately 33% of the population and causing a significant health 
-burden [@sweetman2021]. It characterised by complaints of shortened overnight 
+burden [@sweetman2021]. It is characterised by complaints of shortened overnight 
 sleep, difficulty with sleep initiation, and frequent overnight arousals 
 causing clinically significant distress or dysfunction in daily life 
 [@americanpsychiatricassociation2022]. 
+
+**highly heterogeneous condition for both aetiology and symptoms [@benjamins2017]** 
+
 
 In contrast to many other sleep disorders that are diagnosed through PSG 
 data, diagnosis of insomnia is recommended based on subjective reports of 
@@ -90,44 +77,37 @@ in people with ID-SSD,
 
 Although both conditions are characterised by complaints of inadequate sleep, 
 NRS is distinct from ID due to having a normal sleep duration and architecture 
-as measured by PSG [@roth2010]. Patients do not meet the DSM-5 criteria for ID, 
-primarily reporting a feeling of being unrefreshed upon awakening, and either a 
-self-assessed sleep quality of "fairly bad" to "very bad" or difficulty 
-sleeping greater than once a week [@cite].
-
-**sentence about sleep-state misperception?**
-
-The inability of current PSG techniques to reliably identify markers of NRS 
-suggests they may be insufficient for accurately recording the sleep processes 
-that are specific to individuals with NRS. NRS patients exhibit lower non-rapid 
-eye movement (NREM) delta power compared to healthy controls, despite having 
-similar objective sleep durations [@kao2021].
+as measured by PSG [@roth2010]. Patients have a primary complaint of sleep 
+being subjectively unrefreshing or unrestorative without the presence of another 
+sleep disorder [@stone2008].
 
 Daytime impairments associated with NRS include significant daytime fatigue, 
-reduced cognitive performance, and reduced psychological wellbeing, leading to 
-reduced quality of life and impaired daily function [@cite]. Unrefreshing sleep 
-may arise from disruptions in physiological processes occurring during slow-wave 
-sleep, which are critical for neural function [@tononi2006].
+reduced cognitive performance, and reduced psychological well-being, leading to 
+reduced quality of life and impaired daily function [@cite]. Despite the 
+debilitating effects of this condition, the condition was removed in the DSM-5, 
+meaning the condition is not clinically managed. As there are significant 
+differences between NRS and ID regarding sleep architecture, functional 
+impairment, and longitudinal course [kao2021; zhang2013], it is important to 
+clearly distinguish between the two groups. 
 
+**variation in definition of NRS leads to impairment of research and clinical management [@stone2008]**.
+Prevalence in range of 1.4-35% across studies and populations [@zhang2012] (this 
+paper has good references) although variation in definitions and a lack of a 
+validated measure poses an issue for classification. 
+
+Although this population has normal sleep duration, unrefreshing sleep may be 
+a consequence of disruptions in physiological processes occurring during 
+slow-wave sleep, which are critical for neural function [kao2021; @tononi2006]. 
+
+As current PSG techniques cannot reliably identify NRS through PSG data, 
+they may be insufficient for accurately recording the deficiencies occurring 
+specific to individuals with NRS. NRS patients exhibit lower non-rapid 
+eye movement (NREM) delta power compared to healthy controls, despite having 
+similar objective sleep durations [@kao2021]. **second sentence contradicts first**
 
 The lack of a clear diagnostic criteria and omission in the DSM-5 means that 
 reporting prevalence rates is difficult, and patients are unable to be 
 reliably phenotyped or classified **improve clarity of this sentence**. 
-
-**prevalence??**
-
-
-**our inclusion criteria: do not meet the dsm-5 criteria**
-  **self-rated sleep quality as fairly bad-very bad OR **
-  **more than once a week for PSIQ 5b-5j**
-    (waking up during night, bathroom, cannot breathe, cough, cold/hot, dreams, 
-    pain, other)
-
-- unknown how to record this sleep state mismeasurement observed in NRS. lack of clear 
-diagnostic markers and understanding of the physiological mechanisms. 
-**variation in definition of NRS leads to impairment of research and clinical management [@stone2008]**.
-
-misperception of sleep onset latency is influenced by hyperarousal 
 
 # Mechanisms of sleep
 
@@ -138,42 +118,48 @@ misperception of sleep onset latency is influenced by hyperarousal
 
 Sleep is regulated by both a homeostatic and circadian system, wherein the 
 homeostatic system increases the level of perceived sleepiness as waking time 
-increases (sleep pressure) while the circadian system regulates internal 
-synchrony with the environment [@borbely1982]. Sleep pressure has both a time 
-and intensity domain, increasing proportionately to the duration and **quality** 
-of the waking episode and dissipating during sleep in proportion to sleep 
-duration and intensity [@borbely2005] **check citation**. 
-The best established method of measuring sleep homeostasis is the overnight 
-dissipation of delta power, most prominent during slow-wave sleep (SWS) 
-[@lunsford-avery2021]. 
+increases while the circadian system regulates internal 
+synchrony with the environment [@borbely1982]. The build-up of perceived 
+sleepiness created by the homeostatic system is deemed sleep pressure, which 
+has both a time and intensity domain [@borbely2016].
+**impaired sleep homeostasis suspected in both NRS and ID**
 
-Sleep architecture is identified through changes in EEG patterns which display 
-the shift from wakefulness to sleep, and is categorised into N1, N2, N3 and REM 
+Sleep pressure increases proportionately to the 
+duration and **quality** of the waking episode and dissipates during sleep 
+in proportion to sleep duration and intensity **fix sentence**. 
+The best established method of measuring sleep pressure is the overnight 
+dissipation of delta power, most prominent during slow-wave sleep (SWS) [@cite]. 
+
+Sleep architecture is identified through **changes in EEG patterns which display **
+**the shift from wakefulness to sleep**, and is categorised into N1, N2, N3 and REM 
 sleep stages. N3 sleep is the deepest stage of sleep, characterised by slow 
 waves of delta activity of 0.5-4 Hz and increased amplitude of 75µV, 
-constituting between 20-25% of sleep in healthy adults **check** [@cite]. 
+constituting between 20-25% of sleep in healthy adults [@cite]. 
 **sleep architecture is affected in ID through shortened sleep, however NRS **
 **has normal sleep as measured by PSG**
 
-### SWS
+### SWA
 
-Slow waves are critical for cellular maintenance and repair, allowing neurons 
-to reverse minor cellular damage before it is becomes irreversible 
-[@vyazovskiy2013]. Importantly, sleep deprivation is associated with increased 
-SW activity during resting wake [@cite] suggesting an adaptive process of 
-cortical downregulation in order to prevent long-term irreversible damage at 
-the expense of behavioural performance [@vyazovskiy2013]. 
+Slow waves are neuronal oscillations of membrane potential between hyperpolarised 
+and depolarised states, occurring in the 0.5-4 Hz frequency range [@steriade2001; 
+@achermann2003]. Although the precise function of SWA remains unclear, it 
+appears to be critical for cellular maintenance and repair, allowing neurons to 
+reverse minor cellular damage before it becomes irreversible [@vyazovskiy2013]. 
+Slow wave activity (SWA) is a reliable measure of homeostatic sleep pressure, 
+being greatest during the first period of N3 sleep, dissipating with sleep, 
+and increasing with time awake [@cite]. 
 
-Slow wave activity (SWA) dissipates with sleep, with reduced SWA and decreased 
-wave amplitude during late sleep compared to early sleep [@riedner2007]. 
+Slow waves have topographic variations throughout the brain, occurring locally 
+and asynchronously across brain regions [@siclari2017]. 
+SWA is most prominent in brain regions associated with increased 
+activity during wake, with the greatest power in frontal regions and during 
+early sleep [@werth1996; @cajochen1999].
+Following sleep deprivation, increased SWA has been observed in the frontal and 
+lateral centro-parietal regions compared to baseline [@plante2016]. 
 
-**topography**: 
-- SWA power greatest in frontal areas, especially during early sleep or 
-following sleep deprivation [@werth1996; cajochen1999]
-- Increased frontal slow wave amplitude during N2 and N4 of sleep restriction 
-and recovery night relative to baseline, aggregate slow wave increased in 
-lateral centro-parietal regions in 1st sleep period across all conditions, 
-reflecting a homeostatic response to partial sleep loss [@plante2016]
+SWA is correlated with decreased levels of subjective and objective measures of 
+sleepiness following sleep. 
+
 
       How do differences in SWA reflect variations in symptoms?
       How might topographical differences in NRS compared to ID/HC differ?
@@ -181,13 +167,9 @@ reflecting a homeostatic response to partial sleep loss [@plante2016]
 
 ### ID and NRS slow wave sleep deficiencies
 
-Insomnia is associated with dysfunction in sleep homeostasis, which may be due 
+ID is associated with dysfunction in sleep homeostasis, possibly due 
 to decreased homeostatic drive or cortical arousal affecting the overnight 
-dissipation of sleep pressure [@lunsford-avery2021].
-
-increased delta power during resting wake as seen after sleep deprivation are 
-indicative of an adaptive process aimed to temporarily reduce activity in order 
-to preserve neuronal function at a cost of behavioural performance [@vyazovskiy2013].
+dissipation of sleep pressure [@lunsford-avery2021]. 
 
 
 ```         
@@ -202,13 +184,23 @@ Non-restorative sleep is a population experiencing objectively normal sleep as m
 ### high frequency EEG activity during sleep
 
 - greater power ratio of high frequency EEG activity assumed to give an indication of 'worse' 
-sleep and is associated with sleep complaints of some ID patiets [@krystal] **fix citation**
+sleep and is associated with sleep complaints of some ID patiets [@krystal] **fix citation, do not use this one**
 - intrusion of high frequency EEG activity marker of unrestorative sleep [@cite] and reduced subjective sleep quality [@krystal2008]
 - brain activities that are intensely active during wake show stronger SWA 
 during sleep [@vyazovskiy2013]. 
 
 
 ## EEG drowsiness
+
+In response to increased sleep pressure, there can be increased SWA during 
+resting wake [@cite] suggesting an adaptive process of cortical downregulation 
+in order to prevent long-term irreversible damage [@vyazovskiy2013].
+  - off-periods can appear asynchronously across brain regions increasing with time 
+  awake, in behavourally awake animals presence in motor areas negatively affects 
+  motor performance [@vyazovsky2013]
+However, 
+this is not observed in patients win
+
 
 Main measures : mslt (sleep propensity), mwt (cosnequence of sleepiness), pvt (psychomotor vigilance task) [@martin2023]
 
