@@ -2,7 +2,8 @@
 
 ## Participants
 
-MQ HREC provided ethical approval for this project (FoRA ID 17112).
+MQ HREC provided ethical approval for this project and refer to FoRA ID 17112.
+
 
 12 participants from each clinical population were recruited: individuals with insomnia disorder (ID), individuals with non-restorative sleep (NRS), and healthy controls (HC). Recruitment was conducted through referrals from the Woolcock Institute and the Royal Prince Alfred sleep clinics, in addition to social media advertising. Due to the influence of age and sex on sleep architecture [@mongrain2005], participants were sex and age matched with a maximum difference of 1 year. 
 
