@@ -17,14 +17,16 @@ output:
 Non-restorative sleep (NRS) is a condition characterised 
 by unrefreshing sleep upon awakening despite normal sleep parameters as 
 measured by polysomnography (PSG) [@roth2010]. It has debilitating daytime 
-effects including persistent daytime fatigue [cite], diminished cognitive 
-performance [cite], and reduced mental wellbeing [cite]. 
+effects including persistent daytime fatigue, diminished cognitive 
+performance, and reduced mental wellbeing [@cite]. 
 Despite the significant impacts of this condition, it is poorly diagnosed and 
-not included in the Diagnostic and Statistical Manual-5 [@apa2022], with no 
-established guidelines for clinical management. A potential reason for the lack 
-of diagnostic criteria is the reliance on subjective measures for diagnosis 
-**and the close association with insomnia?**. As this population have normal 
-sleep as measured by PSG, an emerging explanation is that current methodologies 
+not included in the Diagnostic and Statistical Manual-5 
+[@americanpsychiatricassociation2022], with no established guidelines for 
+clinical management. 
+A potential reason for the lack of diagnostic criteria is the reliance on 
+subjective measures for diagnosis **and the close association with insomnia?**. 
+As this population have normal sleep as measured by PSG, an emerging 
+explanation is that current methodologies 
 of PSG recordings provide inadequate sleep state measurement [@cite]. 
 
 Measuring subjective sleepiness and objective drowsiness upon awakening offer a 
@@ -73,8 +75,6 @@ in people with ID-SSD,
 
 ## Non-restorative sleep
 
-``` definition, symptomology, burden, impact```
-
 Although both conditions are characterised by complaints of inadequate sleep, 
 NRS is distinct from ID due to having a normal sleep duration and architecture 
 as measured by PSG [@roth2010]. Patients have a primary complaint of sleep 
@@ -87,7 +87,7 @@ reduced quality of life and impaired daily function [@cite]. Despite the
 debilitating effects of this condition, the condition was removed in the DSM-5, 
 meaning the condition is not clinically managed. As there are significant 
 differences between NRS and ID regarding sleep architecture, functional 
-impairment, and longitudinal course [kao2021; zhang2013], it is important to 
+impairment, and longitudinal course [@kao2021; @zhang2013], it is important to 
 clearly distinguish between the two groups. 
 
 **variation in definition of NRS leads to impairment of research and clinical management [@stone2008]**.
@@ -97,7 +97,7 @@ validated measure poses an issue for classification.
 
 Although this population has normal sleep duration, unrefreshing sleep may be 
 a consequence of disruptions in physiological processes occurring during 
-slow-wave sleep, which are critical for neural function [kao2021; @tononi2006]. 
+slow-wave sleep, which are critical for neural function [@kao2021; @tononi2006]. 
 
 As current PSG techniques cannot reliably identify NRS through PSG data, 
 they may be insufficient for accurately recording the deficiencies occurring 
@@ -111,17 +111,28 @@ reliably phenotyped or classified **improve clarity of this sentence**.
 
 # Mechanisms of sleep
 
-### Current understanding of sleep
+## What is brain activity?
 
-      how do understanding these mechanisms inform the study's approach to 
-      evaluating sleepiness and drowsiness in NRS
+Although the experience of sleep is often classified as binary, brain activity 
+varies in both amplitude and frequency depending on alertness. When the brain 
+is highly active and alert, neural activity is characterised by a dominance of 
+beta waves of >12 Hz and <30 µV. Resting wake is characterised by alpha activity 
+of 8-12 Hz and <50 µV, and is associated with decreased arousal. Sleep onset is 
+characterised by the emergence of theta waves of 8-12 Hz and 50-100 µV, with 
+a dominance of delta waves of 0.5-4 Hz and 100-200 µV in deep sleep. 
+Classifying brain activity into frequency bins enables the analysis of EEG 
+recordings into quantifyable categories of arousal or sleep. It is important 
+to understand what these waves mean and what they are associated with in order 
+to be able to reliably measure sleep or drowsiness. 
+
+## Current understanding of sleep
 
 Sleep is regulated by both a homeostatic and circadian system, wherein the 
 homeostatic system increases the level of perceived sleepiness as waking time 
 increases while the circadian system regulates internal 
 synchrony with the environment [@borbely1982]. The build-up of perceived 
 sleepiness created by the homeostatic system is deemed sleep pressure, which 
-has both a time and intensity domain [@borbely2016].
+has both a time and intensity domain [@borbely2016]. 
 **impaired sleep homeostasis suspected in both NRS and ID**
 
 Sleep pressure increases proportionately to the 
@@ -138,7 +149,11 @@ constituting between 20-25% of sleep in healthy adults [@cite].
 **sleep architecture is affected in ID through shortened sleep, however NRS **
 **has normal sleep as measured by PSG**
 
-### SWA
+      how do understanding these mechanisms inform the study's approach to 
+      evaluating sleepiness and drowsiness in NRS
+
+
+## SWA
 
 Slow waves are neuronal oscillations of membrane potential between hyperpolarised 
 and depolarised states, occurring in the 0.5-4 Hz frequency range [@steriade2001; 
@@ -149,66 +164,129 @@ Slow wave activity (SWA) is a reliable measure of homeostatic sleep pressure,
 being greatest during the first period of N3 sleep, dissipating with sleep, 
 and increasing with time awake [@cite]. 
 
-Slow waves have topographic variations throughout the brain, occurring locally 
-and asynchronously across brain regions [@siclari2017]. 
-SWA is most prominent in brain regions associated with increased 
-activity during wake, with the greatest power in frontal regions and during 
-early sleep [@werth1996; @cajochen1999].
-Following sleep deprivation, increased SWA has been observed in the frontal and 
-lateral centro-parietal regions compared to baseline [@plante2016]. 
-
 SWA is correlated with decreased levels of subjective and objective measures of 
 sleepiness following sleep. 
-
 
       How do differences in SWA reflect variations in symptoms?
       How might topographical differences in NRS compared to ID/HC differ?
       What are the implications of this?
+      
+## Local sleep
 
-### ID and NRS slow wave sleep deficiencies
-
-ID is associated with dysfunction in sleep homeostasis, possibly due 
-to decreased homeostatic drive or cortical arousal affecting the overnight 
-dissipation of sleep pressure [@lunsford-avery2021]. 
-
-
-```         
-- Insomnia SSD has lower sleep duration and lower NREM delta power than HC [@kao2021]
-- Insufficiency of slow-wave sleep may predict cognitive impairment and severity of chronic insomnia [@li2016]
-- insomnia patients exhibit a slower rate in overnight delta decline compared to HC, not explained 
-by differences in total sleep time or wake after sleep onset. [@lunsford-avery2021]
-```
-
-Non-restorative sleep is a population experiencing objectively normal sleep as measured by PSG, however a feeling of being unrefreshed upon awakening [@stone2008]. **sentence about daytime impairments and fatigue**. This population has lower NREM delta power than healthy controls, despite the same objective sleep time [@kao2021]. A potential mechanism for the subjective loss of sleep is sleep-state misperception, where individuals inaccurately gauge their sleep/wake state [@edinger1995]. However, recent research suggests that it may not actually be a misperception, but rather a mismeasurement of current methods of scoring PSG data [@stephan2023].
-
-### high frequency EEG activity during sleep
-
-- greater power ratio of high frequency EEG activity assumed to give an indication of 'worse' 
-sleep and is associated with sleep complaints of some ID patiets [@krystal] **fix citation, do not use this one**
-- intrusion of high frequency EEG activity marker of unrestorative sleep [@cite] and reduced subjective sleep quality [@krystal2008]
-- brain activities that are intensely active during wake show stronger SWA 
-during sleep [@vyazovskiy2013]. 
+Slow waves have topographic variations throughout the brain, occurring locally 
+and asynchronously across brain regions, suggesting that sleep is a bottom-up, 
+locally regulated phenomenon [@huber2004; @krueger2019; @siclari2017]. SWA is 
+most prominent in brain regions associated with increased activity during wake, 
+with the greatest power during early sleep [@werth1996; @cajochen1999]. 
 
 
-## EEG drowsiness
+The synaptic homeostasis hypothesis proposes that as synaptic connections 
+between neurons strengthen through wake, allowing learning and cognition to occur, 
+sleep is needed to enable synaptic strength to 
+decrease and maintain regulation [@tononi2006]. This theory is supported by 
+topograpic variations in SWA observed during sleep that occur in a use-dependent 
+manner. 
 
-In response to increased sleep pressure, there can be increased SWA during 
-resting wake [@cite] suggesting an adaptive process of cortical downregulation 
-in order to prevent long-term irreversible damage [@vyazovskiy2013].
+In response to physical stimulation, the associated cortical motor regions show 
+increased SWA in subsequent sleep [@cite]. In rodent models, increased SWA 
+is observed in brain areas activated throufg 
+
+HD-EEG studies found there was an increase in theta activity in the left frontal 
+brain region following a language task and posterior parietal region following 
+a visuomotor task, which was associated with a subsequent increase in SWS 
+during recovery sleep [@hung2013].
+
+Intrusions of localised SWA can also be observed during wake in a use and 
+time-dependent manner in response to an accumulation of sleep pressure [@huber2004; @krueger2019].
+Rodent studies have found increased SWA in local cortical networks display in 
+response to sleep deprivation despite being physiologically awake, increasing 
+in intensity and synchronicity with the duration of wake [@vyazovskiy2013]. 
+Localised increased in theta and delta activity have additionally been observed 
+in humans in response to prolonged wakefulness [@hung2013]. 
+Following sleep deprivation, increased SWA has been observed in the frontal and 
+lateral centro-parietal regions compared to baseline [@plante2016]. 
+
+The increase slow frequency activity is 
+correlated with diminished task performance in task-related areas, further 
+supporting the association between localised SWA and behavioural performance [@bernardi2015]
+
+
+      ```thalamus and claustrun play a role in synchronising localised slow waves```
+
+
+The topographic variations in SWA show that sleep homeostasis has a localised 
+component. Following a learning task, localised SWA correlates with improved 
+task performance following sleep [@huber2004]. 
+
+
+# Daytime impacts
+
+## What is sleepiness
+
+Insufficient sleep can lead to the intrusion of sleep-like characteristics into 
+waking consciousness, creating the subjective experience of sleepiness and the 
+objective measure of drowsiness. These symptoms are experienced differently 
+between disorders being affected by the different underlying mechanisms 
+affecting sleep. As sleepiness and drowsiness may not be directly correlated, 
+they should be examined as separate measures. 
+
+### EEG drowsiness
+
+Drowsiness is the experience of moving from wake to sleep as measured through 
+brain activity, and is operationalised as the intrusion of higher amplitude, 
+lower frequency brain activity into resting wake [@santamaria1987]. 
+While alert wakefulness is characterised by a dominance of brain activity in beta 
+and alpha frequencies, increased homeostatic sleep pressure is linked to an 
+increase in theta and delta activity [@santamaria1987]. 
+
+
+
+
+with their presence in motor areas negatively 
+affecting motor performance [@vyazovskiy2011], 
+
+The increase of slower 
+frequency power is hypothesised to be an adaptive process of cortical 
+downregulation, allowing cells to prevent long-term damage during periods of 
+extended wake by engaging in the restorative processes observed in 
+slow-wave sleep while maintaining consciousness [@vyazovskiy2013].  
+
   - off-periods can appear asynchronously across brain regions increasing with time 
   awake, in behavourally awake animals presence in motor areas negatively affects 
-  motor performance [@vyazovsky2013]
-However, 
-this is not observed in patients win
+  motor performance [@vyazovskiy2013]
+  
+      
+      How is drowsiness experienced across populations?
 
 
-Main measures : mslt (sleep propensity), mwt (cosnequence of sleepiness), pvt (psychomotor vigilance task) [@martin2023]
+### Measuring drowsiness
 
-Drowsiness is the experience of moving from wake to sleep, observed through reduced frequency and increased amplitude of EEG signals. During wakefulness brain activity is characterised by low amplitude, high frequency beta waves, with the appearance of alpha waves when the eyes are closed [@santamaria1987]. As drowsiness increases, there is an increase in theta and delta waves. Drowsiness alpha activity is associated with a decreased amplitude in occipital regions and a slower alpha pattern in anterior cortical regions [@cantero2002].
+Drowsiness can be measured through a range of tests, measuring associated but 
+distinct characteristics linked to the accumulation of sleep pressure. 
+The most common measures used in clinical practice and scientific research are 
+the multiple sleep latency test which measures sleep propensity, the maintenance 
+of wakefulness test measuring the consequences of sleepiness, and the 
+psychomotor vigilance task which measures sustained attention and reaction 
+time, known to diminish with increased sleepiness [@martin2023; @basner2011]. 
+However, these measures do not directly measure the experience of drowsiness, 
+instead measuring its consequence. As the consequences of drowsiness may be 
+create different experiences across populations, it is therefore important that 
+the neural activity of drowsiness itself, rather than its consequences, are measured. 
 
-EEG fatigue can be measured through various algorithms including AAC, slowing ratio, and [@jap2009]
-
-detecting fatigue from [@jap2009]: algorithm (i) $\frac {\theta + \alpha}{\beta}$, algorithm (ii) $\frac {\alpha}{\beta}$, algorithm (iii) $\frac {\theta + \alpha} {\alpha + \beta}$, and algorithm (iv) $\frac {\theta}{\beta}$, were also assessed as possible indicators for fatigue detection. Results showed stable delta and theta activities over time, a slight decrease of alpha activity, and a significant decrease of beta activity (p \< 0.05). All four algorithms showed an increase in the ratio of slow wave to fast wave EEG activities over time. Algorithm (i) $(\theta + \alpha)/ \beta$ showed a larger increase.
+The Karolinska Drowsiness Test (KDT) was developed as a specific and sensitive 
+measure of drowsiness that can provide insight into the neurobiological markers 
+of drowsiness across populations [@akerstedt1990; @akerstedt2014]. The test 
+uses EEG to measure brain activity during resting wake. 
+The 7 minute test takes place in a quiet room, wherein 
+participants look at a set point for 2.33 minutes with their eyes open, 
+followed by an 2.33 m eyes closed condition, and a subsequent 2.33 eyes open 
+condition. 
+The test has been validated in healthy populations, being a reliable 
+marker of drowsiness in accordance with sleep pressure and circadian rhythm 
+fluctuations [@kaida2006]. 
+This recording provides measures of brain activity across 
+frequencies and channels, providing insight into both the level of drowsiness 
+experienced and any topographical variations in activity. 
 
 ```         
 - relevance to diagnosis and treatment of sleep disorders (??)
