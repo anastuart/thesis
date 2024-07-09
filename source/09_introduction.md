@@ -49,8 +49,8 @@ causing clinically significant distress or dysfunction in daily life
 In contrast to many other sleep disorders that are diagnosed through PSG 
 data, diagnosis of insomnia is recommended based on subjective reports of 
 impairment through self-assessed questionnaires 
-[@americanacademyofsleepmedicine2005]. This diagnostic approach is recommended 
-due to the variability in objective PSG data among individuals with insomnia, 
+[@americanacademyofsleepmedicine2005]. 
+This diagnostic approach is recommended due to the variability in objective PSG data among individuals with insomnia, 
 leading to the identification of distinct phenotypes of the disorder. **fix** 
 The more biologically severe insomnia with objective short sleep duration 
 (ID-SSD) and insomnia with normal sleep duration but non-restorative sleep 
@@ -111,124 +111,94 @@ reliably phenotyped or classified **improve clarity of this sentence**.
 
 # Mechanisms of sleep
 
-## What is brain activity?
+## Neurophysiological correlates of sleep
 
-Although the experience of sleep is often classified as binary, brain activity 
-varies in both amplitude and frequency depending on alertness. When the brain 
-is highly active and alert, neural activity is characterised by a dominance of 
-beta waves of >12 Hz and <30 µV. Resting wake is characterised by alpha activity 
-of 8-12 Hz and <50 µV, and is associated with decreased arousal. Sleep onset is 
-characterised by the emergence of theta waves of 8-12 Hz and 50-100 µV, with 
-a dominance of delta waves of 0.5-4 Hz and 100-200 µV in deep sleep. 
-Classifying brain activity into frequency bins enables the analysis of EEG 
-recordings into quantifyable categories of arousal or sleep. It is important 
-to understand what these waves mean and what they are associated with in order 
-to be able to reliably measure sleep or drowsiness. 
+Sleep is behaviourally defined as a reversible reduction in responsiveness to 
+external stimuli, accompanied with measurable brain activity patterns [@cirelli2008]. 
+The neurophysiological correlates of sleep and wake in humans can be measured 
+through EEG recordings of brain activity patterns, providing a spatiotemporally 
+integrated recording of neuronal signals across the cortical surface [@buzsaki2012].
+Wakefulness is characterised through low amplitude, high frequency signals in 
+beta and alpha frequencies, accompanied by irregular muscle activity recorded 
+electromyogram (EMG). Non-rapid eye movement (NREM) sleep is characterised by 
+reduced muscle movement and the appearance of high-amplitude slow oscillations 
+of delta frequency (0.5-4 Hz), deemed slow wave activity (SWA). 
+Sleep progresses through cycles of brain activity throughout the night, 
+with the greatest prevalence of SWA appearing in N3 sleep [@achermann2003].
 
-## Current understanding of sleep
+## Sleep homeostasis
 
-Sleep is regulated by both a homeostatic and circadian system, wherein the 
-homeostatic system increases the level of perceived sleepiness as waking time 
-increases while the circadian system regulates internal 
-synchrony with the environment [@borbely1982]. The build-up of perceived 
-sleepiness created by the homeostatic system is deemed sleep pressure, which 
-has both a time and intensity domain [@borbely2016]. 
-**impaired sleep homeostasis suspected in both NRS and ID**
+Sleep is regulated by both a homeostatic and circadian system, 
+wherein the homeostatic system increases the level of perceived sleepiness as 
+waking time increases, while the circadian system regulates internal synchrony 
+with the environment [@borbely1982].
+The homeostatic system determines the quantity and intensity of sleep, 
+creating an accumulation of perceived sleepiness deemed "sleep pressure" [@borbely2016].
+Sleep pressure increases in proportion to the duration and intensity of the 
+waking episode, evident through increased sleep duration and sleep intensity 
+[@benington2000; @borbely1982]. 
+Sleep pressure can be measured through SWA, being greatest during the first 
+period of N3 sleep and dissipating in response to sleep duration [@cite]
 
-Sleep pressure increases proportionately to the 
-duration and **quality** of the waking episode and dissipates during sleep 
-in proportion to sleep duration and intensity **fix sentence**. 
-The best established method of measuring sleep pressure is the overnight 
-dissipation of delta power, most prominent during slow-wave sleep (SWS) [@cite]. 
-
-Sleep architecture is identified through **changes in EEG patterns which display **
-**the shift from wakefulness to sleep**, and is categorised into N1, N2, N3 and REM 
-sleep stages. N3 sleep is the deepest stage of sleep, characterised by slow 
-waves of delta activity of 0.5-4 Hz and increased amplitude of 75µV, 
-constituting between 20-25% of sleep in healthy adults [@cite]. 
-**sleep architecture is affected in ID through shortened sleep, however NRS **
-**has normal sleep as measured by PSG**
-
-      how do understanding these mechanisms inform the study's approach to 
-      evaluating sleepiness and drowsiness in NRS
-
+Sleep homeostasis dysfunction may be a causal factor in the 
+impairments observed in ID and NRS patients [@pigeon2006; @cite]. 
+In patients with insomnia with short sleep duration, there is a 
+global reduction in SWA, while insomnia patients with normal sleep duration as 
+measured by PSG can have either reduced delta power or normal delta power [@kao2021]. 
+Overnight SWA has not previously been examined in a NRS population. 
 
 ## SWA
 
-Slow waves are neuronal oscillations of membrane potential between hyperpolarised 
-and depolarised states, occurring in the 0.5-4 Hz frequency range [@steriade2001; 
-@achermann2003]. Although the precise function of SWA remains unclear, it 
+Slow waves are synchronised neuronal oscillations of membrane potential between 
+hyperpolarised and depolarised states originating in thalamocortical loops 
+which propagate through the brain [@steriade2001; @achermann2003]. 
+Although the precise function of SWA remains unclear, it 
 appears to be critical for cellular maintenance and repair, allowing neurons to 
-reverse minor cellular damage before it becomes irreversible [@vyazovskiy2013]. 
-Slow wave activity (SWA) is a reliable measure of homeostatic sleep pressure, 
-being greatest during the first period of N3 sleep, dissipating with sleep, 
-and increasing with time awake [@cite]. 
+reverse minor cellular damage before it becomes irreversible [@vyazovskiy2013].
+The frequency, amplitude and spatial topography of SWA is additionally 
+influenced by sleep homeostasis, creating measurable variations in 
+underlying neuronal activity [@krueger2019]. 
+Increased sleep pressure leads to longer periods of hyperpolarisation and greater 
+synchrony between brain regions, which are reduced as sleep pressure dissipates 
+[@vyazovskiy2011]. 
+Increased synchrony can be measured using HD-EEG through cluster analysis, 
+which provides greater spatial resolution than EEG.
 
-SWA is correlated with decreased levels of subjective and objective measures of 
-sleepiness following sleep. 
+SWA has topographic variance across the cortex, varying in a use-dependent 
+manner [@krueger1993]. 
+SWA has an antero-posterior cortical progression, with the 
+greatest activity in the frontal regions at sleep onset [@huber2000]. 
+Increased SWA following sleep deprivation is additionally greatest in the 
+frontal cortex [@cajochen1999; @werth1996]. 
+Repetitive task performance recruiting functional areas of the brain, 
+such as the motor or sensory cortices, leads to increased regional SWA during 
+subsequent sleep [@huber2004; @vyazovskiy2008].
+HD-EEG recordings observed an increase in theta activity during wake in the 
+left frontal brain region following a language task and posterior parietal 
+region following a visuomotor task, which was associated with a subsequent 
+increase in SWS during recovery sleep [@hung2013].
+These findings suggest that SWA is a localised phenomenon, appearing in response to 
+accumulated sleep pressure and dissipating with sleep. 
 
-      How do differences in SWA reflect variations in symptoms?
-      How might topographical differences in NRS compared to ID/HC differ?
-      What are the implications of this?
-      
-## Local sleep
+# Daytime impacts
 
-Slow waves have topographic variations throughout the brain, occurring locally 
-and asynchronously across brain regions, suggesting that sleep is a bottom-up, 
-locally regulated phenomenon [@huber2004; @krueger2019; @siclari2017]. SWA is 
-most prominent in brain regions associated with increased activity during wake, 
-with the greatest power during early sleep [@werth1996; @cajochen1999]. 
+## SWA in wake
 
-
-The synaptic homeostasis hypothesis proposes that as synaptic connections 
-between neurons strengthen through wake, allowing learning and cognition to occur, 
-sleep is needed to enable synaptic strength to 
-decrease and maintain regulation [@tononi2006]. This theory is supported by 
-topograpic variations in SWA observed during sleep that occur in a use-dependent 
-manner. 
-
-In response to physical stimulation, the associated cortical motor regions show 
-increased SWA in subsequent sleep [@cite]. In rodent models, increased SWA 
-is observed in brain areas activated throufg 
-
-HD-EEG studies found there was an increase in theta activity in the left frontal 
-brain region following a language task and posterior parietal region following 
-a visuomotor task, which was associated with a subsequent increase in SWS 
-during recovery sleep [@hung2013].
-
-Intrusions of localised SWA can also be observed during wake in a use and 
-time-dependent manner in response to an accumulation of sleep pressure [@huber2004; @krueger2019].
+Although SWA is a characteristic of sleep, intrusions of localised SWA can 
+also be observed during wake in a use and time-dependent manner in response to 
+the accumulation of sleep pressure [@huber2004; @krueger2019].
 Rodent studies have found increased SWA in local cortical networks display in 
 response to sleep deprivation despite being physiologically awake, increasing 
 in intensity and synchronicity with the duration of wake [@vyazovskiy2013]. 
 Localised increased in theta and delta activity have additionally been observed 
 in humans in response to prolonged wakefulness [@hung2013]. 
-Following sleep deprivation, increased SWA has been observed in the frontal and 
-lateral centro-parietal regions compared to baseline [@plante2016]. 
+Wake SWA activity resulting from sleep deprivation is greatest in the frontal 
+and lateral centro-parietal regions compared to baseline [@plante2016]. 
 
 The increase slow frequency activity is 
 correlated with diminished task performance in task-related areas, further 
-supporting the association between localised SWA and behavioural performance [@bernardi2015]
+supporting the association between localised SWA and behavioural performance [@bernardi2015] 
 
-
-      ```thalamus and claustrun play a role in synchronising localised slow waves```
-
-
-The topographic variations in SWA show that sleep homeostasis has a localised 
-component. Following a learning task, localised SWA correlates with improved 
-task performance following sleep [@huber2004]. 
-
-
-# Daytime impacts
-
-## What is sleepiness
-
-Insufficient sleep can lead to the intrusion of sleep-like characteristics into 
-waking consciousness, creating the subjective experience of sleepiness and the 
-objective measure of drowsiness. These symptoms are experienced differently 
-between disorders being affected by the different underlying mechanisms 
-affecting sleep. As sleepiness and drowsiness may not be directly correlated, 
-they should be examined as separate measures. 
 
 ### EEG drowsiness
 
