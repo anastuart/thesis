@@ -8,7 +8,7 @@ MQ HREC provided ethical approval for this project (FoRA ID 17112).
 
 Participants were excluded if they had any comorbid sleep apnoea, as measured by wrist oximetry (oxygen desaturation index above 10 during any night of monitoring) (WristOX has high sensitivity of diagnosing OSAS [@nigro2009]). Participants were additionally excluded if they had clinically significant depression or anxiety scores as measured through the DASS-21, heavy alcohol use, pregnancy, circadian rhythm disruption through shift work or recent international travel, or a natural sleep time that of less than 6 hours or outside the hours of 21:30 and 8:00. As medications are known to affect sleep architecture, participants taking regular medications affecting sleep were excluded. 
 
-The inclusion criteria for the ID group was as set by the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition [@apa2022] criteria, with difficulty initiating or maintaining sleep persisting for over 1 month causing clinically significant distress or impairment in daily life. They additionally were required to have a Pittsburgh Sleep Quality Index (PSIQ) score of 6 or higher, and an Insomnia Severity Index (ISI) score of 16 or higher.
+The inclusion criteria for the ID group was as set by the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition [@americanpsychiatricassociation2022] criteria, with difficulty initiating or maintaining sleep persisting for over 1 month causing clinically significant distress or impairment in daily life. They additionally were required to have a Pittsburgh Sleep Quality Index (PSIQ) score of 6 or higher, and an Insomnia Severity Index (ISI) score of 16 or higher.
 
 Individuals in the NRS group could not have a mean Total Sleep Time (TST) below six hours as measured by sleep diary or actigraphy, or a mean refreshed score above 3. Inclusion in this group required a PSQI of 6 or more, with subcomponent scores of at least 2 on the PSQI Component 1 and 10 on PSQI Component 5. 
 
@@ -49,6 +49,7 @@ The data was visually inspected for artefacts and arousals using a **semi-automa
       
 ## Power spectra
 
+- PSA based on FFD most common method for processing EEG signal, transforms eeg signal from time domain (amplitude x time) to frequency domain (frequency x time), providing greater insight into brain activity over timw
 -  The most common quantitative method employed in sleep studies is spectral analysis, which decomposes a time series of EEG data into power  (squared amplitude) in frequency bins (mV2/bin) , can be expressed as absolute or relative to the summed power in all bins, spectral analysis may represent an objective method for examining the pathophysiological mechanisms underlying insomnia [@zhao2021]
 - Raw PSD has a straightforward connection to signal amplitude, with channels expressing larger signal amplitudes typically showing larger power, useful when absolute differences in signal amplitude are deemed meaningful (topographical analysis) [@cox2020]
 
