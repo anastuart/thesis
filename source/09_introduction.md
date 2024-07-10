@@ -15,46 +15,72 @@ output:
 ## Problem statement
 
 Non-restorative sleep (NRS) is a condition characterised 
-by unrefreshing sleep upon awakening despite normal sleep parameters as 
-measured by polysomnography (PSG) [@roth2010]. It has debilitating daytime 
-effects including persistent daytime fatigue, diminished cognitive 
-performance, and reduced mental wellbeing [@cite]. 
-Despite the significant impacts of this condition, it is poorly diagnosed and 
+by unrefreshing sleep upon awakening despite normal sleep duration and 
+architecture as measured by polysomnography (PSG), leading to excessive 
+daytime fatigue and significant daytime functional impairment [@roth2010]. 
+Despite the significant impact of this condition, it is poorly diagnosed and 
 not included in the Diagnostic and Statistical Manual-5 
 [@americanpsychiatricassociation2022], with no established guidelines for 
 clinical management. 
-A potential reason for the lack of diagnostic criteria is the reliance on 
-subjective measures for diagnosis **and the close association with insomnia?**. 
-As this population have normal sleep as measured by PSG, an emerging 
-explanation is that current methodologies 
-of PSG recordings provide inadequate sleep state measurement [@cite]. 
+This population has previously been clinically managed as a subtype of insomnia 
+disorder (ID) despite evidence suggesting the disorder is phenotypically 
+distinct, with different underlying aetiology. 
+Although this population has normal sleep parameters as 
+measured by traditional PSG methodologies, new technologies and techniques such 
+as HD-EEG and spectral analysis enable exploration of the underlying neural 
+mechanisms in greater resolution, which may reveal differences in sleep processes 
+that result in non-restorative sleep. 
 
-Measuring subjective sleepiness and objective drowsiness upon awakening offer a 
-novel and effective potential solution for diagnosis. 
+```Combined, these results suggest that EEG spectral power during sleep, in contrast to standard polysomnography, may provide a better biomarker distinguishing insomnia subtypes, relate to subjective insomnia symptoms and provide more informative with regard to personalised care in ID.```
+
+A potential reason for the lack of restorative sleep experienced by this 
+population may be a dysfunction in slow wave activity (SWA), which is the 
+strongest established marker of reduced sleep pressure [@tononi2008]. 
+Low SWA power during sleep leads to ineffective dissipation of accumulated 
+sleep pressure, while increased SWA in wake is associated with increased 
+feelings of sleepiness. Subjective sleepiness is **important because of why**
+
+In order to explore if NRS is a result of dysfunctions in SWA processes during 
+sleep and wake in comparison to healthy populations and those with ID, 
+this study will high-density electroencephalography (HD-EEG) 
+to examine the power and topographic variance of SWA during resting wake and 
+sleep. Additionally, it will examine if there are group differences in the 
+correlation between subjective sleepiness and SWA following sleep. 
 
 # Introduction to sleep disorders
 
-## Insomnia with short sleep duration
+## Insomnia disorder
 
-Insomnia is the one of the most common sleep complaints in Australia, affecting 
-approximately 33% of the population and causing a significant health 
-burden [@sweetman2021]. It is characterised by complaints of shortened overnight 
-sleep, difficulty with sleep initiation, and frequent overnight arousals 
-causing clinically significant distress or dysfunction in daily life 
+ID is the most common sleep disorder in Australia, affecting approximately 33% 
+of the population and causing a significant health burden [@sweetman2021]. 
+It is characterised by complaints of shortened overnight sleep, 
+difficulty with sleep initiation, and frequent overnight arousals causing 
+clinically significant distress or dysfunction in daily life 
 [@americanpsychiatricassociation2022]. 
-
-**highly heterogeneous condition for both aetiology and symptoms [@benjamins2017]** 
-
-
 In contrast to many other sleep disorders that are diagnosed through PSG 
 data, diagnosis of insomnia is recommended based on subjective reports of 
 impairment through self-assessed questionnaires 
-[@americanacademyofsleepmedicine2005]. 
-This diagnostic approach is recommended due to the variability in objective PSG data among individuals with insomnia, 
-leading to the identification of distinct phenotypes of the disorder. **fix** 
-The more biologically severe insomnia with objective short sleep duration 
-(ID-SSD) and insomnia with normal sleep duration but non-restorative sleep 
-(ID-NRS) [@vgontzas2013] **where do we get NRS term from?**.
+[@americanacademyofsleepmedicine2005]. However, this has led to high 
+heterogenaity within the population, and there is a need for greater use of 
+objective measures in diagnosis to better understand the underlying mechanisms 
+of the disorder. 
+
+The hyperarousal model of insomnia proposes increased physiological and 
+neurobiological arousal has a causal role in creating sleep initation and 
+maintenance [@reimann2010]. 
+EEG studies have demonstrated decreased SWA [@kao2021] and increased fast frequency band 
+activity [@merica1998; @hogan2020] during NREM sleep in comparison to healthy controls.
+These dysfunctions lead to an inability to effectively dissipate sleep pressure 
+throughout the night [@lunsford-avery2021]. 
+Additionally, high frequency activity is associated with poorer subjective sleep 
+quality [@perlis2001]. 
+This persistent arousal prevents normal sleep architecture and causes increased 
+micro-arousals and awakenings during the night, leading to the symptoms 
+characterising ID. 
+
+Patients with ID experience excessive daytime sleepiness, however the mecanisms 
+through which they are affected vary. 
+
 
 Literature has found discordant results on how insomnia affects excessive 
 daytime sleepiness. Individuals with ID often report excessive daytime 
@@ -62,16 +88,6 @@ sleepiness *>10 ESS* [@hein2017], **and other things associated with subjective
 daytime drowsiness**. Additionally, they experience reduced sleep latency in 
 comparison to healthy controls [@roehrs2011; haung2012], 
 **but why can they not sleep at night?** 
-
-Although some studies have found EEG measures of sleepiness are not elevated 
-in people with ID-SSD, 
-
-- cortical hyperarousal model
-    - increased EEG band beta power
-    
-
-**People with NRS and Insomnia may experience subjective and objective sleepiness differently to healthy controls, which impacts their daily life and functioning. This could affect how they need to be managed clinically, and greater understanding of this problem could lead to improved outcomes.**
-
 
 ## Non-restorative sleep
 
@@ -173,10 +189,6 @@ frontal cortex [@cajochen1999; @werth1996].
 Repetitive task performance recruiting functional areas of the brain, 
 such as the motor or sensory cortices, leads to increased regional SWA during 
 subsequent sleep [@huber2004; @vyazovskiy2008].
-HD-EEG recordings observed an increase in theta activity during wake in the 
-left frontal brain region following a language task and posterior parietal 
-region following a visuomotor task, which was associated with a subsequent 
-increase in SWS during recovery sleep [@hung2013].
 These findings suggest that SWA is a localised phenomenon, appearing in response to 
 accumulated sleep pressure and dissipating with sleep. 
 
@@ -187,49 +199,31 @@ accumulated sleep pressure and dissipating with sleep.
 Although SWA is a characteristic of sleep, intrusions of localised SWA can 
 also be observed during wake in a use and time-dependent manner in response to 
 the accumulation of sleep pressure [@huber2004; @krueger2019].
-Rodent studies have found increased SWA in local cortical networks display in 
+Rodent studies have found increased SWA in local cortical networks in 
 response to sleep deprivation despite being physiologically awake, increasing 
 in intensity and synchronicity with the duration of wake [@vyazovskiy2013]. 
-Localised increased in theta and delta activity have additionally been observed 
-in humans in response to prolonged wakefulness [@hung2013]. 
-Wake SWA activity resulting from sleep deprivation is greatest in the frontal 
-and lateral centro-parietal regions compared to baseline [@plante2016]. 
-
-The increase slow frequency activity is 
-correlated with diminished task performance in task-related areas, further 
-supporting the association between localised SWA and behavioural performance [@bernardi2015] 
-
-
-### EEG drowsiness
-
-Drowsiness is the experience of moving from wake to sleep as measured through 
-brain activity, and is operationalised as the intrusion of higher amplitude, 
-lower frequency brain activity into resting wake [@santamaria1987]. 
-While alert wakefulness is characterised by a dominance of brain activity in beta 
-and alpha frequencies, increased homeostatic sleep pressure is linked to an 
-increase in theta and delta activity [@santamaria1987]. 
-
-
-
-
-with their presence in motor areas negatively 
-affecting motor performance [@vyazovskiy2011], 
-
-The increase of slower 
-frequency power is hypothesised to be an adaptive process of cortical 
-downregulation, allowing cells to prevent long-term damage during periods of 
+Localised increased in SWA have additionally been observed 
+in humans in response to prolonged wakefulness, being greatest in the frontal 
+and lateral centro-parietal regions compared to baseline [@hung2013; @plante2016]. 
+The increase of slower frequency power during wake is hypothesised to be an 
+adaptive process of cortical downregulation, 
+allowing cells to prevent long-term damage during periods of 
 extended wake by engaging in the restorative processes observed in 
-slow-wave sleep while maintaining consciousness [@vyazovskiy2013].  
+slow-wave sleep while maintaining consciousness [@vyazovskiy2013].
 
-  - off-periods can appear asynchronously across brain regions increasing with time 
-  awake, in behavourally awake animals presence in motor areas negatively affects 
-  motor performance [@vyazovskiy2013]
-  
-      
-      How is drowsiness experienced across populations?
+Increased SWA is correlated with subjective and objective markers of fatigue, 
+meaning it is a variable of interest when examining the subjective and objective 
+markers of fatigue. 
+The appearance of SWA in task-related regions is associated with diminished 
+behavioural performance [@bernardi2015]. 
+HD-EEG recordings observed a increased SWA during wake in the 
+left frontal brain region following a language task and posterior parietal 
+region following a visuomotor task, which was additionally associated with 
+increased SWA during recovery sleep [@hung2013].
+This suggests that the localisation of sleep pressure observed in sleep is 
+also observed during wake. 
 
-
-### Measuring drowsiness
+## Drowsiness 
 
 Drowsiness can be measured through a range of tests, measuring associated but 
 distinct characteristics linked to the accumulation of sleep pressure. 
