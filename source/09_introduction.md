@@ -61,69 +61,65 @@ In contrast to many other sleep disorders that are diagnosed through PSG
 data, diagnosis of insomnia is recommended based on subjective reports of 
 impairment through self-assessed questionnaires 
 [@americanacademyofsleepmedicine2005]. However, this has led to high 
-heterogenaity within the population, and there is a need for greater use of 
+heterogeneity within the population, and there is a need for greater use of 
 objective measures in diagnosis to better understand the underlying mechanisms 
 of the disorder. 
 
 The hyperarousal model of insomnia proposes increased physiological and 
 neurobiological arousal has a causal role in creating sleep initation and 
-maintenance [@reimann2010]. 
-EEG studies have demonstrated decreased SWA [@kao2021] and increased fast frequency band 
-activity [@merica1998; @hogan2020] during NREM sleep in comparison to healthy controls.
-These dysfunctions lead to an inability to effectively dissipate sleep pressure 
-throughout the night [@lunsford-avery2021]. 
+maintenance [@riemann2010]. 
+Neurobiological hyperarousal in insomnia is observed through increased fast 
+frequency EEG activity during sleep and wake [@zhao2021].
+During sleep, ID patients have decreased SWA [@kao2021] and increased fast 
+frequency band activity [@merica1998; @hogan2020] 
+during NREM sleep in comparison to healthy controls,
+leading to diminished overnight dissipation of sleep pressure [@lunsford-avery2021].
 Additionally, high frequency activity is associated with poorer subjective sleep 
 quality [@perlis2001]. 
-This persistent arousal prevents normal sleep architecture and causes increased 
-micro-arousals and awakenings during the night, leading to the symptoms 
-characterising ID. 
+Hyperarousal persists during wake, with ID being associated with increased alpha 
+power during resting wake, indicating increased wakefulness [@fiege2017]. 
 
-Patients with ID experience excessive daytime sleepiness, however the mecanisms 
-through which they are affected vary. 
-
-
-Literature has found discordant results on how insomnia affects excessive 
-daytime sleepiness. Individuals with ID often report excessive daytime 
-sleepiness *>10 ESS* [@hein2017], **and other things associated with subjective 
-daytime drowsiness**. Additionally, they experience reduced sleep latency in 
-comparison to healthy controls [@roehrs2011; haung2012], 
-**but why can they not sleep at night?** 
+Hyperarousal may explain the low levels of excessive daytime sleepiness (EDS)
+observed in ID despite dysfunctional sleep architecture.
+Approximately half of the ID population experience EDS [@hein2017], and often 
+have normal or increased sleep latency during daytime sleep tests [@roehrs2011; @huang2012]
+These findings support the hypothesis that hyperarousal contributes to ID 
+pathology as a stable construct, rather than just during sleep [@dressle2023].
 
 ## Non-restorative sleep
 
 Although both conditions are characterised by complaints of inadequate sleep, 
 NRS is distinct from ID due to having a normal sleep duration and architecture 
-as measured by PSG [@roth2010]. Patients have a primary complaint of sleep 
-being subjectively unrefreshing or unrestorative without the presence of another 
-sleep disorder [@stone2008].
-
+as measured by PSG [@roth2010]. 
+Patients have a primary complaint of sleep 
+being subjectively unrefreshing or unrestorative without a comorbid 
+sleep disorder [@stone2008]. 
+Prevalence in range of 1.4-35% across studies and populations [@zhang2012] 
+although variation in definitions and a lack of a validated measure poses an 
+issue for classification. 
 Daytime impairments associated with NRS include significant daytime fatigue, 
 reduced cognitive performance, and reduced psychological well-being, leading to 
-reduced quality of life and impaired daily function [@cite]. Despite the 
-debilitating effects of this condition, the condition was removed in the DSM-5, 
-meaning the condition is not clinically managed. As there are significant 
-differences between NRS and ID regarding sleep architecture, functional 
-impairment, and longitudinal course [@kao2021; @zhang2013], it is important to 
-clearly distinguish between the two groups. 
+reduced quality of life and impaired daily function [@cite]. 
 
-**variation in definition of NRS leads to impairment of research and clinical management [@stone2008]**.
-Prevalence in range of 1.4-35% across studies and populations [@zhang2012] (this 
-paper has good references) although variation in definitions and a lack of a 
-validated measure poses an issue for classification. 
+Despite the significant effects of the condition, the symptom of non-restorative 
+sleep was removed from the diagnostic criteria of ID in the DSM-5, meaning 
+this population is diagnoses as "other specified sleep-wake disorder" 
+[@americanpsychiatricassociation2022].
+As NRS may be its own unique disorder with an underlying neurobiological cause, 
+it is essential to develop diagnostic criteria and understand the associated 
+neural mechanisms to improve outcomes for patients. 
 
-Although this population has normal sleep duration, unrefreshing sleep may be 
-a consequence of disruptions in physiological processes occurring during 
-slow-wave sleep, which are critical for neural function [@kao2021; @tononi2006]. 
-
-As current PSG techniques cannot reliably identify NRS through PSG data, 
-they may be insufficient for accurately recording the deficiencies occurring 
-specific to individuals with NRS. NRS patients exhibit lower non-rapid 
-eye movement (NREM) delta power compared to healthy controls, despite having 
-similar objective sleep durations [@kao2021]. **second sentence contradicts first**
-
-The lack of a clear diagnostic criteria and omission in the DSM-5 means that 
-reporting prevalence rates is difficult, and patients are unable to be 
-reliably phenotyped or classified **improve clarity of this sentence**. 
+Although this population has normal sleep duration and architecture, 
+unrefreshing sleep may be a consequence of disruptions in physiological 
+processes occurring during slow-wave sleep, 
+which are critical for neural function [@kao2021; @tononi2006]. 
+    ```this population does not have cortical hyperarousal```
+Power spectral analysis may present an improved criteria for classifying and 
+understanding the cause of non-restorative sleep in this population. 
+NRS patients exhibit lower SWA during NREM sleep compared to healthy controls, 
+despite having similar objective sleep duration [@kao2021]. 
+This dysfunctional SWA during sleep may be associated with increased SWA 
+during wake [@cite], however further exploration using improved technology is required. 
 
 # Mechanisms of sleep
 
@@ -212,8 +208,7 @@ extended wake by engaging in the restorative processes observed in
 slow-wave sleep while maintaining consciousness [@vyazovskiy2013].
 
 Increased SWA is correlated with subjective and objective markers of fatigue, 
-meaning it is a variable of interest when examining the subjective and objective 
-markers of fatigue. 
+meaning it is a variable of interest for this study.
 The appearance of SWA in task-related regions is associated with diminished 
 behavioural performance [@bernardi2015]. 
 HD-EEG recordings observed a increased SWA during wake in the 
@@ -239,43 +234,29 @@ the neural activity of drowsiness itself, rather than its consequences, are meas
 
 The Karolinska Drowsiness Test (KDT) was developed as a specific and sensitive 
 measure of drowsiness that can provide insight into the neurobiological markers 
-of drowsiness across populations [@akerstedt1990; @akerstedt2014]. The test 
-uses EEG to measure brain activity during resting wake. 
-The 7 minute test takes place in a quiet room, wherein 
-participants look at a set point for 2.33 minutes with their eyes open, 
-followed by an 2.33 m eyes closed condition, and a subsequent 2.33 eyes open 
-condition. 
+of drowsiness across populations [@akerstedt1990; @akerstedt2014]. 
+The test uses EEG to measure brain activity during resting wake, which can be 
+transformed into power spectra using a fast Fourier transform and then 
+assessed through power spectral analysis [@cite]. 
 The test has been validated in healthy populations, being a reliable 
 marker of drowsiness in accordance with sleep pressure and circadian rhythm 
 fluctuations [@kaida2006]. 
-This recording provides measures of brain activity across 
-frequencies and channels, providing insight into both the level of drowsiness 
-experienced and any topographical variations in activity. 
-
-```         
-- relevance to diagnosis and treatment of sleep disorders (??)
-```
-
-### increased cortical arousal in ID
-
--   [@zhao2021] meta-analysis found throughout wakefulness and sleep, patients with ID exhibited increased beta band power, although such increases sometimes extended into neighbouring frequency bands, increased theta and gamma power during wake, increased alpha and sigma power during REM, decreased delta and increased theta, alpha, sigma power during NREM sleep.
--   ID is associated with significantly increased EEG activity in high-frequency bands (beta/gamma) during g reststate wakefulness, sleep-onset, non-rapid eye movement, may reflect cortical hyperarousal [@zhao2021]
--   no significant differences in waking or NREM sleep power were observed across all frequency bands in PI [@wu2013]
-
-### Differences of brain waves of people with insomnia/NRS and healthy controls
-
-```         
-- Increased slowing ratio
-- Higher delta and theta power
-    - Associated with increased sleepiness and cognitive implications
-    
-```
 
 ## Self-reported sleepiness
 
- - measured primarily through ESS, SSS, KSS [@martin2023]
+Subjective measures of sleepiness are useful for recording the self-assessed 
+impairment of poor sleep on the individual. 
+The most prevalent method of measuring self-reported sleepiness is through 
+questionnaires such as the the Epsworth Sleepiness Scale, Stanford 
+sleepiness scale, and Karolinska sleepiness test [@martin2023]. 
+Sleepiness scores fluctuate throughout the day in response to circadian 
+and sleep homeostatic systems [@kaida2006].
 
-Subjective sleepiness is a measure of an individual's self-assessed level of drowsiness, often assessed through self-report questionnaires such as the Karolinska Sleepiness Scale or the Epworth Sleepiness Scale [@akerstedt1990; @johns1991]. Sleepiness scores fluctuate throughout the day as a result of the impact of system S and C [@kaida2006] and increased subjective sleepiness scores is linked to reduced cognitive performance [@babkoff1991] and delayed reaction time [@akerstedt2014]. Persistent excessive daytime sleepiness is strongly associated with depressive symptoms and illness intrusiveness [@hossain2005].
+Excessive daytime sleepiness causes a significant burden on individuals. 
+
+
+Subjective sleepiness is a measure of an individual's self-assessed level of 
+drowsiness, often assessed through self-report questionnaires such as the Karolinska Sleepiness Scale or the Epworth Sleepiness Scale [@akerstedt1990; @johns1991]. Sleepiness scores fluctuate throughout the day as a result of the impact of system S and C [@kaida2006] and increased subjective sleepiness scores is linked to reduced cognitive performance [@babkoff1991] and delayed reaction time [@akerstedt2014]. Persistent excessive daytime sleepiness is strongly associated with depressive symptoms and illness intrusiveness [@hossain2005].
 
 Self-reported sleepiness strongly correlates with objective measures of drowsiness (MSLT, actigraphy, [@kaida2006]), however discrepancies have been found in individuals with insomnia **flesh out with more evidence**.
 
