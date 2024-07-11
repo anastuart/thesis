@@ -235,3 +235,34 @@ regions and a slower alpha pattern in anterior cortical regions [@cantero2002].
 EEG fatigue can be measured through various algorithms including AAC, slowing ratio, and [@jap2009]
 
 detecting fatigue from [@jap2009]: algorithm (i) $\frac {\theta + \alpha}{\beta}$, algorithm (ii) $\frac {\alpha}{\beta}$, algorithm (iii) $\frac {\theta + \alpha} {\alpha + \beta}$, and algorithm (iv) $\frac {\theta}{\beta}$, were also assessed as possible indicators for fatigue detection. Results showed stable delta and theta activities over time, a slight decrease of alpha activity, and a significant decrease of beta activity (p \< 0.05). All four algorithms showed an increase in the ratio of slow wave to fast wave EEG activities over time. Algorithm (i) $(\theta + \alpha)/ \beta$ showed a larger increase.
+
+## Subjective sleepiness 
+
+Subjective sleepiness is a measure of an individual's self-assessed level of 
+drowsiness, often assessed through self-report questionnaires such as the Karolinska Sleepiness Scale or the Epworth Sleepiness Scale [@akerstedt1990; @johns1991]. Sleepiness scores fluctuate throughout the day as a result of the impact of system S and C [@kaida2006] and increased subjective sleepiness scores is linked to reduced cognitive performance [@babkoff1991] and delayed reaction time [@akerstedt2014]. Persistent excessive daytime sleepiness is strongly associated with depressive symptoms and illness intrusiveness [@hossain2005].
+
+Self-reported sleepiness strongly correlates with objective measures of drowsiness (MSLT, actigraphy, [@kaida2006]), however discrepancies have been found in individuals with insomnia **flesh out with more evidence**.
+
+```         
+"physiological indices of sleepiness did not occur reliably until subjective perceptions
+fell between “sleepy” and “extremely sleepy-fighting sleep”; i.e. physiological changes due to 
+sleepiness are not likely to occur until extreme sleepiness is encountered. " [@akerstedt2009]
+-  weak association ($r$=0.18) between subjective fatigue and sleepiness in individuals with 
+sleep disorders. Analysis of variance testing showed strong association between those patients 
+with prominent fatigue and depressive symptoms (P < 0.01) and illness intrusiveness (P < 0.001). 
+The findings support the notion that subjective fatigue and sleepiness can be independent 
+manifestations of sleep disorders [@hossain2005]
+- excessive sleepiness is regarded as one of the cardinal manifestations of sleep disorders and 
+often is accompanied by fatigue, many patients with fatigue complain of insomnia and do not report 
+falling asleep or feeling sleepy at inappropriate times [@hossain2005]
+```
+
+
+
+
+
+
+
+
+
+
