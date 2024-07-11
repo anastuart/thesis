@@ -218,10 +218,10 @@ increased SWA during recovery sleep [@hung2013].
 This suggests that the localisation of sleep pressure observed in sleep is 
 also observed during wake. 
 
-## Drowsiness 
+## Objective Drowsiness 
 
-Drowsiness can be measured through a range of tests, measuring associated but 
-distinct characteristics linked to the accumulation of sleep pressure. 
+Objective drowsiness can be measured through a range of tests, measuring 
+associated but distinct characteristics linked to the accumulation of sleep pressure. 
 The most common measures used in clinical practice and scientific research are 
 the multiple sleep latency test which measures sleep propensity, the maintenance 
 of wakefulness test measuring the consequences of sleepiness, and the 
@@ -244,39 +244,22 @@ fluctuations [@kaida2006].
 
 ## Self-reported sleepiness
 
-Subjective measures of sleepiness are useful for recording the self-assessed 
-impairment of poor sleep on the individual. 
+Subjective sleepiness is a measure of an individual's self-assessed level of 
+sleep pressure, objective drowsiness, or sleep propensity. 
 The most prevalent method of measuring self-reported sleepiness is through 
 questionnaires such as the the Epsworth Sleepiness Scale, Stanford 
 sleepiness scale, and Karolinska sleepiness test [@martin2023]. 
 Sleepiness scores fluctuate throughout the day in response to circadian 
 and sleep homeostatic systems [@kaida2006].
 
-Excessive daytime sleepiness causes a significant burden on individuals. 
+Subjective sleepiness scores strongly correlate with objective measures of 
+drowsiness in healthy populations, but have a weak association in 
+individuals with sleep disorders [@hossain2005]. 
+A subjective-objective mismatch has been observed in individuals with ID, 
+who **finish this part** [@bianchi2013]
+This suggests that subjective sleepiness and neurobiological drowsiness can be 
+independent facets of sleep disorders. 
 
-
-Subjective sleepiness is a measure of an individual's self-assessed level of 
-drowsiness, often assessed through self-report questionnaires such as the Karolinska Sleepiness Scale or the Epworth Sleepiness Scale [@akerstedt1990; @johns1991]. Sleepiness scores fluctuate throughout the day as a result of the impact of system S and C [@kaida2006] and increased subjective sleepiness scores is linked to reduced cognitive performance [@babkoff1991] and delayed reaction time [@akerstedt2014]. Persistent excessive daytime sleepiness is strongly associated with depressive symptoms and illness intrusiveness [@hossain2005].
-
-Self-reported sleepiness strongly correlates with objective measures of drowsiness (MSLT, actigraphy, [@kaida2006]), however discrepancies have been found in individuals with insomnia **flesh out with more evidence**.
-
-```         
-"physiological indices of sleepiness did not occur reliably until subjective perceptions
-fell between “sleepy” and “extremely sleepy-fighting sleep”; i.e. physiological changes due to 
-sleepiness are not likely to occur until extreme sleepiness is encountered. " [@akerstedt2009]
--  weak association ($r$=0.18) between subjective fatigue and sleepiness in individuals with 
-sleep disorders. Analysis of variance testing showed strong association between those patients 
-with prominent fatigue and depressive symptoms (P < 0.01) and illness intrusiveness (P < 0.001). 
-The findings support the notion that subjective fatigue and sleepiness can be independent 
-manifestations of sleep disorders [@hossain2005]
-- excessive sleepiness is regarded as one of the cardinal manifestations of sleep disorders and 
-often is accompanied by fatigue, many patients with fatigue complain of insomnia and do not report 
-falling asleep or feeling sleepy at inappropriate times [@hossain2005]
-```
-
-### subjective-objective mismatch
-
-There is a subjective-objective mismatch that is observed in people with NRS [@bianchi2013], however unknown if this persists in daytime drowsiness
 
 ## approach
 
