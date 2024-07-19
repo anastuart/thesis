@@ -73,44 +73,46 @@ data, diagnosis of insomnia is recommended based on subjective reports of
 impairment through self-assessed questionnaires 
 [@americanacademyofsleepmedicine2005]. 
 ID is associated with diminished quality of life [@kyle2010] and increased risk 
-of comorbid psychiatric disorders [@hertenstein2019].
+of comorbid psychiatric disorders [@perlis2022].
 Daytime fatigue, being the subjective experience of low energy [@raizen2023], 
-is highly prevalent in this population [@kyle2010], but patients experience 
-decreased sleepiness as measured through sleep latency [@roehrs2011; @huang2012]. 
+is the most prevalent daytime complaint in this population and is associated with the most 
+significant detrimental impact to daily functioning [@kyle2010]. 
+Severe fatigue is associated with greater insomnia symptom severity, daytime 
+sleepiness, depressive symptoms, and increased habitual sleep duration [@kim2019]. 
 
-The contrasting experiences of increased fatigue with reduced sleepiness is 
-hypothesised to be caused by the competing influences of hyperarousal and 
-sleep pressure. 
+Despite the prevalence of fatigue within the population, 
+the prevalence of excessive daytime sleepiness (EDS) as measured by sleep propensity 
+within ID varies between 10-41.61% and is unrelated to insomnia [@fasiello2023; @seong2022; @hein2017]. 
+
+
+Cortical hyperarousal, being the increased prevalence of fast frequency brain 
+activity, is hypothesised to be a causal factor in ID through preventing sleep 
+initiation [@dressle2023; @riemann2010]. 
+Hyperarousal can prevent daytime sleepiness as measured through sleep latency 
+despite significant fatigue, as the dominance of wake-like neural activity 
+prevents a global lapse of consctiousness. 
+
+
+
+
+However, these studies are limited as the sample contained individuals with 
+comorbid obstructive sleep apnoea (OSA). 
+When controlling for comorbid sleep disorders, Fasiello et al. [@fasiello2023] 
+found ESS was present in 10% of ID patients, and was unrelated to insomnia severity. 
+
+The contrasting experiences of increased fatigue with reduced sleepiness 
+may be caused by the competing influences of hyperarousal and sleep pressure [@marques2024].
 ID is proposed to be caused and perpetuated by increased physiological and 
 neurobiological arousal, preventing sleep initiation and leading to increased 
-overnight awakenings [@riemann2010]. 
+overnight awakenings [@dressle2023; @riemann2010]. 
 
 
-```how does this affect daytime sleepiness```
+As a hallmark of ID is the inability to fall asleep, measuring sleepiness through 
+sleep latency is insufficient for measuring sleepiness. 
+Sleepiness perception, or the subjective evaluation of sleepiness, may provide
 
+decreased sleepiness as measured through sleep latency [@roehrs2011; @huang2012]. 
 
-
-
-ID with short sleep duration is proposed to be caused and perpetuated by 
-increased physiological and neurobiological arousal, preventing sleep 
-initiation and leading to increased overnight awakenings [@riemann2010]. 
-Neurobiological hyperarousal in ID is observed through increased fast 
-frequency EEG activity during sleep and wake [@zhao2021].
-During sleep, ID patients have decreased SWA [@kao2021] and increased fast 
-frequency band activity [@merica1998; @hogan2020] 
-during NREM sleep in comparison to healthy controls,
-leading to diminished overnight dissipation of sleep pressure [@lunsford-avery2021].
-Additionally, high frequency activity is associated with poorer subjective sleep 
-quality [@perlis2001]. 
-Hyperarousal persists during wake, with ID being associated with increased alpha 
-power during resting wake, indicating increased wakefulness [@feige2017]. 
-
-Hyperarousal may explain the low levels of excessive daytime sleepiness (EDS)
-observed in ID despite dysfunctional sleep architecture.
-Approximately half of the ID population experience EDS [@hein2017], and often 
-have normal or increased sleep latency during daytime sleep tests [@roehrs2011; @huang2012]
-These findings support the hypothesis that hyperarousal contributes to ID 
-pathology as a stable construct, rather than just during sleep [@dressle2023].
 
 ## Non-restorative sleep
 
@@ -212,6 +214,8 @@ such as the motor or sensory cortices, leads to increased regional SWA during
 subsequent sleep [@huber2004; @vyazovskiy2008].
 These findings suggest that SWA is a localised phenomenon, appearing in response to 
 accumulated sleep pressure and dissipating with sleep. 
+
+```is now well established that localised sleep and wake patterns, which are not adequately captured by standard sleep recordings (PSG) and scoring methods, can coexist in both physiological and pathological conditions, and likely determine sleep-related conscious experiences [@siclari2017]```
 
 # Daytime impacts
 

@@ -53,6 +53,25 @@ and propagate in an anteroposterior direction [@massimini2004].
 
 ## ID
 
+However, this has led to high heterogeneity within the population, 
+and there is a need for greater use of 
+objective measures in diagnosis to better understand the underlying mechanisms 
+of the disorder. 
+
+Dysfunctional sleep architecture has a causal role in creating excessive daytime 
+sleepiness (EDS) in approximately half of the ID population [@hein2017], 
+
+Hyperarousal may explain the low levels of excessive daytime sleepiness (EDS)
+observed in ID despite dysfunctional sleep architecture.
+Approximately half of the ID population experience EDS [@hein2017], and often 
+have normal or increased sleep latency during daytime sleep tests [@roehrs2011; @huang2012]
+These findings support the hypothesis that hyperarousal contributes to ID 
+pathology as a stable construct, rather than just during sleep [@dressle2023].
+
+
+
+
+
 The condition has high heterogeneity in both aetiology and symptoms, which may 
 be due to the existence of disorder sub-types which are not currently being 
 adequately classified [@benjamins2017]. 
@@ -76,6 +95,19 @@ doctors with complaints of insomnia may be incorrectly classified and treated.
 -   ID is associated with significantly increased EEG activity in high-frequency bands (beta/gamma) during g reststate wakefulness, sleep-onset, non-rapid eye movement, may reflect cortical hyperarousal [@zhao2021]
 -   no significant differences in waking or NREM sleep power were observed across all frequency bands in PI [@wu2013]
 ```
+
+
+#### Hyperarousal in ID
+Neurobiological hyperarousal in ID is observed through increased fast 
+frequency EEG activity during sleep and wake [@zhao2021].
+During sleep, ID patients have decreased SWA [@kao2021] and increased fast 
+frequency band activity [@merica1998; @hogan2020] 
+during NREM sleep in comparison to healthy controls,
+leading to diminished overnight dissipation of sleep pressure [@lunsford-avery2021].
+Additionally, high frequency activity is associated with poorer subjective sleep 
+quality [@perlis2001]. 
+Hyperarousal persists during wake, with ID being associated with increased alpha 
+power during resting wake, indicating increased wakefulness [@feige2017]. 
 
 
 ## NRS as a disorder
