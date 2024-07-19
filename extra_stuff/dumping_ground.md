@@ -261,8 +261,43 @@ falling asleep or feeling sleepy at inappropriate times [@hossain2005]
 
 
 
+## approach
+
+-   why are we doing things in the way we are doing? Integrate with theory
+    -   Link psychological construct to approach you are using it to measure it
+    -   Operationalise how you are going to measure constructs
+-   description of overall research study
+    -   what type of study it is,
+        -   observational, age and sex matched
 
 
+## Power spectral analysis
+Power spectral analysis (PSA) is an alternative quantitative approach to the
+description and interpretation of EEG data. This method is based on signal
+processing approaches (Welch, 1967). The Fast Fourier Transform (FFT) identifies
+signal amplitude for each frequency during 30 s epochs and quantifies the overall
+power trends in the EEG data (Ktonas & Gosalia, 1981). Using FFT the absolute
+power (μV2
+), relative power (%), and mean frequency (Hz) within each frequency
+component in a given time domain (30 s epochs) can be determined. The absolute
+power of an EEG frequency band is the integral of all of the power values within its
+frequency range, while the relative power (RP) is the percentage of the absolute
+power in each frequency band relative to the sum of absolute powers of the four
+frequency bands (Yuvaraj et al., 2014). 
 
+## Subjective sleepiness
 
-
+The most prevalent method of measuring self-reported sleepiness is through 
+questionnaires such as the the Epsworth Sleepiness Scale (ESS), Stanford 
+sleepiness scale, and Karolinska sleepiness scale (KSS) [@martin2023]. 
+Scales vary in their assessment of somnolence. The ESS is an 8 item questionnaire 
+which measures an individual's likelihood of sleeping in a particular scenario, 
+creating a measure of an individual's sleep propensity which is robust to variations in 
+previous sleep and time of day [@johns1991]. 
+Although the ESS has been found to be a valid measure of EDS for group level 
+comparisons of average sleep propensity, it does not measure subjective feelings 
+of drowsiness at a specific time point [@kendzerska2014]. 
+In contrast, the KSS is a 1-item nine-point Likert scale of an individual's 
+perceived sleepiness at a particular point in time, and is highly correlated with 
+EEG measures of drowsiness in response to sleep deprivation in healthy populations 
+[@akerstedt2014]. 
