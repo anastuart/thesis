@@ -1,0 +1,42 @@
+# Configuration file for PALM.
+# Version (github, running in MATLAB 24.1.0.2603908 (R2024a) Update 3.
+# 05-Aug-2024 14:26:08
+
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_1.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_2.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_3.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_4.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_5.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_6.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_7.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_8.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_9.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_10.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_11.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_12.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_13.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_14.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_15.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_16.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_17.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/depvar_18.csv
+-s /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/surface.srf
+-d /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/desmat.csv
+-eb /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/exchangeability_blocks.csv
+-vg /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/variance_groups.csv
+-t /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/tcontrasts_ftests.csv
+-f /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/input/ftests.csv
+-o /Volumes/PRJ-cfsnrs/group-stats/oneanova_kdtam_oc_clustmassperm/output/palm_fstat
+-n 10000
+-ee
+-C 1.959964
+-Cstat mass
+-within
+-whole
+-seed 50336499
+-cmcx
+-savedof
+-savemetrics
+-verbosefilenames
+-quiet
+-fonly

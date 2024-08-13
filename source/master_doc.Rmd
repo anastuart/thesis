@@ -3,12 +3,12 @@ title: "Thesis"
 author: "Anastasia Stuart"
 date: "`r Sys.Date()`"
 output:
-  pdf_document:
-    latex_engine: xelatex
-  html_document:
-    df_print: paged
   word_document:
     reference_docx: apa_template.docx
+  html_document:
+    df_print: paged
+  pdf_document:
+    latex_engine: xelatex
   md_document:
 header-includes: \usepackage{setspace}\doublespacing
   \usepackage{indentfirst}
@@ -33,7 +33,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r child='07_list_of_tables.md', eval=FALSE}
 
-```{r child='08_abbreviations.md', eval=TRUE}
+```{r child='08_abbreviations.md', eval=FALSE}
 
 ```{r child='09_introduction.md', eval=TRUE}
 

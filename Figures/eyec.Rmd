@@ -1,0 +1,85 @@
+---
+title: "eyec"
+output:
+  word_document: default
+  html_document: default
+date: "2024-08-09"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## NRS
+
+![sub-16lr_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-16lr_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-18cb_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-18cb_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-20rc_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-20rc_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-24rm_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-24rm_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-25cr_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-25cr_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-27rh_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-27rh_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+
+![sub-29la_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-29la_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-30ok_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-30ok_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+
+![sub-32jw_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-32jw_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+
+![sub-37wt_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-37wt_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-38sg_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-38sg_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-48yc_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-48yc_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-54bl_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-54bl_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+
+## ID
+
+![sub-21rh_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-21rh_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-22mm_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-22mm_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-26sm_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-26sm_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-28lh_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-28lh_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-31ik_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-31ik_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-33mg_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-33mg_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-34rw_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-34rw_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-40eb_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-40eb_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-41as_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-41as_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-42kc_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-42kc_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-51ec_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-51ec_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+## CTL
+
+![sub-44sh_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-44sh_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-45sb_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-45sb_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-52mc_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-52mc_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-53kb_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-53kb_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-55rf_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-55rf_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-56bw_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-56bw_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-58ja_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-58ja_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)
+
+![sub-59la_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect](/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/Figures/sub-59la_ses-1_task-kdtam_run-1_desc-eyecclean_powerspect.png)

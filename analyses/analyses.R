@@ -1,12 +1,12 @@
 # load data frame
 
 library(dplyr)
-data <- read.csv("~/Documents/Honours/thesis_rstudio_doc/data.csv")
+data <- read.csv("~/Documents/Honours/thesis_rstudio_doc/descriptive-statistics_Aug06.csv")
 summary(data)
 
 
 # if on imac
-data <- read.csv("/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/data.csv")
+data <- read.csv("/Users/anastuart/Library/CloudStorage/GoogleDrive-anastasia.stuart@students.mq.edu.au/Other computers/My MacBook Pro/Documents/Honours/thesis_rstudio_doc/descriptive-statistics_Aug06.csv")
 
 # graph
 library(ggplot2)

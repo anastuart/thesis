@@ -17,8 +17,9 @@ output:
 Non-restorative sleep (NRS) is a condition characterised 
 by unrefreshing sleep upon awakening despite normal sleep duration and 
 architecture as measured by polysomnography (PSG), leading to excessive 
-daytime fatigue and significant daytime functional impairment [@roth2010]. 
-Despite the significant impact of this condition, it is poorly diagnosed and 
+daytime fatigue and significant daytime functional impairment 
+`clarify` [@roth2010]. 
+Despite the impact of this condition, it is poorly diagnosed and 
 not included in the Diagnostic and Statistical Manual-5-TR 
 [@americanpsychiatricassociation2022], with no established guidelines for 
 clinical management. 
@@ -28,20 +29,20 @@ distinct with a different underlying aetiology [@cite].
 
 Both disorders are associated with increased daytime fatigue and sleepiness, 
 however there may be different causal mechanisms leading to these symptoms. 
-
-
 A major distinction between ID and NRS is sleep architecture, with a marker of 
 ID being shortened overnight sleep duration or frequent overnight arousals, 
 which are not present in NRS. 
 The dysfunctional sleep architecture experienced by ID populations is 
-hypothesised to be a causal factor for daytime sleepiness lead
+hypothesised to be a causal factor for increased fatigue, however this population 
+does not experience increased sleep propensity in comparison to healthy controls [@fasiello2023].
+Although NRS is associated with normal sleep architecture, it may be linked to 
+a reduction in slow wave activity (SWA) [@kao2021] preventing the dissipation of sleep 
+pressure. 
 
-A potential reason for the lack of restorative sleep experienced by this 
-population may be a dysfunction in slow wave activity (SWA), which is the 
-strongest established marker of reduced sleep pressure [@tononi2008]. 
 Low SWA power during sleep leads to ineffective dissipation of accumulated 
 sleep pressure, while increased SWA in wake is associated with increased 
-feelings of sleepiness. Subjective sleepiness is **important because of why**
+feelings of sleepiness [@cite]. 
+Subjective sleepiness is **important because of why**
 
 ```EEG spectral power during sleep, in contrast to standard polysomnography or questionnaires, may provide a better biomarker for distinguishing insomnia subtypes.```
 
@@ -82,8 +83,16 @@ sleepiness, depressive symptoms, and increased habitual sleep duration [@kim2019
 
 Despite the prevalence of fatigue within the population, 
 the prevalence of excessive daytime sleepiness (EDS) as measured by sleep propensity 
-within ID varies between 10-41.61% and is unrelated to insomnia [@fasiello2023; @seong2022; @hein2017]. 
-
+within ID varies between 10-41.61% and is unrelated to insomnia symptom severity
+[@fasiello2023; @seong2022; @hein2017]. 
+Hyperarousal, observed in ID through increased physiological, psychological, and 
+neurophysiologial activity, prevents sleep initation through preventing the  
+reduction of activity needed to experience the reuced consciousness of global sleep
+[@cite; probably that tonini paper about consciousness].
+This is further observed with ID havind similar or increased sleep latency in 
+comparison to healthy populations, despite increased fatigue [@cite]. 
+The discrepancy between fatigue, sleepiness, and cortical arousal requires further 
+elucidation. 
 
 Cortical hyperarousal, being the increased prevalence of fast frequency brain 
 activity, is hypothesised to be a causal factor in ID through preventing sleep 

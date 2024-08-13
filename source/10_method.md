@@ -2,6 +2,8 @@
 
 ## Study design
 
+The study was approved by the Macquarie University Human Research Ethics Committee (FoRA ID 17112) and all participants provided written informed consent.
+
 The study was a cross-sectional, age and sex matched case-control study. 
 The study employed a between-participants mixed linear model design. 
 The independent variables was clinical group and EEG channel, and the dependent variables were KSS score and spectral power. 
@@ -9,7 +11,17 @@ Additionally, topographic anaysis of spectral power ...
 
 ## Participants
 
-12 participants from each clinical population were recruited: individuals with insomnia disorder (ID), individuals with non-restorative sleep (NRS), and healthy controls (HC). Recruitment was conducted through referrals from the Woolcock Institute and the Royal Prince Alfred sleep clinics, in addition to social media advertising. Due to the influence of age and sex on sleep architecture [@mongrain2005], participants were sex and age matched with a maximum difference of 1 year. 
+
+Predetermined sample size was 12 participants from each clinical population, determined **how?**
+Due to the strict exclusion criteria and time constraints, the total sample analysed was 33 participants (13 NRS; 11 ID; 9 Control). 
+
+Due to the influence of age and sex on sleep architecture [@mongrain2005], participants were sex and age matched with a maximum difference ± 2 years. 
+
+
+**how many** people expressed interest through an online recruitment survey. 
+**how many** were excluded due to **what reasons**
+
+Recruitment was conducted through referrals from the Woolcock Institute and the Royal Prince Alfred sleep clinics, in addition to social media advertising. 
 
 Participants were excluded if they had any comorbid sleep apnoea, as measured by wrist oximetry (oxygen desaturation index above 10 during any night of monitoring) (WristOX has high sensitivity of diagnosing OSAS [@nigro2009]). Participants were additionally excluded if they had clinically significant depression or anxiety scores as measured through the DASS-21, heavy alcohol use, pregnancy, circadian rhythm disruption through shift work or recent international travel, or a natural sleep time that of less than 6 hours or outside the hours of 21:30 and 8:00. As medications are known to affect sleep architecture, participants taking regular medications affecting sleep were excluded. 
 
@@ -26,20 +38,19 @@ Due to the strict inclusion and exclusion criteria, of the N participants that c
 
 ## Protocol
 
-The study was approved by the Macquarie University Human Research Ethics Committee (FoRA ID 17112).
-
  Participants attended the sleep laboratory at the Woolcock Institute of Medical Research for initial screening by a sleep physician. Participants baseline sleep and activity patterns were measured via an Actigraphy watch (**which one**) for 7 days prior, which was validated against self-reported sleep diaries. Participants additionally completed the Restorative Sleep Questionnaire Daily Version (RSQ-D) for 7 days prior. 
 
 Upon arrival at the laboratory at 17:00, participants underwent final medical screening and a series of cognitive assessments. They were then served dinner and fitted with a high-density electroencephalography (HD-EEG) cap **which one**. Further cognitive assessments were conducted before the administration of the Karolinska Drowsiness Test (KDT) approximately 45 minutes prior to their habitual bedtime. Overnight polysomnography using HD-EEG was recorded, in addition to sleep video recording using a AXIS P3225-LV camera. 
 
-Lights were turned on at the participant's natural wake time and they were asked if they were already awake or wakened by researchers. The KSS and KDT was administered five minutes post-habitual wake time. Following the morning KDT, participants completed further cognitive testing and an MRI scan. 
+Lights were turned on at the participant's natural wake time and they were asked if they were already awake or wakened by researchers. The KSS and KDT was administered five minutes post habitual wake time. Following the morning KDT, participants completed further cognitive testing and an MRI scan. 
 
 ## Measures
 
 ### KSS
 
-Subjective sleepiness was assessed 15 minutes after natural wake time using the Karolinska Sleepiness Scale (KSS), a 9 point scale with verbal anchors at each step [@akerstedt1990]. It is a measure of an individual's percieved sleepiness at a given point and is therefore difficult to assess test-retest reliability, however it has demonstrated reliability over two nights of sleep loss with a one week recovery period [@gillberg1994]. It is sensitive to manipulations affecting sleepiness and is ised consistently across individuals [@akerstedt2014]
-The KSS has been vaidated in healthy populations as being closely related to EEG and behavioural variables of sleepiness [@akerstedt1991; @kaida2006]. Correlations between KSS scores and EEG measures of sleepiness are over *r* = .5 [@akerstedt1990; vandenberg2005] and correlate (*r* = .57) with response times on a vigilance test [@kaida2006]. 
+Subjective sleepiness was assessed 15 minutes after natural wake time using the Karolinska Sleepiness Scale (KSS), a 9 point scale with verbal anchors at each step [@akerstedt1990]. It is a measure of an individual's perceived sleepiness at a given point and is therefore difficult to assess test-retest reliability, however it has demonstrated reliability over two nights of sleep loss with a one week recovery period [@gillberg1994]. It is sensitive to manipulations affecting sleepiness and is used consistently across individuals [@akerstedt2014]
+
+The KSS has been validated in healthy populations as being closely related to EEG and behavioral variables of sleepiness [@akerstedt1991; @kaida2006]. Correlations between KSS scores and EEG measures of sleepiness are over *r* = .5 [@akerstedt1990; vandenberg2005] and correlate (*r* = .57) with response times on a vigilance test [@kaida2006]. 
 
 ### KDT
 
@@ -48,110 +59,73 @@ Participants were instructed "Look at the dot in front of you and be as relaxed 
 The test is 7 minutes long with 3 phases (eyes open/eyes closed/eyes open) each lasting 120 seconds. 
 ```why do we do eyes open and eyes closed```
 
-Spectral power is calculated for each 6 second epoch
 
 ### HD-EEG
-High-density EEG data were collected using 256-channel caps (**which one**). Th
-        ```signals were amplified and digitised, impedences, recordings were acquired with electrodes referenced to the vertex```
-        ``` processing of original eeg signals was performed ```
+High-density EEG data were collected using 256-channel electrode caps (**which one**) and a **which** amplifier and **which** software (digitised?) with electodes referenced to the vertex (CZ) [@cite]. Electrodes were placed along the scalp, mastiods, **anywhere else?**. Electrooculography (EOG) were recorded using electrodes placed *where* and electrocardiogram *?*
+During acquisition, data were low-pass filtered at **70** Hz, high-pass filtered at **0.3** Hz, and notch filtered at **50** Hz [@cite]. 
+Electrode impedences were below **what** kΩ. 
 
+```filter and hanning window```
+        
 The data was visually inspected for artefacts and arousals using a **semi-automatic process** and was manually verified and cleaned. 
+
       ```The record was visually inspected for bad channels and channels identified as poor quality (2.5% ± 1.4% of 164 chan- nels) were replaced with an interpolated EEG signal using a spher- ical spline interpolation algorithm. After artifact removal and bad channel interpolation, the EEG signals were average-referenced.``` **did we do this?**
       
-## Power spectra
-
-Get a power spectrum for each 6 second epoch in your data
-
-- PSA based on FFD most common method for processing EEG signal, transforms eeg signal from time domain (amplitude x time) to frequency domain (frequency x time), providing greater insight into brain activity over timw
--  The most common quantitative method employed in sleep studies is spectral analysis, which decomposes a time series of EEG data into power  (squared amplitude) in frequency bins (mV2/bin) , can be expressed as absolute or relative to the summed power in all bins, spectral analysis may represent an objective method for examining the pathophysiological mechanisms underlying insomnia [@zhao2021]
-- Raw PSD has a straightforward connection to signal amplitude, with channels expressing larger signal amplitudes typically showing larger power, useful when absolute differences in signal amplitude are deemed meaningful (topographical analysis) [@cox2020]
-
       
-To calculate power spectral density, cleaned EEG signals were analysed using a fast Fourier transform ```with 50% overlapping between con- secutive 4-second windows with a Hanning filter function, resulting in a frequency resolution of 0.25 Hz``` 
+## Data processing
 
-EEG spectral power densities were quantified as: delta (1–4.5 Hz), theta (4.5–8 Hz), alpha (8–12 Hz), sigma (12–15 Hz), beta (15–25 Hz), and gamma (25–40 Hz). 
+### EEG Preprocessing
+
+All preprocessing was completed using the EEG Processor application (@wassing2024). 
+Data were visually inspected for artefacts and arousals which were removed across all channels. 
+Poor quality channels were replaced with an interpolated EEG signal from neighbouring channels using linear mixing, weighted by the squared non-linear distance *on average how many per participant, +-SD)*. 
+
+### Average referencing
+
+To improve the accuracy of recorded signals, data was re-referenced to a common average signal created through finding the mean global signal across all electrodes.
+This average signal was then subtracted from each individual electrode's signal, reducing the influence of a single electrode that occurs when using the vertex (CZ) signal as a reference.
+This process enhances the detection of local neuronal activity and enables the rich spatial resolution of HD-EEG data. 
+
+### Independent components analysis
+
+Following preprocessing, independent components analysis (ICA) was used to identify and seperate components that are statistically independent from each other in KDT data. 
+This was done using an automated process using the MATLAB program *ICLabel*, removing components with a weighting of .8 or greater for non-brain activity [@pion-tonachini2019]. Artefact removal of eye, heart, muscle, and electrical activity components was conducted, with remaining components being back-projected to the EEG dataset via regression resulting in a cleaned time series signal.
+
+ICA was unable to be applied to PSG data. Although ICA is effective in removing artefacts in short recordings of a stationary subject, it is unable to process PSG recordings as signal sources are variable over the course of the night. Furthermore, the temporal variability of brain activity across sleep stages prevents ICA from being able to reliably differentiate between artefacts and brain activity. As ICA was unable to be applied to PSG, this data is contaminated by non-brain activity, however as the data was visually cleaned for artefacts and interpreted with acknowledgement of artefact contamination, it was still used. 
+ 
+### Power spectra
+
+        ```is this where we excluded non-cranial EEG channels?```
+
+EEG power spectra was obtained for each channel using a fast Fourier transform (FFT) to deconstruct the EEG signal from the time domain to the frequency domain, allowing it to be analysed in power (squared amplitude) in frequency bins (mV2/bin).
+The power spectra was calculated for 50% overlapping 6-second epochs and obtained for the eyes closed condition and a concatenated recording of the eyes open condition. ```with a Hanning window, resulting in a frequency resolution of 0.25 Hz```
+    **boundary clip?**
+EEG spectral power densities were quantified as: low delta (0.5-1 Hz), delta (1–4.5 Hz), theta (4.5–8 Hz), alpha (8–12 Hz), sigma (12–15 Hz), beta (15–25 Hz), and gamma (25–40 Hz). These frequency bands were chosen as they reliably identify vigilance states in humans ** paper from Garry?**
+Power spectral densities represent the distribution of power in a signal across frequencies, allowing analysis of the frequency components that are most significant in each epoch's signal. This allowes the measurement of neuronal activity on vigilance states. 
+
+This data was then expressed as both an absolute and normalised **global?** value for all bins. 
+
+### Slowing ratio
+
+The EEG slowing ratio during each KDT condition was calculated by [(δ + θ)/ (α + σ + β)] power.
+
+### Alpha attenuation coefficient
+
+The alpha attenuation coefficient (AAC) measures alpha frequency power differences between eyes open and eyes closed conditions. Alpha power is expected to decrease during the eyes closed condition and increase during the eyes open condition. A high AAC score reflects high sleepiness.  
+
 
 ## Statistical analysis
 
-z-score normalised power spectral data were analysed for eyes open and eyes closed conditions for each participant
-
-```To control for Type I error rate in cluster analysis, statistical nonparametric mapping (SnPM) with the suprathreshold cluster test will be used. SnPM uses permutation tests (10 000 random shuffles of the data) to establish a distribution of cluster size findings that occur due to chance. This distribution can then be used to compare cluster size to the a priori set threshold of p < .05, determining if it is statistically significant (D’Rozario et al., 2023). ```
-
-EEG processor 
-
 All analyses were performed using MATLAB version r2024a (MathWorks, Natick, MA, USA). 
+The normality of the distribution of dependent variables, demographic variables, and outliers was conducted using Q-Q Plots, Shapiro-Wilk normality tests, and visual inspections of histograms. 
 
-## Data cleaning
+A one-way analysis of variance (ANOVA) was conducted to determine if there was a difference in group mean KSS scores. Post-hoc pairwise comparisons were conducted using Tukey's HSD. 
 
-Gives us discontinuous data (boundary clip)
+Statistical analysis of group-level KDT data was conducted using a one-way ANOVA to assess differences in normalised EEG power spectra across groups and conditions (eyes open/eyes closed).
+The potential for Type I error during cluster analysis evaluation of EEG data was controlled for using statistical nonparametric mapping  (SnPM) to resolve the challenge of multiple comparisons when using a large number of time-frequency comparisons. `clustermass approach` SnPM used 10 000 random permutatuions of the data to establish a distribution of cluster size findings that occur die to chance, which can then be used to compare found cluster sizes to. The cluster alpha was set at .05. Blocks were permuted as whole-blocks and within-blocks. 
 
-Bad channels and epochs were manually inspected and replaced with interpolated signals from neighbouring channels
-Using linear mixing to replace bad channels - from direct neighbours
-    created a new signal that is interpolated from the neigh
-    creates a reconstructed channel that is interpolated from neighbouting channels weighted by non-linear (squared) distance weights
-    
-    $\frac{\alpha}{{1}{\R}}
-    
-## FFT
-
-done in 6 second epochs 
-
-## Independent components analysis 
-
-concatenated files
-
-ICA estimates how indepedent the estimated sources are
-Attempts to make the sources as indepentent as possible
-can use components to subtract the artefact from the data
-take away the time series signal - remove the component 
-weighted components
-
-algorithm looks at eye, muscle and heart 
-
-classifier looks at spatial weights in the time series
-
-Limitations of the approach
-     there is no perfect solution to subtract artefacts and just capture brain activity
-     If you remove artefacts, you also remove brain activity
-     Remove as many artefacts as you can without removing too much brain activity
-     trying to optimise weights - may end up with a global minimum rather than a global minimum
-     
-    The lack of ICA in PSG means that it is contaminated by ECG artefacts - this is a limitation 
-     
-ICA assumes that sources are stationary 
-
-we are using it to clean the data
-cocktail party problem
-- cleans the data so that each electrode is only picking up activity that is specific to that area
-combines signals in a way so that they combine the activity that they measure and cancel out activity that they do not consistently measure
-no perfect way of seperating the the data
-
-Classifier - IClabel - https://www.sciencedirect.com/science/article/pii/S1053811919304185
-    threshold of 0.8
-    If a component has a weight of .8 or higher on eye/muscle/heart it is removed, otherwise retained
-    
-ICA is NOT done for PSG
-
-## average referencing
-
-rereferencing = want to stay close enough to skull but not close enough to pick up brain activity
-HD-EEG allows a uniform estimation of all brain activity 
-
-(net voltage brain potential should be 0) - meaning that in order to accurately measure total brain activity you need to be able to measure enough activity to know the voltage potential differences between the sites) - using average of brain activity across cortex means that you are measuring the activity of the particular electrode
-
-when to do - it doesnt matter as you are selecting the average reference at each particular point - as long as you don't average across time or apply an FFT first 
-but it does need to be done before ICA!
-
-
-## Process
-
-1. manual inspection and removal of artefacts
-2. average referencing
-3. ICA
-4. concatenate two eyes open channels
-5. then apply FFT
-
+To account for non-normality, SR and AAC values were log transformed prior to analysis. 
 
 
 \newpage
-   
+

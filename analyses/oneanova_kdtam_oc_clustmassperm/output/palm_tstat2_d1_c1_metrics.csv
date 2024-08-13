@@ -1,0 +1,9 @@
+Log of max number of permutations given the tree (W),85.054467
+Log of max number of permutations if unrestricted (W0),85.054467
+Huberman & Hogg complexity (tree only),0
+Huberman & Hogg complexity (tree & design),8589934590
+Average Hamming distance (tree only),32.001600
+Average Hamming distance (tree & design),32.001600
+Average Euclidean distance (tree only),76.977029
+Average Euclidean distance (tree & design),76.977029
+Average Spearman correlation,0.001725

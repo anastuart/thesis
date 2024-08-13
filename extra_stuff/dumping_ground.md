@@ -333,3 +333,68 @@ In contrast, the KSS is a 1-item nine-point Likert scale of an individual's
 perceived sleepiness at a particular point in time, and is highly correlated with 
 EEG measures of drowsiness in response to sleep deprivation in healthy populations 
 [@akerstedt2014]. 
+
+
+
+
+# Methods
+
+### average referencing
+
+(net voltage brain potential should be 0) - meaning that in order to accurately measure total brain activity you need to be able to measure enough activity to know the voltage potential differences between the sites) - using average of brain activity across cortex means that you are measuring the activity of the particular electrode
+
+ 
+Following a visual inspection of the data, channels were rereferenced to the average of global brain activity over the time signal. This allows the signal for each electrode to measure its unique activity subtracted from the global activity at that time point. 
+
+### ICA
+
+
+ICA estimates how indepedent the estimated sources are
+Attempts to make the sources as indepentent as possible
+can use components to subtract the artefact from the data
+take away the time series signal - remove the component 
+weighted components
+
+
+classifier looks at spatial weights in the time series
+
+Limitations of the approach
+     there is no perfect solution to subtract artefacts and just capture brain activity
+     If you remove artefacts, you also remove brain activity
+     Remove as many artefacts as you can without removing too much brain activity
+     trying to optimise weights - may end up with a global minimum rather than a global minimum
+     
+    The lack of ICA in PSG means that it is contaminated by ECG artefacts - this is a limitation 
+     
+ICA assumes that sources are stationary 
+
+we are using it to clean the data
+cocktail party problem
+- cleans the data so that each electrode is only picking up activity that is specific to that area
+combines signals in a way so that they combine the activity that they measure and cancel out activity that they do not consistently measure
+no perfect way of seperating the the data
+      
+### Power spectra
+
+- Raw PSD has a straightforward connection to signal amplitude, with channels expressing larger signal amplitudes typically showing larger power, useful when absolute differences in signal amplitude are deemed meaningful (topographical analysis) [@cox2020]
+
+
+## Process
+
+1. manual inspection and removal of artefacts
+2. average referencing
+3. ICA
+4. concatenate two eyes open channels
+5. then apply FFT
+
+
+
+## Statistical analysis
+
+
+*to account for non-normality, frontal, central, occipital, and parietal EEG slowing ratios were
+­ log-transformed prior to statistical analysis.*
+
+
+
+To assess if slowing ratio was significantly different between 
