@@ -2,13 +2,35 @@
 
 ## Descriptives
 
-964 participants completed the online expression of interest questionnaire, with 352 found as eligible for participation. Of these, 8 were unable to be contacted via email and 161 did not respond to a follow up email.  180 participants proceeded to pre-screening. 145 completers were excluded from participation during the pre-screening and screening visits,  with 44 (30%) being excluded for medication use and 54 (15%) being excluded due to having to age or sex match.
+33 participants were included, with the sample consisting of 13 individuals with Non-Restorative Sleep (NRS), 11 participants with Insomnia Disorder (ID), and 9 healthy controls (HC). Table 1 summarises the participant demographics and self-report questionnaires. 
 
- 33 participants were included. Due to time limitations, groups were of unequal size. The final sample consisted of 13 individuals with Non-Restorative Sleep (NRS), 11 participants with Insomnia Disorder (ID), and 9 healthy controls (HC). Table 1 summarises the participant demographics.
- 
 
- 
- 
+```
+{r, message=FALSE}
+library(knitr)
+library(tidyverse)
+library(dplyr)
+
+data2 <- data_frame("/Users/anastuart/Documents/Honours/descriptive-statistics_Aug06.csv")
+descriptives <- data2 %>% group_by("group"") %>%
+  summarize(
+    Mean = mean(KSS_AM1)
+    , Median = median(KSS_AM1)
+    , SD = sd(KSS_AM1)
+    , Min = min(KSS_AM1)
+    , Max = max(KSS_AM1)
+  )
+descriptives[, -1] <- printnum(descriptives[, -1])
+
+apa_table(
+  descriptives
+  , caption = "Descriptive statistics of correct recall by dosage."
+  , note = "This table was created with apa_table()."
+  , escape = TRUE
+) 
+```
+
+
 
 ## Comparing KSS scores between groups
 

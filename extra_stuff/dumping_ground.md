@@ -53,6 +53,33 @@ and propagate in an anteroposterior direction [@massimini2004].
 
 ## ID
 
+Hyperarousal can prevent daytime sleepiness as measured through sleep latency despite significant fatigue, as the dominance of wake-like neural activity in the beta frequencies prevents a global lapse of consctiousness [@shi2022]. 
+
+
+
+ID is proposed to be caused and perpetuated by increased physiological and neurobiological arousal, preventing sleep initiation and leading to increased overnight awakenings [@dressle2023; @riemann2010]. 
+
+
+The contrasting experiences of increased fatigue with reduced sleepiness may be caused by the competing influences of hyperarousal and sleep pressure [@marques2024].
+
+
+However, these studies are limited as the sample contained individuals with 
+comorbid obstructive sleep apnoea (OSA). 
+When controlling for comorbid sleep disorders, Fasiello et al. [@fasiello2023] 
+found ESS was present in 10% of ID patients, and was unrelated to insomnia severity. 
+
+
+24-hour hyperarousal, observed in ID through increased physiological, psychological, and 
+neurophysiologial activity, is hypothesised to prevent sleep initation through preventing the  
+reduction of activity needed to experience the reduced consciousness of global sleep
+[@cite; probably that tonini paper about consciousness].
+Cortical hyperarousal is hypothesised to be a causal factor in ID through preventing sleep initiation [@dressle2023; @riemann2010]. 
+
+
+The discrepancy between fatigue, sleepiness, and cortical arousal requires further 
+elucidation. 
+
+
 However, this has led to high heterogeneity within the population, 
 and there is a need for greater use of 
 objective measures in diagnosis to better understand the underlying mechanisms 
@@ -97,6 +124,14 @@ doctors with complaints of insomnia may be incorrectly classified and treated.
 ```
 
 
+In contrast to many other sleep disorders that are diagnosed through PSG 
+data, diagnosis of insomnia is recommended based on subjective reports of 
+impairment through self-assessed questionnaires 
+[@americanacademyofsleepmedicine2005]. 
+
+decreased sleepiness as measured through sleep latency [@roehrs2011; @huang2012]. 
+
+
 #### Hyperarousal in ID
 Neurobiological hyperarousal in ID is observed through increased fast 
 frequency EEG activity during sleep and wake [@zhao2021].
@@ -108,6 +143,12 @@ Additionally, high frequency activity is associated with poorer subjective sleep
 quality [@perlis2001]. 
 Hyperarousal persists during wake, with ID being associated with increased alpha 
 power during resting wake, indicating increased wakefulness [@feige2017]. 
+
+
+. 
+Sleep state misperception has been observed in ID patients with reduced delta power in NREM sleep, with both subjective and objective short sleep [@kao2021].
+In addition to redued delta pwoer, there is also a global increase in wake-like fast-frequency brain activity during both NREM and REM sleep [@stephan2021]. 
+These findings suggest that sleep misperception may be better conceptualised as sleep mismeasurement, as the localised sleep and wake patterns are not accurately captured by standard sleep scoring methods which do not account for the coexistance of localised variations in cortical activation that correlate with subjective wake [@stephan2023].
 
 
 ## NRS as a disorder
@@ -336,6 +377,19 @@ EEG measures of drowsiness in response to sleep deprivation in healthy populatio
 
 
 
+## Hypotheses
+
+
+Finally, to examine if delta power is a potential mechanism 
+for non-refreshing sleep in NRS, we investigated if clusters associated with a 
+higher slowing ratio were associated with reduced delta power during the 
+previous night's sleep.
+
+```By examining regional brain activity during resting wake, the study aims
+to examine if there are differences in how NRS, ID and HC experience and 
+dissipate sleep pressure. Differences in delta power and SWA among groups may
+reveal differences in how sleep pressure is dissipated and if there are 
+adaptive processes emerging as a result of ongoing sleep deprivation.```
 
 # Methods
 

@@ -1,0 +1,1321 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{setspace}\doublespacing \usepackage{indentfirst}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Thesis},
+  pdfauthor={Anastasia Stuart},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Thesis}
+\author{Anastasia Stuart}
+\date{2024-08-17}
+
+\begin{document}
+\maketitle
+
+\vspace*{\fill}
+
+\noindent \textit{
+I, Anastasia Stuart confirm that the work presented in this thesis is my own. Where information has been derived from other sources, I confirm that this has been indicated in the thesis.
+} \vspace*{\fill} \pagenumbering{gobble} \newpage
+
+\pagenumbering{gobble}
+
+\tableofcontents
+
+\newpage
+
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\doublespacing
+\setlength{\parindent}{0.5in}
+
+\section{Introduction}\label{introduction}
+
+\subsection{Problem statement}\label{problem-statement}
+
+Non-restorative sleep (NRS) is a condition characterised by unrefreshing
+sleep upon awakening despite normal sleep duration and architecture as
+measured by polysomnography (PSG), leading to excessive daytime fatigue,
+sleepiness, and diminished quality of life (Roth et al., 2010). Despite
+the impact of this condition, there are no established guidelines for
+diagnosis or clinical management, and it is not included in the
+Diagnostic and Statistical Manual-5-TR (Association, 2022). NRS has
+previously been clinically managed as a subtype of insomnia disorder
+(ID) despite evidence suggesting it is phenotypically distinct with a
+different underlying aetiology (\textbf{cite?}).
+
+Both disorders are associated with increased daytime fatigue and
+sleepiness, however there may be different causal mechanisms leading to
+these symptoms. A major distinction between ID and NRS is sleep
+architecture, with a marker of ID being percieved shortened overnight
+sleep duration or frequent overnight arousals, which are not present in
+NRS. The dysfunctional sleep architecture experienced by ID populations
+is hypothesised to be a causal factor for increased fatigue
+(\textbf{cite?}), however this population does not experience increased
+sleep propensity in comparison to healthy controls
+(\textbf{fasiello2023?}). Although NRS is associated with normal sleep
+architecture, it may be linked to a reduction in slow wave activity
+(SWA) (Kao et al., 2021) preventing the dissipation of sleep pressure.
+
+Low SWA power during sleep leads to ineffective dissipation of
+accumulated sleep pressure, while increased SWA in wake is associated
+with increased feelings of sleepiness (\textbf{cite?}). Subjective
+sleepiness is \textbf{important because of why}
+
+\texttt{EEG\ spectral\ power\ during\ sleep,\ in\ contrast\ to\ standard\ polysomnography\ or\ questionnaires,\ may\ provide\ a\ better\ biomarker\ for\ distinguishing\ insomnia\ subtypes.}
+
+Although this population has normal sleep parameters as measured by
+traditional PSG methodologies, new technologies and techniques such as
+HD-EEG and spectral analysis enable exploration of the underlying neural
+mechanisms in greater resolution, which may reveal differences in sleep
+processes that result in non-restorative sleep.
+
+In order to explore if NRS is a result of dysfunctions in SWA processes
+during sleep and wake in comparison to healthy populations and those
+with ID, this study will high-density electroencephalography (HD-EEG) to
+examine the power and topographic variance of SWA during resting wake
+and sleep. Additionally, it will examine if there are group differences
+in the correlation between subjective sleepiness and SWA following
+sleep.
+
+\section{Introduction to sleep
+disorders}\label{introduction-to-sleep-disorders}
+
+\subsection{Insomnia disorder}\label{insomnia-disorder}
+
+ID is the most common sleep disorder in Australia with an estimated
+prevalence of 23.2\% (Appleton et al., 2022). It is characterised by
+complaints of shortened overnight sleep, difficulty with sleep
+initiation, or frequent overnight arousals causing clinically
+significant distress or dysfunction in daily life (Association, 2022).
+Diagnosis is recommended to be made though subjective self-reporting
+rather than polysomnographic (PSG) data (American Academy of Sleep
+Medicine, 2005), as this population often have normal objective sleep
+paramaters as measured by PSG data (\textbf{cite?}). ID is associated
+with diminished quality of life (\textbf{kyle2010?}), increased risk of
+comorbid psychiatric disorders (Perlis et al., 2022) and increased
+daytime fatigue (\textbf{kim2019?}). These symptoms lead to a
+significant health impact, however the pathophysiology and etiology of
+ID remains unclear.
+
+A proposed causal and perpetuating factor in ID is 24-hour hyperarousal,
+being an increase of physiological, cognitive and cortical activity that
+contributes to the subjective and objective symptoms of the disorder
+(Dressle \& Riemann, 2023; Riemann et al., 2010).
+
+ID is proposed to be caused and perpetuated by increased physiological
+and neurobiological arousal, preventing sleep initiation and leading to
+increased overnight awakenings (Dressle \& Riemann, 2023; Riemann et
+al., 2010). Cortical hyperarousal is present in ID as observed through a
+24-hour increase in fast frequency brain activity, particularly in the
+beta frequency (\textbf{shi2022?}). Hyperarousal can prevent daytime
+sleepiness as measured through sleep latency despite significant
+fatigue, as the dominance of wake-like neural activity in the beta
+frequencies prevents a global lapse of consctiousness
+(\textbf{shi2022?}).
+
+Daytime fatigue, being the subjective experience of low energy
+(\textbf{raizen2023?}), is the most prevalent daytime complaint in this
+population and is associated with the most significant detrimental
+impact to daily functioning (\textbf{kyle2010?}). Severe fatigue is
+associated with greater insomnia symptom severity, daytime sleepiness,
+depressive symptoms, and increased habitual sleep duration
+(\textbf{kim2019?}).
+
+Despite the prevalence of fatigue within the population, this population
+does not consistently exhibit increased measures of sleepiness. The
+prevalence of excessive daytime sleepiness (EDS) as measured by sleep
+propensity within ID varies between 10-41.61\% and is unrelated to
+insomnia symptom severity (Hein et al., 2017; \textbf{fasiello2023?};
+\textbf{seong2022?}). Additionally, despite increased fatigue, ID
+populations display similar or increased sleep latency in comparison to
+healthy controls (\textbf{cite?}).
+
+The contrasting experiences of increased fatigue with reduced sleepiness
+may be caused by the competing influences of hyperarousal and sleep
+pressure (\textbf{marques2024?}).
+
+Individuals experiencing a misperception between their subjective and
+ojective sleep were intitially hypothesised to have an inability to
+accurately percieve their sleep or wake state leading to a skewed
+perception of their wake after sleep onset (\textbf{dorsey1997?}).
+However, with the introduction of more refined measurement techniques
+including HD-EEG and power spectral analysis, research has found that an
+increase of `wake-like' brain activity in the alpha, sigma, beta and
+gamma bands during sleep is associated with increased percieved
+wakefulness (\textbf{andrillon2020?}; \textbf{krystal2002?};
+\textbf{lecci2020?}). These findings have led the suggestion that
+sleep-state misperception may be due to the inability of current
+recording and analysis techniques to accurately identify wake-like
+intrusions into sleep, and the misperception experienced by ID
+populations possibly being better conceptualised as a mismeasurement
+instead (Stephan \& Siclari, 2023).
+
+As a hallmark of ID is the inability to fall asleep, measuring
+sleepiness through sleep latency is insufficient for measuring
+sleepiness. Sleepiness perception, or the subjective evaluation of
+sleepiness, may provide
+
+In contrast to many other sleep disorders that are diagnosed through PSG
+data, diagnosis of insomnia is recommended based on subjective reports
+of impairment through self-assessed questionnaires (American Academy of
+Sleep Medicine, 2005).
+
+decreased sleepiness as measured through sleep latency (Huang et al.,
+2012; Roehrs et al., 2011).
+
+\subsection{Non-restorative sleep}\label{non-restorative-sleep}
+
+Although both conditions are characterised by complaints of inadequate
+sleep, NRS is distinct from ID due to having a normal sleep duration and
+architecture as measured by PSG (Roth et al., 2010). Patients have a
+primary complaint of sleep being subjectively unrefreshing or
+unrestorative without a comorbid sleep disorder (Stone et al., 2008).
+Prevalence in range of 1.4-35\% across studies and populations (Zhang et
+al., 2012) although variation in definitions and a lack of a validated
+measure poses a challenge for classification. Daytime impairments
+associated with NRS include significant daytime fatigue, reduced
+cognitive performance, and reduced psychological well-being, leading to
+reduced quality of life and impaired daily function (\textbf{cite?}).
+(Neu et al., 2015)
+
+Despite the significant effects of the condition, the symptom of
+non-restorative sleep was removed from the diagnostic criteria of ID in
+the DSM-5, meaning this population is diagnosed as ``other specified
+sleep-wake disorder'' (Association, 2022). As NRS may be its own unique
+disorder with an underlying neurobiological cause, it is essential to
+develop diagnostic criteria and understand the associated neural
+mechanisms to improve outcomes for patients.
+
+Although this population has normal sleep duration and architecture,
+unrefreshing sleep may be a consequence of disruptions in physiological
+processes occurring during slow-wave sleep, which are critical for
+neural function (Kao et al., 2021; Tononi \& Cirelli, 2006).
+\texttt{this\ population\ does\ not\ have\ cortical\ hyperarousal} Power
+spectral analysis may present an improved criteria for classifying and
+understanding the cause of non-restorative sleep in this population. NRS
+patients exhibit lower SWA during NREM sleep compared to healthy
+controls, despite having similar objective sleep duration (Kao et al.,
+2021). This dysfunctional SWA during sleep may be associated with
+increased SWA during wake (\textbf{cite?}), however further exploration
+using improved technology is required.
+
+\section{Mechanisms of sleep}\label{mechanisms-of-sleep}
+
+\subsection{Neurophysiological correlates of
+sleep}\label{neurophysiological-correlates-of-sleep}
+
+Sleep is behaviourally defined as a reversible reduction in
+responsiveness to external stimuli, accompanied with measurable brain
+activity patterns (Cirelli \& Tononi, 2008). The neurophysiological
+correlates of sleep and wake in humans can be measured through EEG
+recordings of brain activity patterns, providing a spatiotemporally
+integrated recording of neuronal signals across the cortical surface
+(Buzsáki et al., 2012). Wakefulness is characterised through low
+amplitude, high frequency signals in beta and alpha frequencies,
+accompanied by irregular muscle activity recorded in electromyogram
+(EMG). Non-rapid eye movement (NREM) sleep is characterised by reduced
+muscle movement and the appearance of high-amplitude slow oscillations
+of delta frequency (0.5-4 Hz), deemed slow wave activity (SWA). Sleep
+progresses through cycles of brain activity throughout the night, with
+the greatest prevalence of SWA appearing in N3 sleep (Achermann \&
+Borbély, 2003).
+
+\subsection{Sleep homeostasis}\label{sleep-homeostasis}
+
+Sleep is regulated by both a homeostatic and circadian system, wherein
+the homeostatic system increases the level of perceived sleepiness as
+waking time increases, while the circadian system regulates internal
+synchrony with the environment (Borbély, 1982). The homeostatic system
+determines the quantity and intensity of sleep, creating an accumulation
+of perceived sleepiness deemed ``sleep pressure'' (Borbély et al.,
+2016). Sleep pressure increases in proportion to the duration and
+intensity of the waking episode, evident through increased sleep
+duration and sleep intensity (Benington, 2000; Borbély, 1982). Sleep
+pressure can be measured through SWA, being greatest during the first
+period of N3 sleep and dissipating in response to sleep duration
+(\textbf{cite?}).
+
+Sleep homeostasis dysfunction may be a causal factor in the impairments
+observed in ID and NRS patients (Pigeon \& Perlis, 2006;
+\textbf{cite?}). In patients with insomnia with short sleep duration,
+there is a global reduction in SWA, while insomnia patients with normal
+sleep duration as measured by PSG can have either reduced delta power or
+normal delta power (Kao et al., 2021). Overnight SWA has not previously
+been examined in a NRS population.
+
+\subsection{SWA}\label{swa}
+
+Slow waves are synchronised neuronal oscillations of membrane potential
+between hyperpolarised and depolarised states originating in
+thalamocortical loops which propagate through the brain (Achermann \&
+Borbély, 2003; Steriade et al., 2001). Although the precise function of
+SWA remains unclear, it appears to be critical for cellular maintenance
+and repair, allowing neurons to reverse minor cellular damage before it
+becomes irreversible (Vyazovskiy \& Harris, 2013). The frequency,
+amplitude and spatial topography of SWA is additionally influenced by
+sleep homeostasis, creating measurable variations in underlying neuronal
+activity (Krueger et al., 2019). Increased sleep pressure leads to
+longer periods of hyperpolarisation and greater synchrony between brain
+regions, which are reduced as sleep pressure dissipates (Vyazovskiy et
+al., 2011). Increased synchrony can be measured using HD-EEG through
+cluster analysis, which provides greater spatial resolution than EEG.
+
+SWA has topographic variance across the cortex, varying in a
+use-dependent manner (Krueger \& Obäl Jr., 1993). SWA has an
+antero-posterior cortical progression, with the greatest activity in the
+frontal regions at sleep onset (Huber et al., 2000). Increased SWA
+following sleep deprivation is additionally greatest in the frontal
+cortex (Cajochen et al., 1999; Werth et al., 1996). Repetitive task
+performance recruiting functional areas of the brain, such as the motor
+or sensory cortices, leads to increased regional SWA during subsequent
+sleep (Huber et al., 2004; Vyazovskiy et al., 2008). These findings
+suggest that SWA is a localised phenomenon, appearing in response to
+accumulated sleep pressure and dissipating with sleep.
+
+\texttt{is\ now\ well\ established\ that\ localised\ sleep\ and\ wake\ patterns,\ which\ are\ not\ adequately\ captured\ by\ standard\ sleep\ recordings\ (PSG)\ and\ scoring\ methods,\ can\ coexist\ in\ both\ physiological\ and\ pathological\ conditions,\ and\ likely\ determine\ sleep-related\ conscious\ experiences\ {[}@siclari2017{]}}
+
+\section{Daytime impacts}\label{daytime-impacts}
+
+\subsection{SWA in wake}\label{swa-in-wake}
+
+Although SWA is a characteristic of sleep, intrusions of localised SWA
+can also be observed during wake in a use and time-dependent manner in
+response to the accumulation of sleep pressure (Huber et al., 2004;
+Krueger et al., 2019). Rodent studies have found increased SWA in local
+cortical networks in response to sleep deprivation despite being
+physiologically awake, increasing in intensity and synchronicity with
+the duration of wake (Vyazovskiy \& Harris, 2013). Localised increases
+in SWA have additionally been observed in humans in response to
+prolonged wakefulness, being greatest in the frontal and lateral
+centro-parietal regions compared to baseline (Hung et al., 2013; Plante
+et al., 2016). The increase of slower frequency power during wake is
+hypothesised to be an adaptive process of cortical downregulation,
+allowing cells to prevent long-term damage during periods of extended
+wake by engaging in the restorative processes observed in slow-wave
+sleep while maintaining consciousness (Vyazovskiy \& Harris, 2013).
+These findings suggest that intrusions of SWA in wake may be
+representative of accumulated sleep pressure, and therefore a measure of
+physiological fatigue.
+
+Increased SWA is correlated with subjective and objective markers of
+fatigue, meaning it is a variable of interest for this study. The
+appearance of SWA in task-related regions is associated with diminished
+behavioural performance (Bernardi et al., 2015). HD-EEG recordings
+observed a increased SWA during wake in the left frontal brain region
+following a language task and posterior parietal region following a
+visuomotor task, which was additionally associated with increased SWA
+during recovery sleep (Hung et al., 2013). This suggests that the
+localisation of sleep pressure observed in sleep is also observed during
+wake.
+
+\subsection{Objective Drowsiness}\label{objective-drowsiness}
+
+Objective drowsiness can be measured through a range of tests, measuring
+associated but distinct characteristics linked to the accumulation of
+sleep pressure. The most common measures used in clinical practice and
+scientific research are the multiple sleep latency test which measures
+sleep propensity, the maintenance of wakefulness test measuring the
+consequences of sleepiness, and the psychomotor vigilance task which
+measures sustained attention and reaction time, known to diminish with
+increased sleepiness (Basner \& Dinges, 2011; Martin et al., 2023).
+However, these measures do not directly measure the experience of
+drowsiness, instead measuring its consequence. As the consequences of
+drowsiness may be create different experiences across populations, it is
+therefore important that the neural activity of drowsiness itself,
+rather than its consequences, are measured.
+
+The Karolinska Drowsiness Test (KDT) was developed as a specific and
+sensitive measure of drowsiness that can provide insight into the
+neurobiological markers of drowsiness across populations (Åkerstedt et
+al., 2014; Åkerstedt \& Gillberg, 1990). The test uses EEG to measure
+brain activity during resting wake, which can be transformed into power
+spectra using a fast Fourier transform and then assessed through power
+spectral analysis (\textbf{cite?}). The test has been validated in
+healthy populations, being a reliable marker of drowsiness in accordance
+with sleep pressure and circadian rhythm fluctuations (Kaida et al.,
+2006).
+
+\subsection{Subjective sleepiness}\label{subjective-sleepiness}
+
+Subjective sleepiness is a measure of an individual's self-assessed
+level of sleep pressure, objective drowsiness, or sleep propensity,
+which flucuates throughout the day in response to the influence of sleep
+homeostasis and circadian systems (Åkerstedt et al., 2014). There are
+two dimensions of sleepiness, sleepiness propensity being the likelihood
+of an individual sleeping in a given situation, and sleepiness
+perception being the subjective assessment of an individuals feelings of
+sleepiness (Johns, 2009). Howecer, sleepiness perception is not
+experienced uniformly across populations, with the differential
+influences of factors including fatigue and arousal causing individuals
+to possibly mispercieve their internal state (Marques et al., 2019).
+
+In healthy populations, subjective sleepiness scores correlate closely
+with objective measures of drowsiness, such as sleep latency
+(\textbf{cite?}), reaction time (\textbf{cite?}), and EEG spectral power
+(\textbf{cite?}). Subjective sleepiness is predominantly measured
+through self-reported questionnaires that measure either state or trait
+sleepiness. The most prevalent measure of trait somnolence is the
+Epsworth Sleepiness Scale (ESS), which measures an individual's
+propensity to sleep in given scenarios robust to variations in sleep
+pressure and circadian variance (Johns, 1991; Martin et al., 2023). The
+Karolinska Sleepiness Scale (KSS) measures state sleepiness using a
+1-item nine point Likert scale, and is highly correlated with EEG
+measures of drowsiness in response to sleep deprivation (Åkerstedt et
+al., 2014; Kaida et al., 2006). This correlation makes the KSS a useful
+measurement tool for examining the relationship between objective and
+subjective measures of drowsiness on clinical populations, as it
+measures sleepiness at a particular point in time which can then be
+compared to EEG activity.
+
+The feeling of subjective sleepiness is not experienced homogeneously
+across populations.\\
+Excessive daytime sleepiness is one of the most common complaints
+associated with NRS, with significantly increased daytime fatigue, and
+self-reported cognitive and psychological impairments (Sarsour et al.,
+2010; Tinajero et al., 2018). Daytime sleepiness is also present in ID,
+with excessive daytime sleepiness (EDS) having a prevalence of 45\%
+(Hein et al., 2017). Insomnia symptom severity is correlated to
+increased EDS scores across the day, particularly in the morning and
+evening (Balter et al., 2024). However, these symptoms are additionally
+associated with hyperarousal, leading to a phenomenon of co-activation
+of the parasympathetic and sympathetic nervous systems. This
+co-activation leads to high and low arousal symptoms being experienced
+concurrently, leading to greater variability in symptoms. Examining how
+the experience of subjective sleepiness varies across disorders will
+lead to greater understanding of the sujective experience of sleepiness
+across both disorders.
+
+Although subjective sleepiness scores strongly correlate with objective
+measures of drowsiness in healthy populations, there is a
+subjective-objective mismatch observed in individuals with ID, possibly
+due to increased fast-frequency activity (\textbf{cite?}). ID is
+associated with a discrepancy between objective sleep as measured by PSG
+and subjective sleep as reported by a sleep diary. Patients with ID
+report a reduction in sleep duration of up to 4 hours greater than that
+measured by PSG, however this discrepancy may be attributable to
+mismeasurement rather than misperception (Benz et al., 2023; Stephan \&
+Siclari, 2023). Localised spectral power cannot be recorded through
+traditional PSG methods, which are hypothesised to be a determinant of
+sleep-related consciousness (Siclari \& Tononi, 2017). The relationship
+between EEG spectral power and subjective state drowsiness has not been
+explored in clinical populations, and greater understanding of this
+relationship is needed.
+
+\section{Aim}\label{aim}
+
+This study aimed to explore if there are differences in how populations
+with NRS, ID, and healthy controls experience subjective and objective
+sleepiness, and if these differences are associated with topographic
+differences of SWA during resting wake and overnight sleep. Using mixed
+linear models, we aimed to assess if there was a difference in the
+correlation between subjective and objective measures based on
+population group. Finally, to examine if delta power is a potential
+mechanism for non-refreshing sleep in NRS, we investigated if clusters
+associated with a higher slowing ratio were associated with reduced
+delta power during the previous night's sleep.
+
+\texttt{By\ examining\ regional\ brain\ activity\ during\ resting\ wake,\ the\ study\ aims\ to\ examine\ if\ there\ are\ differences\ in\ how\ NRS,\ ID\ and\ HC\ experience\ and\ \ dissipate\ sleep\ pressure.\ Differences\ in\ delta\ power\ and\ SWA\ among\ groups\ may\ reveal\ differences\ in\ how\ sleep\ pressure\ is\ dissipated\ and\ if\ there\ are\ \ adaptive\ processes\ emerging\ as\ a\ result\ of\ ongoing\ sleep\ deprivation.}
+
+\subsection{Hypotheses}\label{hypotheses}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  KSS scores upon awakening will be highest in the NRS group compared to
+  ID and healthy controls, reporting higher subjective sleepiness
+  following sleep.
+\item
+  The correlation between KSS score and global Slowing Ratio will be
+  significantly different between groups.
+\end{enumerate}
+
+3.Topographic cluster analysis of SR will reveal cluster differences
+between groups. We hypothesise that at least one cluster of EEG channels
+will demonstrate a significantly different slowing ratio power that will
+differentiate the NRS group from ID and healthy controls.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  For those with NRS, channel clusters with high values of slowing ratio
+  will also show reduced delta power in NREM3 sleep.
+\end{enumerate}
+
+\newpage
+
+\section{Method}\label{sec:method}
+
+\subsection{Study design}\label{study-design}
+
+The study was approved by the Macquarie University Human Research Ethics
+Committee (FoRA ID 17112) and all participants provided written informed
+consent.
+
+The study was a cross-sectional, age and sex matched case-control study.
+The study employed a between-participants mixed linear model design. The
+independent variables was clinical group and EEG channel, and the
+dependent variables were KSS score and spectral power. Additionally,
+topographic anaysis of spectral power \ldots{}
+
+\subsection{Participants}\label{participants}
+
+964 participants completed the online expression of interest
+questionnaire, 352 found as eligible for participation, and 33
+participants were included in the study.
+
+. Of these, 8 were unable to be contacted via email and 161 did not
+respond to a follow up email. 180 participants proceeded to
+pre-screening. 145 completers were excluded from participation during
+the pre-screening and screening visits, with 44 (30\%) being excluded
+for medication use and 54 (15\%) being excluded due to having to age or
+sex match.
+
+Predetermined sample size was 12 participants from each clinical
+population, determined \textbf{how?} Due to the strict exclusion
+criteria and time constraints, the total sample analysed was 33
+participants (13 NRS; 11 ID; 9 Control).
+
+Due to the influence of age and sex on sleep architecture (Mongrain et
+al., 2005), participants were sex and age matched with a maximum
+difference ± 2 years.
+
+\textbf{how many} people expressed interest through an online
+recruitment survey. \textbf{how many} were excluded due to \textbf{what
+reasons}
+
+Recruitment was conducted through referrals from the Woolcock Institute
+and the Royal Prince Alfred sleep clinics, in addition to social media
+advertising.
+
+Participants were excluded if they had any comorbid sleep apnoea, as
+measured by wrist oximetry (oxygen desaturation index above 10 during
+any night of monitoring) (WristOX has high sensitivity of diagnosing
+OSAS (Nigro et al., 2009)). Participants were additionally excluded if
+they had clinically significant depression or anxiety scores as measured
+through the DASS-21, heavy alcohol use, pregnancy, circadian rhythm
+disruption through shift work or recent international travel, or a
+natural sleep time that of less than 6 hours or outside the hours of
+21:30 and 8:00. As medications are known to affect sleep architecture,
+participants taking regular medications affecting sleep were excluded.
+
+The inclusion criteria for the ID group was as set by the DSM-5-TR
+(Association, 2022) criteria, with difficulty initiating or maintaining
+sleep persisting for over 1 month causing clinically significant
+distress or impairment in daily life. They additionally were required to
+have a Pittsburgh Sleep Quality Index (PSIQ) score of 6 or higher, and
+an Insomnia Severity Index (ISI) score of 16 or higher.
+
+Individuals in the NRS group could not have a mean Total Sleep Time
+(TST) below six hours as measured by sleep diary or actigraphy, or a
+mean refreshed score above 3. Inclusion in this group required a PSQI of
+6 or more, with subcomponent scores of at least 2 on the PSQI Component
+1 and 10 on PSQI Component 5.
+
+Healthy controls needed to have a PSQI score of 4 or less and an ISI
+score of 6 or less.
+
+All participants provided written consent and participation could be
+discontinued at any time. Participants were remunerated \$100 upon
+successful completion of the study.
+
+Due to the strict inclusion and exclusion criteria, of the N
+participants that completed the expression of interest form, only N were
+eligible for inclusion.
+
+\subsection{Protocol}\label{protocol}
+
+Participants attended the sleep laboratory at the Woolcock Institute of
+Medical Research for initial screening by a sleep physician.
+Participants baseline sleep and activity patterns were measured via an
+Actigraphy watch (\textbf{which one}) for 7 days prior, which was
+validated against self-reported sleep diaries. Participants additionally
+completed the Restorative Sleep Questionnaire Daily Version (RSQ-D) for
+7 days prior.
+
+Upon arrival at the laboratory at 17:00, participants underwent final
+medical screening and a series of cognitive assessments. They were then
+served dinner and fitted with a high-density electroencephalography
+(HD-EEG) cap \textbf{which one}. Further cognitive assessments were
+conducted before the administration of the Karolinska Drowsiness Test
+(KDT) approximately 45 minutes prior to their habitual bedtime.
+Overnight polysomnography using HD-EEG was recorded, in addition to
+sleep video recording using a AXIS P3225-LV camera.
+
+Lights were turned on at the participant's natural wake time and they
+were asked if they were already awake or wakened by researchers. The KSS
+and KDT was administered five minutes post habitual wake time. Following
+the morning KDT, participants completed further cognitive testing and an
+MRI scan.
+
+\subsection{Measures}\label{measures}
+
+\subsubsection{KSS}\label{kss}
+
+Subjective sleepiness was assessed 15 minutes after natural wake time
+using the Karolinska Sleepiness Scale (KSS), a 9 point scale with verbal
+anchors at each step (Åkerstedt \& Gillberg, 1990). It is a measure of
+an individual's perceived sleepiness at a given point and is therefore
+difficult to assess test-retest reliability, however it has demonstrated
+reliability over two nights of sleep loss with a one week recovery
+period (Gillberg et al., 1994). It is sensitive to manipulations
+affecting sleepiness and is used consistently across individuals
+(Åkerstedt et al., 2014)
+
+The KSS has been validated in healthy populations as being closely
+related to EEG and behavioral variables of sleepiness (Åkerstedt et al.,
+1991; Kaida et al., 2006). Correlations between KSS scores and EEG
+measures of sleepiness are over \emph{r} = .5 {[}Åkerstedt \& Gillberg
+(1990); vandenberg2005{]} and correlate (\emph{r} = .57) with response
+times on a vigilance test (Kaida et al., 2006).
+
+\subsubsection{KDT}\label{kdt}
+
+The Karolinska Drowsiness Test (KDT) was administered immediately
+following the KSS and was used to measure electrophysiological
+drowsiness as measured through HD-EEG recordings. Participants were
+instructed ``Look at the dot in front of you and be as relaxed as
+possible while staying awake. Keep your head and body still and minimize
+blinking. After a few minutes, I'll ask you to close your eyes and keep
+them closed for a few minutes. Finally, I'll ask you to open your eyes
+again and keep them open for a few minutes.'' The test is 7 minutes long
+with 3 phases (eyes open/eyes closed/eyes open) each lasting 120
+seconds. \texttt{why\ do\ we\ do\ eyes\ open\ and\ eyes\ closed}
+
+\subsubsection{HD-EEG}\label{hd-eeg}
+
+High-density EEG data were collected using 256-channel electrode caps
+(\textbf{which one}) and a \textbf{which} amplifier and \textbf{which}
+software (digitised?) with electodes referenced to the vertex (CZ)
+(\textbf{cite?}). Electrodes were placed along the scalp, mastiods,
+\textbf{anywhere else?}. Electrooculography (EOG) were recorded using
+electrodes placed \emph{where} and electrocardiogram \emph{?} During
+acquisition, data were low-pass filtered at \textbf{70} Hz, high-pass
+filtered at \textbf{0.3} Hz, and notch filtered at \textbf{50} Hz
+(\textbf{cite?}). Electrode impedences were below \textbf{what} kΩ.
+
+\texttt{filter\ and\ hanning\ window}
+
+The data was visually inspected for artefacts and arousals using a
+\textbf{semi-automatic process} and was manually verified and cleaned.
+
+\begin{verbatim}
+  ```The record was visually inspected for bad channels and channels identified as poor quality (2.5% ± 1.4% of 164 chan- nels) were replaced with an interpolated EEG signal using a spher- ical spline interpolation algorithm. After artifact removal and bad channel interpolation, the EEG signals were average-referenced.``` **did we do this?**
+  
+  
+\end{verbatim}
+
+\subsection{Data processing}\label{data-processing}
+
+\subsubsection{EEG Preprocessing}\label{eeg-preprocessing}
+
+All preprocessing was completed using the EEG Processor application
+((\textbf{wassing2024?})). Data were visually inspected for artefacts
+and arousals which were removed across all channels. Poor quality
+channels were replaced with an interpolated EEG signal from neighbouring
+channels using linear mixing, weighted by the squared non-linear
+distance \emph{on average how many per participant, +-SD)}.
+
+\subsubsection{Average referencing}\label{average-referencing}
+
+To improve the accuracy of recorded signals, data was re-referenced to a
+common average signal created through finding the mean global signal
+across all electrodes. This average signal was then subtracted from each
+individual electrode's signal, reducing the influence of a single
+electrode that occurs when using the vertex (CZ) signal as a reference.
+This process enhances the detection of local neuronal activity and
+enables the rich spatial resolution of HD-EEG data.
+
+\subsubsection{Independent components
+analysis}\label{independent-components-analysis}
+
+Following preprocessing, independent components analysis (ICA) was used
+to identify and seperate components that are statistically independent
+from each other in KDT data. This was done using an automated process
+using the MATLAB program \emph{ICLabel}, removing components with a
+weighting of .8 or greater for non-brain activity (Pion-Tonachini et
+al., 2019). Artefact removal of eye, heart, muscle, and electrical
+activity components was conducted, with remaining components being
+back-projected to the EEG dataset via regression resulting in a cleaned
+time series signal.
+
+ICA was unable to be applied to PSG data. Although ICA is effective in
+removing artefacts in short recordings of a stationary subject, it is
+unable to process PSG recordings as signal sources are variable over the
+course of the night. Furthermore, the temporal variability of brain
+activity across sleep stages prevents ICA from being able to reliably
+differentiate between artefacts and brain activity. As ICA was unable to
+be applied to PSG, this data is contaminated by non-brain activity,
+however as the data was visually cleaned for artefacts and interpreted
+with acknowledgement of artefact contamination, it was still used.
+
+\subsubsection{Power spectra}\label{power-spectra}
+
+\begin{verbatim}
+    ```is this where we excluded non-cranial EEG channels?```
+\end{verbatim}
+
+EEG power spectra was obtained for each channel using a fast Fourier
+transform (FFT) to deconstruct the EEG signal from the time domain to
+the frequency domain, allowing it to be analysed in power (squared
+amplitude) in frequency bins (mV2/bin). The power spectra was calculated
+for 50\% overlapping 6-second epochs and obtained for the eyes closed
+condition and a concatenated recording of the eyes open condition.
+\texttt{with\ a\ Hanning\ window,\ resulting\ in\ a\ frequency\ resolution\ of\ 0.25\ Hz}
+\textbf{boundary clip?} EEG spectral power densities were quantified as:
+low delta (0.5-1 Hz), delta (1--4.5 Hz), theta (4.5--8 Hz), alpha (8--12
+Hz), sigma (12--15 Hz), beta (15--25 Hz), and gamma (25--40 Hz). These
+frequency bands were chosen as they reliably identify vigilance states
+in humans ** paper from Garry?** Power spectral densities represent the
+distribution of power in a signal across frequencies, allowing analysis
+of the frequency components that are most significant in each epoch's
+signal. This allowes the measurement of neuronal activity on vigilance
+states.
+
+This data was then expressed as both an absolute and normalised
+\textbf{global?} value for all bins.
+
+\subsubsection{Slowing ratio}\label{slowing-ratio}
+
+The EEG slowing ratio during each KDT condition was calculated by {[}(δ
++ θ)/ (α + σ + β){]} power.
+
+\subsubsection{Alpha attenuation
+coefficient}\label{alpha-attenuation-coefficient}
+
+The alpha attenuation coefficient (AAC) measures alpha frequency power
+differences between eyes open and eyes closed conditions. Alpha power is
+expected to decrease during the eyes closed condition and increase
+during the eyes open condition. A high AAC score reflects high
+sleepiness.
+
+\subsection{Statistical analysis}\label{statistical-analysis}
+
+All analyses were performed using MATLAB version r2024a (MathWorks,
+Natick, MA, USA). The normality of the distribution of dependent
+variables, demographic variables, and outliers was conducted using Q-Q
+Plots, Shapiro-Wilk normality tests, and visual inspections of
+histograms.
+
+A one-way analysis of variance (ANOVA) was conducted to determine if
+there was a difference in group mean KSS scores. Post-hoc pairwise
+comparisons were conducted using Tukey's HSD.
+
+Statistical analysis of group-level KDT data was conducted using a
+one-way ANOVA to assess differences in normalised EEG power spectra
+across groups and conditions (eyes open/eyes closed). The potential for
+Type I error during cluster analysis evaluation of EEG data was
+controlled for using statistical nonparametric mapping (SnPM) to resolve
+the challenge of multiple comparisons when using a large number of
+time-frequency comparisons. \texttt{clustermass\ approach} SnPM used 10
+000 random permutatuions of the data to establish a distribution of
+cluster size findings that occur die to chance, which can then be used
+to compare found cluster sizes to. The cluster alpha was set at .05.
+Blocks were permuted as whole-blocks and within-blocks.
+
+To account for non-normality, SR and AAC values were log transformed
+prior to analysis.
+
+\newpage
+
+\section{Results}\label{sec:results}
+
+\subsection{Descriptives}\label{descriptives}
+
+33 participants were included, with the sample consisting of 13
+individuals with Non-Restorative Sleep (NRS), 11 participants with
+Insomnia Disorder (ID), and 9 healthy controls (HC). Table 1 summarises
+the participant demographics and self-report questionnaires.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(knitr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'knitr' was built under R version 4.3.3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+
+\CommentTok{\# Load the CSV file correctly}
+\NormalTok{data2 }\OtherTok{\textless{}{-}} \FunctionTok{read\_csv}\NormalTok{(}\StringTok{"/Users/anastuart/Documents/Honours/descriptive{-}statistics\_Aug06.csv"}\NormalTok{)}
+
+\CommentTok{\# Group by \textquotesingle{}group\textquotesingle{} column and summarize statistics}
+\NormalTok{descriptives }\OtherTok{\textless{}{-}}\NormalTok{ data2 }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{group\_by}\NormalTok{(group) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{summarize}\NormalTok{(}
+    \AttributeTok{Mean =} \FunctionTok{mean}\NormalTok{(KSS\_AM1, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{),}
+    \AttributeTok{Median =} \FunctionTok{median}\NormalTok{(KSS\_AM1, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{),}
+    \AttributeTok{SD =} \FunctionTok{sd}\NormalTok{(KSS\_AM1, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{),}
+    \AttributeTok{Min =} \FunctionTok{min}\NormalTok{(KSS\_AM1, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{),}
+    \AttributeTok{Max =} \FunctionTok{max}\NormalTok{(KSS\_AM1, }\AttributeTok{na.rm =} \ConstantTok{TRUE}\NormalTok{)}
+\NormalTok{  )}
+
+\CommentTok{\# Format the numeric columns (optional, depending on the desired output)}
+\NormalTok{descriptives[, }\SpecialCharTok{{-}}\DecValTok{1}\NormalTok{] }\OtherTok{\textless{}{-}} \FunctionTok{round}\NormalTok{(descriptives[, }\SpecialCharTok{{-}}\DecValTok{1}\NormalTok{], }\DecValTok{2}\NormalTok{)}
+
+\CommentTok{\# Create the table}
+\FunctionTok{kable}\NormalTok{(}
+\NormalTok{  descriptives,}
+  \AttributeTok{caption =} \StringTok{"Descriptive statistics of correct recall by dosage."}
+\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}lrrrrr@{}}
+\caption{Descriptive statistics of correct recall by
+dosage.}\tabularnewline
+\toprule\noalign{}
+group & Mean & Median & SD & Min & Max \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+group & Mean & Median & SD & Min & Max \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+CTL & 4.22 & 4 & 1.09 & 2 & 6 \\
+ID & 5.09 & 5 & 2.17 & 2 & 9 \\
+NRS & 5.77 & 6 & 1.92 & 1 & 8 \\
+\end{longtable}
+
+\{r, message=FALSE\} library(knitr) library(tidyverse) library(dplyr)
+
+data2 \textless-
+data\_frame(``/Users/anastuart/Documents/Honours/descriptive-statistics\_Aug06.csv'')
+descriptives \textless- data2 \%\textgreater\% group\_by(``group''\,``)
+\%\textgreater\% summarize( Mean = mean(KSS\_AM1) , Median =
+median(KSS\_AM1) , SD = sd(KSS\_AM1) , Min = min(KSS\_AM1) , Max =
+max(KSS\_AM1) ) descriptives{[}, -1{]} \textless-
+printnum(descriptives{[}, -1{]})
+
+apa\_table( descriptives , caption = ``Descriptive statistics of correct
+recall by dosage.'' , note = ``This table was created with
+apa\_table().'' , escape = TRUE ) ```
+
+\subsection{Comparing KSS scores between
+groups}\label{comparing-kss-scores-between-groups}
+
+Analyses were run on R version 4.3.2 (2023-10-31).
+
+A repeated measures ANOVA was conducted to evaluate the effect of group
+on AM KSS scores. For the KSS\_AM1 scores, the mean score for the
+control group was 4.22 (SD = 1.09), for the ID group was 5.09 (SD =
+2.17), and for the NRS group was 5.77 (SD = 1.92). The median scores
+were 4, 5, and 6, respectively. The minimum and maximum scores were 2
+and 6 for CTL, 2 and 9 for GID, and 1 and 8 for NRS. The analysis
+revealed no significant effect of group, F(2,30)=1.897,p=.168
+
+A post-hoc power analysis conducted in G*power Version 3.1.9.6 reported
+inadequate power for the given effect size, f=0.356. With a set alpha of
+0.05, the power was found to be 0.396.
+
+\texttt{huge\ variance\ in\ KSS\_AM1\ for\ GID,\ NRS\ higher\ but\ affected\ by\ outliers}
+
+The ANOVA (formula: KSS\_AM1 \textasciitilde{} group) suggests that:
+
+\begin{itemize}
+\tightlist
+\item
+  The main effect of group is statistically not significant and medium
+  (F(2, 30) = 1.90, p = 0.168; Eta2 = 0.11, 95\% CI {[}0.00, 1.00{]})
+\end{itemize}
+
+Effect sizes were labelled following Field's (2013) recommendations.
+
+\subsection{Correlation between KSS and slowing ratio scores between
+groups}\label{correlation-between-kss-and-slowing-ratio-scores-between-groups}
+
+\subsection{Correlation between KSS and AAC between
+groups}\label{correlation-between-kss-and-aac-between-groups}
+
+\subsection{Topography of channel-by-channel comparisons between ID and
+NRS
+groups}\label{topography-of-channel-by-channel-comparisons-between-id-and-nrs-groups}
+
+\newpage
+
+\footnotesize
+\setlength{\parindent}{0in}
+
+\section{References}\label{references}
+
+\newpage
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-achermann2003}
+Achermann, P., \& Borbély, A. A. (2003). Mathematical models of sleep
+regulation. \emph{Frontiers in Bioscience-Landmark}, \emph{8}(6),
+683--693. \url{https://doi.org/10.2741/1064}
+
+\bibitem[\citeproctext]{ref-akerstedt2014}
+Åkerstedt, T., Anund, A., Axelsson, J., \& Kecklund, G. (2014).
+Subjective sleepiness is a sensitive indicator of insufficient sleep and
+impaired waking function. \emph{Journal of Sleep Research},
+\emph{23}(3), 242--254. \url{https://doi.org/10.1111/jsr.12158}
+
+\bibitem[\citeproctext]{ref-akerstedt1990}
+Åkerstedt, T., \& Gillberg, M. (1990). Subjective and objective
+sleepiness in the active individual. \emph{International Journal of
+Neuroscience}, \emph{52}(1-2), 29--37.
+\url{https://doi.org/10.3109/00207459008994241}
+
+\bibitem[\citeproctext]{ref-akerstedt1991}
+Åkerstedt, T., Kecklund, G., \& Knutsson, A. (1991). Spectral analysis
+of sleep electroencephalography in rotating three-shift work.
+\emph{Scandinavian Journal of Work, Environment \& Health},
+\emph{17}(5), 330--336. \url{https://www.jstor.org/stable/40965913}
+
+\bibitem[\citeproctext]{ref-americanacademyofsleepmedicine2005}
+American Academy of Sleep Medicine. (2005). International classification
+of sleep disorders. \emph{Diagnostic and Coding Manual}, 148--152.
+
+\bibitem[\citeproctext]{ref-appleton2022}
+Appleton, S. L., Reynolds, A. C., Gill, T. K., Melaku, Y. A., \& Adams,
+R. J. (2022). Insomnia {Prevalence Varies} with {Symptom Criteria Used}
+with {Implications} for {Epidemiological Studies}: {Role} of
+{Anthropometrics}, {Sleep Habit}, and {Comorbidities}. \emph{Nature and
+Science of Sleep}, \emph{14}, 775--790.
+\url{https://doi.org/10.2147/NSS.S359437}
+
+\bibitem[\citeproctext]{ref-americanpsychiatricassociation2022}
+Association, A. P. (2022). \emph{Diagnostic and statistical manual of
+mental disorders} (5th ed., text revision). American Psychiatric
+Association.
+
+\bibitem[\citeproctext]{ref-balter2024}
+Balter, L. J. T., Van Someren, E. J. W., \& Axelsson, J. (2024).
+Insomnia symptom severity and dynamics of arousal-related symptoms
+across the day. \emph{Journal of Sleep Research}, e14276.
+\url{https://doi.org/10.1111/jsr.14276}
+
+\bibitem[\citeproctext]{ref-basner2011}
+Basner, M., \& Dinges, D. F. (2011). Maximizing {Sensitivity} of the
+{Psychomotor Vigilance Test} ({PVT}) to {Sleep Loss}. \emph{Sleep},
+\emph{34}(5), 581--591. \url{https://doi.org/10.1093/sleep/34.5.581}
+
+\bibitem[\citeproctext]{ref-benington2000}
+Benington, J. H. (2000).
+\href{https://www.ncbi.nlm.nih.gov/pubmed/11083605}{Sleep homeostasis
+and the function of sleep}. \emph{Sleep}, \emph{23}(7), 959--966.
+
+\bibitem[\citeproctext]{ref-benz2023}
+Benz, F., Riemann, D., Domschke, K., Spiegelhalder, K., Johann, A. F.,
+Marshall, N. S., \& Feige, B. (2023). How many hours do you sleep? {A}
+comparison of subjective and objective sleep duration measures in a
+sample of insomnia patients and good sleepers. \emph{Journal of Sleep
+Research}, \emph{32}(2), e13802. \url{https://doi.org/10.1111/jsr.13802}
+
+\bibitem[\citeproctext]{ref-bernardi2015}
+Bernardi, G., Siclari, F., Yu, X., Zennig, C., Bellesi, M., Ricciardi,
+E., Cirelli, C., Ghilardi, M. F., Pietrini, P., \& Tononi, G. (2015).
+Neural and {Behavioral Correlates} of {Extended Training} during {Sleep
+Deprivation} in {Humans}: {Evidence} for {Local}, {Task-Specific
+Effects}. \emph{Journal of Neuroscience}, \emph{35}(11), 4487--4500.
+\url{https://doi.org/10.1523/JNEUROSCI.4567-14.2015}
+
+\bibitem[\citeproctext]{ref-borbely1982}
+Borbély, A. A. (1982).
+\href{https://www.ncbi.nlm.nih.gov/pubmed/7185792}{A two process model
+of sleep regulation}. \emph{Human Neurobiology}, \emph{1}(3), 195--204.
+
+\bibitem[\citeproctext]{ref-borbely2016}
+Borbély, A. A., Daan, S., Wirz-Justice, A., \& Deboer, T. (2016). The
+two-process model of sleep regulation: A reappraisal. \emph{Journal of
+Sleep Research}, \emph{25}(2), 131--143.
+\url{https://doi.org/10.1111/jsr.12371}
+
+\bibitem[\citeproctext]{ref-buzsaki2012}
+Buzsáki, G., Anastassiou, C. A., \& Koch, C. (2012). The origin of
+extracellular fields and currents --- {EEG}, {ECoG}, {LFP} and spikes.
+\emph{Nature Reviews Neuroscience}, \emph{13}(6), 407--420.
+\url{https://doi.org/10.1038/nrn3241}
+
+\bibitem[\citeproctext]{ref-cajochen1999}
+Cajochen, C., Foy, R., \& Dijk, D.-J. (1999). Frontal predominance of a
+relative increase in sleep delta and theta {EEG} activity after sleep
+loss in humans. \emph{Sleep Research Online : SRO}, \emph{2}, 65--69.
+
+\bibitem[\citeproctext]{ref-cirelli2008}
+Cirelli, C., \& Tononi, G. (2008). Is sleep essential? \emph{PLOS
+Biology}, \emph{6}(8), e216.
+\url{https://doi.org/10.1371/journal.pbio.0060216}
+
+\bibitem[\citeproctext]{ref-dressle2023}
+Dressle, R. J., \& Riemann, D. (2023). Hyperarousal in insomnia
+disorder: {Current} evidence and potential mechanisms. \emph{Journal of
+Sleep Research}, \emph{32}(6), e13928.
+\url{https://doi.org/10.1111/jsr.13928}
+
+\bibitem[\citeproctext]{ref-gillberg1994}
+Gillberg, M., Kecklund, G., \& Akerstedt, T. (1994). Relations between
+performance and subjective ratings of sleepiness during a night awake.
+\emph{Sleep}, \emph{17}(3), 236--241.
+\url{https://doi.org/10.1093/sleep/17.3.236}
+
+\bibitem[\citeproctext]{ref-hein2017}
+Hein, M., Lanquart, J.-P., Loas, G., Hubain, P., \& Linkowski, P.
+(2017). Prevalence and risk factors of excessive daytime sleepiness in
+insomnia sufferers: {A} study with 1311 individuals. \emph{Journal of
+Psychosomatic Research}, \emph{103}, 63--69.
+\url{https://doi.org/10.1016/j.jpsychores.2017.10.004}
+
+\bibitem[\citeproctext]{ref-huang2012}
+Huang, L., Zhou, J., Li, Z., Lei, F., \& Tang, X. (2012). Sleep
+perception and the multiple sleep latency test in patients with primary
+insomnia. \emph{Journal of Sleep Research}, \emph{21}(6), 684--692.
+\url{https://doi.org/10.1111/j.1365-2869.2012.01028.x}
+
+\bibitem[\citeproctext]{ref-huber2000}
+Huber, R., Deboer, T., \& Tobler, I. (2000). Topography of {EEG Dynamics
+After Sleep Deprivation} in {Mice}. \emph{Journal of Neurophysiology},
+\emph{84}(4), 1888--1893.
+\url{https://doi.org/10.1152/jn.2000.84.4.1888}
+
+\bibitem[\citeproctext]{ref-huber2004}
+Huber, R., Felice Ghilardi, M., Massimini, M., \& Tononi, G. (2004).
+Local sleep and learning. \emph{Nature}, \emph{430}(6995), 78--81.
+\url{https://doi.org/10.1038/nature02663}
+
+\bibitem[\citeproctext]{ref-hung2013}
+Hung, C.-S., Sarasso, S., Ferrarelli, F., Riedner, B., Ghilardi, M. F.,
+Cirelli, C., \& Tononi, G. (2013). Local {Experience-Dependent Changes}
+in the {Wake EEG} after {Prolonged Wakefulness}. \emph{Sleep},
+\emph{36}(1), 59--72. \url{https://doi.org/10.5665/sleep.2302}
+
+\bibitem[\citeproctext]{ref-johns1991}
+Johns, M. W. (1991). A new method for measuring daytime sleepiness: {The
+Epworth} sleepiness scale. \emph{Sleep}, \emph{14}(6), 540--545.
+\url{https://doi.org/10.1093/sleep/14.6.540}
+
+\bibitem[\citeproctext]{ref-johns2009}
+Johns, M. W. (2009). What is excessive daytime sleepiness !!@cite fix
+this citation!! In \emph{Sleep deprivation: {Causes}, effects and
+treatment} (pp. 59--94). Nova Science Publishers Inc.
+
+\bibitem[\citeproctext]{ref-kaida2006}
+Kaida, K., Takahashi, M., Akerstedt, T., Nakata, A., Otsuka, Y.,
+Haratani, T., \& Fukasawa, K. (2006). Validation of the {Karolinska}
+sleepiness scale against performance and {EEG} variables. \emph{Clinical
+Neurophysiology: Official Journal of the International Federation of
+Clinical Neurophysiology}, \emph{117}(7), 1574--1581.
+\url{https://doi.org/10.1016/j.clinph.2006.03.011}
+
+\bibitem[\citeproctext]{ref-kao2021}
+Kao, C.-H., D'Rozario, A. L., Lovato, N., Wassing, R., Bartlett, D.,
+Memarian, N., Espinel, P., Kim, J.-W., Grunstein, R. R., \& Gordon, C.
+J. (2021). Insomnia subtypes characterised by objective sleep duration
+and {NREM} spectral power and the effect of acute sleep restriction:
+{An} exploratory analysis. \emph{Scientific Reports}, \emph{11}(1),
+24331. \url{https://doi.org/10.1038/s41598-021-03564-6}
+
+\bibitem[\citeproctext]{ref-krueger2019}
+Krueger, J. M., Nguyen, J. T., Dykstra-Aiello, C. J., \& Taishi, P.
+(2019). Local sleep. \emph{Sleep Medicine Reviews}, \emph{43}, 14--21.
+\url{https://doi.org/10.1016/j.smrv.2018.10.001}
+
+\bibitem[\citeproctext]{ref-krueger1993}
+Krueger, J. M., \& Obäl Jr., F. (1993). A neuronal group theory of sleep
+function. \emph{Journal of Sleep Research}, \emph{2}(2), 63--69.
+\url{https://doi.org/10.1111/j.1365-2869.1993.tb00064.x}
+
+\bibitem[\citeproctext]{ref-marques2019}
+Marques, D. R., Gomes, A. A., \& de Azevedo, M. H. P. (2019). {DSPS-4}:
+A {Brief Measure} of {Perceived Daytime Sleepiness}. \emph{Current
+Psychology}, \emph{38}(2), 579--588.
+\url{https://doi.org/10.1007/s12144-017-9638-0}
+
+\bibitem[\citeproctext]{ref-martin2023}
+Martin, V. P., Lopez, R., Dauvilliers, Y., Rouas, J.-L., Philip, P., \&
+Micoulaud-Franchi, J.-A. (2023). Sleepiness in adults: {An} umbrella
+review of a complex construct. \emph{Sleep Medicine Reviews}, \emph{67},
+101718. \url{https://doi.org/10.1016/j.smrv.2022.101718}
+
+\bibitem[\citeproctext]{ref-mongrain2005}
+Mongrain, V., Carrier, J., \& Dumont, M. (2005). Chronotype and sex
+effects on sleep architecture and quantitative sleep {EEG} in healthy
+young adults. \emph{Sleep}, \emph{28}(7), 819--827.
+\url{https://doi.org/10.1093/sleep/28.7.819}
+
+\bibitem[\citeproctext]{ref-neu2015}
+Neu, D., Mairesse, O., Verbanck, P., \& Le Bon, O. (2015). Slow wave
+sleep in the chronically fatigued: {Power} spectra distribution patterns
+in chronic fatigue syndrome and primary insomnia. \emph{Clinical
+Neurophysiology}, \emph{126}(10), 1926--1933.
+\url{https://doi.org/10.1016/j.clinph.2014.12.016}
+
+\bibitem[\citeproctext]{ref-nigro2009}
+Nigro, C. A., Aimaretti, S., Gonzalez, S., \& Rhodius, E. (2009).
+Validation of the {WristOx} 3100™ oximeter for the diagnosis of sleep
+apnea/hypopnea syndrome. \emph{Sleep and Breathing}, \emph{13}(2),
+127--136. \url{https://doi.org/10.1007/s11325-008-0217-3}
+
+\bibitem[\citeproctext]{ref-perlis2022}
+Perlis, M. L., Posner, D., Riemann, D., Bastien, C. H., Teel, J., \&
+Thase, M. (2022). Insomnia. \emph{The Lancet}, \emph{400}(10357),
+1047--1060. \url{https://doi.org/10.1016/S0140-6736(22)00879-0}
+
+\bibitem[\citeproctext]{ref-pigeon2006}
+Pigeon, W. R., \& Perlis, M. L. (2006). Sleep homeostasis in primary
+insomnia. \emph{Sleep Medicine Reviews}, \emph{10}(4), 247--254.
+\url{https://doi.org/10.1016/j.smrv.2005.09.002}
+
+\bibitem[\citeproctext]{ref-pion-tonachini2019}
+Pion-Tonachini, L., Kreutz-Delgado, K., \& Makeig, S. (2019). {ICLabel}:
+{An} automated electroencephalographic independent component classifier,
+dataset, and website. \emph{NeuroImage}, \emph{198}, 181--197.
+\url{https://doi.org/10.1016/j.neuroimage.2019.05.026}
+
+\bibitem[\citeproctext]{ref-plante2016}
+Plante, D. T., Goldstein, M. R., Cook, J. D., Smith, R., Riedner, B. A.,
+Rumble, M. E., Jelenchick, L., Roth, A., Tononi, G., Benca, R. M., \&
+Peterson, M. J. (2016). Effects of partial sleep deprivation on slow
+waves during non-rapid eye movement sleep: {A} high density {EEG}
+investigation. \emph{Clinical Neurophysiology}, \emph{127}(2),
+1436--1444. \url{https://doi.org/10.1016/j.clinph.2015.10.040}
+
+\bibitem[\citeproctext]{ref-riemann2010}
+Riemann, D., Spiegelhalder, K., Feige, B., Voderholzer, U., Berger, M.,
+Perlis, M., \& Nissen, C. (2010). The hyperarousal model of insomnia:
+{A} review of the concept and its evidence. \emph{Sleep Medicine
+Reviews}, \emph{14}(1), 19--31.
+\url{https://doi.org/10.1016/j.smrv.2009.04.002}
+
+\bibitem[\citeproctext]{ref-roehrs2011}
+Roehrs, T. A., Randall, S., Harris, E., Maan, R., \& Roth, T. (2011).
+{MSLT} in {Primary Insomnia}: {Stability} and {Relation} to {Nocturnal
+Sleep}. \emph{Sleep}, \emph{34}(12), 1647--1652.
+\url{https://doi.org/10.5665/sleep.1426}
+
+\bibitem[\citeproctext]{ref-roth2010}
+Roth, T., Zammit, G., Lankford, A., Mayleben, D., Stern, T., Pitman, V.,
+Clark, D., \& Werth, J. L. (2010). Nonrestorative sleep as a distinct
+component of insomnia. \emph{Sleep}, \emph{33}(4), 449--458.
+\url{https://doi.org/10.1093/sleep/33.4.449}
+
+\bibitem[\citeproctext]{ref-sarsour2010}
+Sarsour, K., Van Brunt, D. L., Johnston, J. A., Foley, K. A., Morin, C.
+M., \& Walsh, J. K. (2010). Associations of nonrestorative sleep with
+insomnia, depression, and daytime function. \emph{Sleep Medicine},
+\emph{11}(10), 965--972.
+\url{https://doi.org/10.1016/j.sleep.2010.08.007}
+
+\bibitem[\citeproctext]{ref-siclari2017}
+Siclari, F., \& Tononi, G. (2017). Local aspects of sleep and
+wakefulness. \emph{Current Opinion in Neurobiology}, \emph{44},
+222--227. \url{https://doi.org/10.1016/j.conb.2017.05.008}
+
+\bibitem[\citeproctext]{ref-stephan2023}
+Stephan, A. M., \& Siclari, F. (2023). Reconsidering sleep perception in
+insomnia: {From} misperception to mismeasurement. \emph{Journal of Sleep
+Research}, \emph{32}(6), e14028. \url{https://doi.org/10.1111/jsr.14028}
+
+\bibitem[\citeproctext]{ref-steriade2001}
+Steriade, M., Timofeev, I., \& Grenier, F. (2001). Natural waking and
+sleep states: {A} view from inside neocortical neurons. \emph{Journal of
+Neurophysiology}, \emph{85}(5), 1969--1985.
+\url{https://doi.org/10.1152/jn.2001.85.5.1969}
+
+\bibitem[\citeproctext]{ref-stone2008}
+Stone, K. C., Taylor, D. J., McCrae, C. S., Kalsekar, A., \& Lichstein,
+K. L. (2008). Nonrestorative sleep. \emph{Sleep Medicine Reviews},
+\emph{12}(4), 275--288. \url{https://doi.org/10.1016/j.smrv.2007.12.002}
+
+\bibitem[\citeproctext]{ref-tinajero2018}
+Tinajero, R., Williams, P. G., Cribbet, M. R., Rau, H. K., Bride, D. L.,
+\& Suchy, Y. (2018). Nonrestorative sleep in healthy, young adults
+without insomnia: Associations with executive functioning, fatigue, and
+pre-sleep arousal. \emph{Sleep Health}, \emph{4}(3), 284--291.
+\url{https://doi.org/10.1016/j.sleh.2018.02.006}
+
+\bibitem[\citeproctext]{ref-tononi2006}
+Tononi, G., \& Cirelli, C. (2006). Sleep function and synaptic
+homeostasis. \emph{Sleep Medicine Reviews}, \emph{10}(1), 49--62.
+\url{https://doi.org/10.1016/j.smrv.2005.05.002}
+
+\bibitem[\citeproctext]{ref-vyazovskiy2008}
+Vyazovskiy, V. V., Cirelli, C., Pfister-Genskow, M., Faraguna, U., \&
+Tononi, G. (2008). Molecular and electrophysiological evidence for net
+synaptic potentiation in wake and depression in sleep. \emph{Nature
+Neuroscience}, \emph{11}(2), 200--208.
+\url{https://doi.org/10.1038/nn2035}
+
+\bibitem[\citeproctext]{ref-vyazovskiy2013}
+Vyazovskiy, V. V., \& Harris, K. D. (2013). Sleep and the single neuron:
+{The} role of global slow oscillations in individual cell rest.
+\emph{Nature Reviews Neuroscience}, \emph{14}(6), 443--451.
+\url{https://doi.org/10.1038/nrn3494}
+
+\bibitem[\citeproctext]{ref-vyazovskiy2011}
+Vyazovskiy, V. V., Olcese, U., Hanlon, E. C., Nir, Y., Cirelli, C., \&
+Tononi, G. (2011). Local sleep in awake rats. \emph{Nature},
+\emph{472}(7344), 443--447. \url{https://doi.org/10.1038/nature10009}
+
+\bibitem[\citeproctext]{ref-werth1996}
+Werth, E., Achermann, P., \& Borbély, A. A. (1996). Brain topography of
+the human sleep {EEG}: Antero-posterior shifts of spectral power.
+\emph{NeuroReport}, \emph{8}(1), 123.
+
+\bibitem[\citeproctext]{ref-zhang2012}
+Zhang, J., Lam, S.-P., Li, S. X., Li, A. M., \& Wing, Y.-K. (2012). The
+longitudinal course and impact of non-restorative sleep: {A} five-year
+community-based follow-up study. \emph{Sleep Medicine}, \emph{13}(6),
+570--576. \url{https://doi.org/10.1016/j.sleep.2011.12.012}
+
+\end{CSLReferences}
+
+\end{document}

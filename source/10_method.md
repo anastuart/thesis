@@ -11,6 +11,14 @@ Additionally, topographic anaysis of spectral power ...
 
 ## Participants
 
+964 participants completed the online expression of interest questionnaire, 352 found as eligible for participation, and 33 participants were included in the study. 
+
+. Of these, 8 were unable to be contacted via email and 161 did not respond to a follow up email. 180 participants proceeded to pre-screening. 145 completers were excluded from participation during the pre-screening and screening visits,  with 44 (30%) being excluded for medication use and 54 (15%) being excluded due to having to age or sex match.
+
+
+
+
+
 
 Predetermined sample size was 12 participants from each clinical population, determined **how?**
 Due to the strict exclusion criteria and time constraints, the total sample analysed was 33 participants (13 NRS; 11 ID; 9 Control). 
