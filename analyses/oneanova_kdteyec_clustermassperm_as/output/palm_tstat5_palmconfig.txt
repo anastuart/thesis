@@ -1,0 +1,44 @@
+# Configuration file for PALM.
+# Version (github, running in MATLAB 9.11.0.1769968 (R2021b).
+# 16-Aug-2024 13:03:50
+
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_1.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_2.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_3.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_4.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_5.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_6.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_7.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_8.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_9.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_10.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_11.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_12.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_13.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_14.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_15.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_16.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_17.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_18.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_19.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/depvar_20.csv
+-s /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/surface.srf
+-d /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/desmat.csv
+-eb /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/exchangeability_blocks.csv
+-vg /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/variance_groups.csv
+-t /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/input/tcontrast5.csv
+-o /Volumes/PRJ-cfsnrs/group-stats/oneanova_ksseyec_clustermassperm_as/output/palm_tstat5
+-n 10000
+-ee
+-Cstat mass
+-C 1.959964
+-within
+-whole
+-twotail
+-seed 51281919
+-cmcx
+-savedof
+-savemetrics
+-saveglm
+-verbosefilenames
+-quiet

@@ -1,0 +1,40 @@
+# Configuration file for PALM.
+# Version (github, running in MATLAB 9.11.0.1769968 (R2021b).
+# 20-Sep-2024 16:05:24
+
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_1.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_2.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_3.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_4.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_5.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_6.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_7.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_8.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_9.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_10.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_11.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_12.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_13.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_14.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_15.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/depvar_16.csv
+-s /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/surface.srf
+-d /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/desmat.csv
+-eb /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/exchangeability_blocks.csv
+-vg /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/variance_groups.csv
+-t /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/input/tcontrast4.csv
+-o /Volumes/PRJ-cfsnrs/group-stats/eyeso_final_hopefully/output/palm_tstat4
+-n 10000
+-ee
+-Cstat mass
+-C 1.959964
+-within
+-whole
+-twotail
+-seed 54316873
+-cmcx
+-savedof
+-savemetrics
+-saveglm
+-verbosefilenames
+-quiet

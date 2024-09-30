@@ -53,6 +53,13 @@ and propagate in an anteroposterior direction [@massimini2004].
 
 ## ID
 
+During sleep, ID is associated with increased absolute and relative beta power and relative theta, alpha, and sigma power, in addition to decreased delta power (Kao et al., 2021; Zhao et al., 2021). This increase is also observed during resting wake, with an increase in absolute and overall theta power, relative beta power and absolute gamma power (Zhao et al., 2021). Increased theta power in wake is associated with feelings of sleepiness, while beta and gamma power are indicators of cognitive arousal (@cite). 
+
+
+
+
+
+
 Hyperarousal can prevent daytime sleepiness as measured through sleep latency despite significant fatigue, as the dominance of wake-like neural activity in the beta frequencies prevents a global lapse of consctiousness [@shi2022]. 
 
 
@@ -151,9 +158,17 @@ In addition to redued delta pwoer, there is also a global increase in wake-like 
 These findings suggest that sleep misperception may be better conceptualised as sleep mismeasurement, as the localised sleep and wake patterns are not accurately captured by standard sleep scoring methods which do not account for the coexistance of localised variations in cortical activation that correlate with subjective wake [@stephan2023].
 
 
+
+A proposed causal and perpetuating factor in ID is 24-hour hyperarousal, being an increase of physiological, cognitive and cortical activity that contributes to the subjective and objective symptoms of the disorder (Dressle & Riemann, 2023; Riemann et al., 2010). Cortical hyperarousal is present in ID as observed through a 24-hour increase in fast frequency brain activity, preventing sleep onset despite significant fatigue due to the dominance of activity in wake-promoting cortico-limbic networks relative to sleep-promoting networks (Riemann et al., 2015). These competing forces combine to create the ‘tired but wired’ feelings present in those with ID, where patients feel significant fatigue but are unable to sleep
+
+
+
+
 ## NRS as a disorder
 
 ``` definition, symptomology, burden, impact```
+
+Although this population has normal sleep duration and architecture, unrefreshing sleep may be a consequence of reduced SWA during sleep, which are critical for neural function and dissipation of accumulated sleep pressure (Kao et al., 2021; Tononi & Cirelli, 2006). Power spectral analysis may present an improved criteria for classifying and understanding the cause of non-restorative sleep in this population. NRS patients exhibit lower SWA during NREM sleep compared to healthy controls, despite having similar objective sleep duration (Kao et al., 2021). This dysfunctional SWA during sleep may be associated with increased SWA during wake (cite?), however further exploration using improved technology is required.
 
 As there are significant differences between NRS and ID regarding sleep architecture, functional 
 impairment, and longitudinal course [@kao2021; @zhang2013], it is important to 
@@ -393,6 +408,20 @@ adaptive processes emerging as a result of ongoing sleep deprivation.```
 
 # Methods
 
+### KSS
+
+The KSS has demonstrated correlations with EEG and behavioural measures of sleepiness in 
+It is a measure of an individual's perceived sleepiness at a given point and is therefore difficult to assess test-retest reliability, however it has demonstrated reliability over two nights of sleep loss with a one week recovery period [@gillberg1994]. It is sensitive to manipulations affecting sleepiness and is used consistently across individuals [@akerstedt2014]
+
+The KSS has been validated in healthy populations as being closely related to EEG and behavioral variables of sleepiness [@akerstedt1991; @kaida2006]. Correlations between KSS scores and EEG measures of sleepiness are over *r* = .5 [@akerstedt1990; vandenberg2005] and correlate (*r* = .57) with response times on a vigilance test [@kaida2006]. 
+    - intraclass correlation coefficient (ICC) for KSS to be 0.90 between two occasions of 36 h total sleep deprivation [@vandongen2004]
+    - effect size  highest for extended wakefulness and lowest for repeated partial sleep deprivation, within group and condition SD average of 1.25 ± 0.3 [@akerstedt2014]
+    
+### DASS-21
+DASS-21 (can I scrap this for space?)
+To control for clinically significant comorbid depression or anxiety, the short form Depression Anxiety and Stress Scale (DASS-21) was administered during the recruitment stage (lovibond1995?). The 21-item self-report scale is comprised of three 7-item subscales measuring depression, anxiety, and stress symptoms over the prevous week on a 4-point likert scale from 0 (“did not apply to me at all”) to 3 (“applied to me very much, or most of the time”). Scale scores range from 0 to 21, with higher scores indicating incresed depression, anxiety, or stress symptoms. The scale had acceptable internal consistency for the depression (α=.74) and anxiety (α=.79) subscales, but unacceptable internal consistency for the stress (α = .21) subscale. As only the depression and anxiety scores were used to screen for comorbidity, the scale demonstrated acceptable reliability for the dimensions of interest.
+
+
 ### average referencing
 
 (net voltage brain potential should be 0) - meaning that in order to accurately measure total brain activity you need to be able to measure enough activity to know the voltage potential differences between the sites) - using average of brain activity across cortex means that you are measuring the activity of the particular electrode
@@ -403,6 +432,8 @@ Following a visual inspection of the data, channels were rereferenced to the ave
 ### ICA
 
 
+ICA was unable to be applied to PSG data. Although ICA is effective in removing artefacts in short recordings of a stationary subject, it is unable to process PSG recordings as signal sources are variable over the course of the night. Furthermore, the temporal variability of brain activity across sleep stages prevents ICA from being able to reliably differentiate between artefacts and brain activity. As ICA was unable to be applied to PSG, this data is contaminated by non-brain activity, however as the data was visually cleaned for artefacts and interpreted with acknowledgement of artefact contamination, it was still used. 
+ 
 ICA estimates how indepedent the estimated sources are
 Attempts to make the sources as indepentent as possible
 can use components to subtract the artefact from the data
@@ -452,3 +483,13 @@ no perfect way of seperating the the data
 
 
 To assess if slowing ratio was significantly different between 
+
+
+## results
+
+This analysis suggests that participants in the NRS group exhibit a stronger relationship between their sleepiness scores and the outcome variable compared to participants in the GID group, where the interaction between sleepiness and the outcome was non-significant.
+A general linear model was used to analyse EEG measures across groups, allowing the slope to vary for individual KSS scores. There were no significant channel-by-channel comparisons for AAC or Slowing Ratio between groups. Additionally, KSS was only associated with SR in one channel during the eyes closed condition at the uncorrected level (channel 48, uncorrected pchannel = .032), however this did not remain significant after correcting for multiple comparisons (pfamily wise errors = .286), and was not significant in any other channels during the eyes closed condition, or in any channels during the eyes open condition. 
+
+
+To account for non-normality, SR and AAC values were log transformed prior to analysis.
+For hypothesis 2, EEG power as a normalised value for the defined frequency ranges and SR, and AAC were compared for each condition (eyes open/eyes closed) between groups (ID, NRS, Control) using a one-way ANOVA (p < .05). For hypothesis 3, KSS score was added as a covariate. 

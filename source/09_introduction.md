@@ -26,6 +26,8 @@ A potential mechanism for NRS may be reduced slow wave activity (SWA) during sle
 
 **fix thesis statement**
 
+[@colombo2016]
+
 In order to explore if NRS is a result of dysfunctions in SWA processes during sleep and wake in comparison to healthy populations and those with ID, this study will high-density electroencephalography (HD-EEG) to examine the power and topographic variance of SWA during resting wake and sleep. Additionally, it will examine if there are group differences in the correlation between subjective sleepiness and SWA following sleep. 
 
 # Introduction to sleep disorders

@@ -1,22 +1,13 @@
 # Discussion {#sec:discussion}
 
-The study aimed to explore the relationship between self-reported sleepiness scores, as measured by the KSS, and neural markers of drowsiness measured in the KDT across a sample of people with insomnia, non-restorative sleep, and healthy controls. 
+### Summary
 
-### KSS score variance 
+This study aimed to examine the differences in brain activity during resting wake upon awakening between a small group of age and sex matched individuals with non-restorative sleep, insomnia disorder, and healthy controls. 
+It did not find any significant differences in self-assessed state sleepiness scores as measured by the KSS between groups or EEG markers of drowsiness calculated through SR or AAC, however there was a significant difference in normalised theta activity between the ID and NRS groups when adding self-assessed sleepiness as a covariate. 
+ KSS scores were additionally not correlated with any significant clusters of electrodes for SR or AAC after adjustment for multiple comparisons across any groups.  
 
-The study found that KSS scores varied across groups. 
 
-### AAC
 
-This is how AAC scores correlated amongst 3 groups
-
-### Slowing Ratio
-
-Here I will talk about slowing ratio
-
-### Topographic electrode cluster differences between ID/NRS
-
-Topographic power spectral analysis found these cluster differences which mean this
 
 ## Strengths
 

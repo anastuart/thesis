@@ -354,21 +354,63 @@ display: none;
 
 <div id="sec:results" class="section level1">
 <h1>Results</h1>
+<p><code>{r include = FALSE} knitr:: opts_chunk$set(echo = FALSE)</code></p>
+<div id="participants" class="section level2">
+<h2>Participants</h2>
+<p>The final sample consisted of 33 participants, with 13 NRS, 11 ID,
+and 9 healthy controls. Participant demographic and survey response
+details are provided in Table 1.</p>
+</div>
 <div id="descriptives" class="section level2">
 <h2>Descriptives</h2>
+<p>A post-hoc power analysis using G*power <span class="citation">[@faul2007]</span> determined that using the found
+effect size for KSS AM score of 0.36 (f = 0.355) and a set alpha of
+0.05, the study achieved a power of approximately 0.39. A post-hoc
+sensitivity analysis found the study was sensitive to detecting a larch
+effect size of 0.57 using an alpha level of 0.05 and a desired power of
+0.8. This suggests that while the study was underpowered to detect small
+to medium effect sizes, it was adequately powered to detect large
+effects. As the KSS is sensitive for detecting - clinical significance
+would be a large effect size</p>
+<p>964 participants completed the online expression of interest
+questionnaire, 352 found as eligible for participation, and 33
+participants were included in the study.</p>
+<p>The decision to proceed with the sample size despite the low power
+was justified by the exploratory nature of the study and the strength of
+the age and sex matching of participants, allowing for control of
+confounding variables and increased likelihood of detecting true
+differences between groups.</p>
+<p>. Of these, 8 were unable to be contacted via email and 161 did not
+respond to a follow up email. 180 participants proceeded to
+pre-screening. 145 completers were excluded from participation during
+the pre-screening and screening visits, with 44 (30%) being excluded for
+medication use and 54 (15%) being excluded due to having to age or sex
+match.</p>
 <p>33 participants were included, with the sample consisting of 13
 individuals with Non-Restorative Sleep (NRS), 11 participants with
 Insomnia Disorder (ID), and 9 healthy controls (HC). Table 1 summarises
 the participant demographics and self-report questionnaires.</p>
-<p>```{r, message=FALSE} library(knitr) library(tidyverse)
-library(dplyr)</p>
-<p>descriptives &lt;- data2 %&gt;% group_by(group) %&gt;% summarize(
-Mean = mean(KSS_AM1) , Median = median(KSS_AM1) , SD = sd(KSS_AM1) , Min
-= min(KSS_AM1) , Max = max(KSS_AM1) ) descriptives[, -1] &lt;-
-printnum(descriptives[, -1])</p>
-<p>apa_table( descriptives , caption = “Descriptive statistics of
-correct recall by dosage.” , note = “This table was created with
-apa_table().” , escape = TRUE ) ```</p>
+<pre><code>{r, message=FALSE, results=&#39;asis&#39;}
+library(knitr)
+library(tidyverse)
+library(dplyr)
+
+data2 &lt;- read_csv(&quot;/Users/anastuart/Documents/Honours/descriptive-statistics_Aug06.csv&quot;)
+descriptives &lt;- data2 %&gt;% 
+  group_by(group) %&gt;%
+  summarize(
+    Mean = mean(KSS_AM1)
+    , Median = median(KSS_AM1)
+    , SD = sd(KSS_AM1)
+    , Min = min(KSS_AM1)
+    , Max = max(KSS_AM1)
+  )
+  
+
+knitr::kable(
+  descriptives,
+  caption = &quot;Descriptive statistics of correct recall by dosage.&quot;
+)</code></pre>
 </div>
 <div id="comparing-kss-scores-between-groups" class="section level2">
 <h2>Comparing KSS scores between groups</h2>

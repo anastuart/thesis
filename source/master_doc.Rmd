@@ -3,12 +3,15 @@ title: "Thesis"
 author: "Anastasia Stuart"
 date: "`r Sys.Date()`"
 output:
-  word_document:
-    reference_docx: apa_template.docx
-  html_document:
-    df_print: paged
   pdf_document:
     latex_engine: xelatex
+  html_document:
+    df_print: paged
+  word_document:
+    reference_docx: apa_template.docx
+    toc: true  # Adds a table of contents
+    fig_caption: true  # Enable figure captions
+    df_print: kable  # Ensures data frames are printed using kable()
   md_document:
 header-includes: \usepackage{setspace}\doublespacing
   \usepackage{indentfirst}

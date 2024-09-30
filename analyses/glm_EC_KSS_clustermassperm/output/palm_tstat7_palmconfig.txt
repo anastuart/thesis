@@ -1,0 +1,48 @@
+# Configuration file for PALM.
+# Version (github, running in MATLAB 9.11.0.1769968 (R2021b).
+# 23-Sep-2024 14:06:03
+
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_1.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_2.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_3.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_4.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_5.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_6.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_7.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_8.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_9.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_10.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_11.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_12.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_13.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_14.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_15.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_16.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_17.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_18.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_19.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_20.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_21.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_22.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_23.csv
+-i /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/depvar_24.csv
+-s /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/surface.srf
+-d /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/desmat.csv
+-eb /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/exchangeability_blocks.csv
+-vg /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/variance_groups.csv
+-t /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/input/tcontrast7.csv
+-o /Volumes/PRJ-cfsnrs/group-stats/glm_EC_KSS_clustermassperm/output/palm_tstat7
+-n 10000
+-ee
+-Cstat mass
+-C 1.959964
+-within
+-whole
+-twotail
+-seed 54568513
+-cmcx
+-savedof
+-savemetrics
+-saveglm
+-verbosefilenames
+-quiet
