@@ -105,3 +105,4 @@ Open the master doc in rstudio, change the values of the things you want to incl
 Congratulate yourself for being such a whiz and doing reproducable science!
 
 
+# anastuart.github.io
