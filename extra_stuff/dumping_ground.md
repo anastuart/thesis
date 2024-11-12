@@ -41,6 +41,9 @@ and propagate in an anteroposterior direction [@massimini2004].
 
 
 
+
+
+
 ```         
 - Definition and overview of sleep-state misperception
   - What are the neural mechanisms? [discussed in @stephan2023]
@@ -211,6 +214,13 @@ state misperception, where individuals inaccurately gauge their sleep/wake
 state [@edinger1995]. However, recent research suggests that it may not 
 actually be a misperception, but rather a mismeasurement of current methods of 
 scoring PSG data [@stephan2023].
+
+## What is sleep and sleepiness 
+
+Prolonged wake is associated with subjective and objective sleepiness, perceived subjectively through feelings of sleepiness, which are associated with objectively measurable changes in brain activity, measurable through EEG. 
+Sleepiness is Additionally, sleep, particularly slow wave activity (SWA) which are synchronized oscillations of membrane potential between hyperpolarised and depolarised states that propagate throughout the brain in an antero-posterior cortical progression
+    Increased sleep pressure is associated with 
+
 
 
 ## What is brain activity?
@@ -493,3 +503,11 @@ A general linear model was used to analyse EEG measures across groups, allowing 
 
 To account for non-normality, SR and AAC values were log transformed prior to analysis.
 For hypothesis 2, EEG power as a normalised value for the defined frequency ranges and SR, and AAC were compared for each condition (eyes open/eyes closed) between groups (ID, NRS, Control) using a one-way ANOVA (p < .05). For hypothesis 3, KSS score was added as a covariate. 
+
+
+# Results
+
+Differences in theta power
+As increased theta power upon wake is indicative of increased sleep pressure (cite), subjective feelings of non-restorative sleep may occur in this frequency band and not be adequately captured through analysis of SR or AAC. Exploratory analysis of theta activity revealed a cluster of electrodes (size = 14) that suggested differences in normalized theta activity between groups, however this was not significant when adjusted for multiple comparisons (EO cluster size = 14, F = 30.88, p=.064). There were also 60 significant channels in the eyes closed condition in the frontocentral, central and parietal regions at the uncorrected level, however they did not reach the cluster mass required to become a significant cluster and were non-significant when corrected for multiple comparisons. 
+Post-hoc exploratory t-tests revealed significant differences in theta activity between the NRS group and ID groups in both eyes open and eyes closed conditions (Figure X). Clusters remained significant when controlling for multiple comparisons. Eyes closed cluster size 115 t = 276.4, p = .012; eyes open cluster size t = 119.3, p = .030. 
+-    unexpected finding: that model found main effect of group for theta

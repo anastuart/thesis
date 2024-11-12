@@ -32,11 +32,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r child='05_table_of_contents.md', eval=TRUE}
 
-```{r child='06_list_of_figures.md', eval=FALSE}
+```{r child='06_list_of_figures.md', eval=TRUE}
 
-```{r child='07_list_of_tables.md', eval=FALSE}
+```{r child='07_list_of_tables.md', eval=TRUE}
 
-```{r child='08_abbreviations.md', eval=FALSE}
+```{r child='08_abbreviations.md', eval=TRUE}
 
 ```{r child='09_introduction.md', eval=TRUE}
 
